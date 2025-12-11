@@ -238,9 +238,9 @@ Partial Class FrmSalesItemMaster
         Me.gbMainDetail.Controls.Add(Me.lblTItemCode)
         Me.gbMainDetail.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gbMainDetail.Location = New System.Drawing.Point(11, 5)
-        Me.gbMainDetail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gbMainDetail.Margin = New System.Windows.Forms.Padding(4)
         Me.gbMainDetail.Name = "gbMainDetail"
-        Me.gbMainDetail.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gbMainDetail.Padding = New System.Windows.Forms.Padding(4)
         Me.gbMainDetail.Size = New System.Drawing.Size(1231, 457)
         Me.gbMainDetail.TabIndex = 1
         Me.gbMainDetail.TabStop = False
@@ -252,7 +252,7 @@ Partial Class FrmSalesItemMaster
         Me.btnRemoveImg.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRemoveImg.Image = CType(resources.GetObject("btnRemoveImg.Image"), System.Drawing.Image)
         Me.btnRemoveImg.Location = New System.Drawing.Point(1081, 190)
-        Me.btnRemoveImg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnRemoveImg.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRemoveImg.Name = "btnRemoveImg"
         Me.btnRemoveImg.Size = New System.Drawing.Size(116, 36)
         Me.btnRemoveImg.TabIndex = 194
@@ -266,7 +266,7 @@ Partial Class FrmSalesItemMaster
         Me.btnStart.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStart.Image = CType(resources.GetObject("btnStart.Image"), System.Drawing.Image)
         Me.btnStart.Location = New System.Drawing.Point(1167, 15)
-        Me.btnStart.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnStart.Margin = New System.Windows.Forms.Padding(4)
         Me.btnStart.Name = "btnStart"
         Me.btnStart.Size = New System.Drawing.Size(52, 34)
         Me.btnStart.TabIndex = 296
@@ -303,7 +303,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbBarcodeType.FormattingEnabled = True
         Me.cmbBarcodeType.Items.AddRange(New Object() {"Item Master", "Purchase Time", "Piece Wise", "Vendor Barcode"})
         Me.cmbBarcodeType.Location = New System.Drawing.Point(144, 23)
-        Me.cmbBarcodeType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbBarcodeType.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbBarcodeType.Name = "cmbBarcodeType"
         Me.cmbBarcodeType.Size = New System.Drawing.Size(221, 31)
         Me.cmbBarcodeType.TabIndex = 0
@@ -327,7 +327,7 @@ Partial Class FrmSalesItemMaster
         Me.txtSalesRateA.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtSalesRateA.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSalesRateA.Location = New System.Drawing.Point(561, 176)
-        Me.txtSalesRateA.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSalesRateA.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSalesRateA.MaxLength = 12
         Me.txtSalesRateA.Name = "txtSalesRateA"
         Me.txtSalesRateA.Size = New System.Drawing.Size(113, 30)
@@ -339,7 +339,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbItemSizeRange.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.cmbItemSizeRange.FormattingEnabled = True
         Me.cmbItemSizeRange.Location = New System.Drawing.Point(931, 62)
-        Me.cmbItemSizeRange.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbItemSizeRange.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbItemSizeRange.Name = "cmbItemSizeRange"
         Me.cmbItemSizeRange.Size = New System.Drawing.Size(119, 31)
         Me.cmbItemSizeRange.TabIndex = 19
@@ -362,7 +362,7 @@ Partial Class FrmSalesItemMaster
         Me.txtMRP.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtMRP.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtMRP.Location = New System.Drawing.Point(144, 217)
-        Me.txtMRP.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtMRP.Margin = New System.Windows.Forms.Padding(4)
         Me.txtMRP.MaxLength = 12
         Me.txtMRP.Name = "txtMRP"
         Me.txtMRP.Size = New System.Drawing.Size(113, 30)
@@ -398,7 +398,7 @@ Partial Class FrmSalesItemMaster
         Me.txtCommissionAmt.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtCommissionAmt.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.txtCommissionAmt.Location = New System.Drawing.Point(824, 217)
-        Me.txtCommissionAmt.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCommissionAmt.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCommissionAmt.MaxLength = 6
         Me.txtCommissionAmt.Name = "txtCommissionAmt"
         Me.txtCommissionAmt.Size = New System.Drawing.Size(159, 30)
@@ -422,7 +422,7 @@ Partial Class FrmSalesItemMaster
         Me.txtCommissionPer.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtCommissionPer.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.txtCommissionPer.Location = New System.Drawing.Point(824, 178)
-        Me.txtCommissionPer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCommissionPer.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCommissionPer.MaxLength = 6
         Me.txtCommissionPer.Name = "txtCommissionPer"
         Me.txtCommissionPer.Size = New System.Drawing.Size(159, 30)
@@ -470,7 +470,7 @@ Partial Class FrmSalesItemMaster
         Me.txtSalesDiscPer.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtSalesDiscPer.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSalesDiscPer.Location = New System.Drawing.Point(561, 217)
-        Me.txtSalesDiscPer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSalesDiscPer.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSalesDiscPer.MaxLength = 6
         Me.txtSalesDiscPer.Name = "txtSalesDiscPer"
         Me.txtSalesDiscPer.Size = New System.Drawing.Size(113, 30)
@@ -482,7 +482,7 @@ Partial Class FrmSalesItemMaster
         Me.txtPurchaseDiscPer.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtPurchaseDiscPer.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPurchaseDiscPer.Location = New System.Drawing.Point(561, 138)
-        Me.txtPurchaseDiscPer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPurchaseDiscPer.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPurchaseDiscPer.MaxLength = 6
         Me.txtPurchaseDiscPer.Name = "txtPurchaseDiscPer"
         Me.txtPurchaseDiscPer.Size = New System.Drawing.Size(113, 30)
@@ -506,7 +506,7 @@ Partial Class FrmSalesItemMaster
         Me.txtLocation.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtLocation.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtLocation.Location = New System.Drawing.Point(824, 138)
-        Me.txtLocation.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtLocation.Margin = New System.Windows.Forms.Padding(4)
         Me.txtLocation.MaxLength = 25
         Me.txtLocation.Name = "txtLocation"
         Me.txtLocation.Size = New System.Drawing.Size(225, 30)
@@ -529,7 +529,7 @@ Partial Class FrmSalesItemMaster
         Me.txtCatalogName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtCatalogName.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtCatalogName.Location = New System.Drawing.Point(824, 295)
-        Me.txtCatalogName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtCatalogName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCatalogName.MaxLength = 20
         Me.txtCatalogName.Name = "txtCatalogName"
         Me.txtCatalogName.Size = New System.Drawing.Size(225, 30)
@@ -540,7 +540,7 @@ Partial Class FrmSalesItemMaster
         Me.txtDesignNo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtDesignNo.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtDesignNo.Location = New System.Drawing.Point(824, 98)
-        Me.txtDesignNo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtDesignNo.Margin = New System.Windows.Forms.Padding(4)
         Me.txtDesignNo.MaxLength = 20
         Me.txtDesignNo.Name = "txtDesignNo"
         Me.txtDesignNo.Size = New System.Drawing.Size(225, 30)
@@ -565,7 +565,7 @@ Partial Class FrmSalesItemMaster
         Me.chkManageStock.CheckState = System.Windows.Forms.CheckState.Checked
         Me.chkManageStock.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkManageStock.Location = New System.Drawing.Point(937, 338)
-        Me.chkManageStock.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkManageStock.Margin = New System.Windows.Forms.Padding(4)
         Me.chkManageStock.Name = "chkManageStock"
         Me.chkManageStock.Size = New System.Drawing.Size(143, 27)
         Me.chkManageStock.TabIndex = 27
@@ -580,7 +580,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbItemColor.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbItemColor.FormattingEnabled = True
         Me.cmbItemColor.Location = New System.Drawing.Point(824, 257)
-        Me.cmbItemColor.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbItemColor.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbItemColor.Name = "cmbItemColor"
         Me.cmbItemColor.Size = New System.Drawing.Size(159, 31)
         Me.cmbItemColor.TabIndex = 24
@@ -626,7 +626,7 @@ Partial Class FrmSalesItemMaster
         '
         Me.txtTItemName1.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTItemName1.Location = New System.Drawing.Point(144, 98)
-        Me.txtTItemName1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTItemName1.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTItemName1.MaxLength = 50
         Me.txtTItemName1.Name = "txtTItemName1"
         Me.txtTItemName1.Size = New System.Drawing.Size(532, 30)
@@ -649,7 +649,7 @@ Partial Class FrmSalesItemMaster
         Me.txtTaxPer.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtTaxPer.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTaxPer.Location = New System.Drawing.Point(560, 255)
-        Me.txtTaxPer.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTaxPer.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTaxPer.MaxLength = 5
         Me.txtTaxPer.Name = "txtTaxPer"
         Me.txtTaxPer.Size = New System.Drawing.Size(113, 30)
@@ -673,7 +673,7 @@ Partial Class FrmSalesItemMaster
         Me.txtHSNCode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtHSNCode.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtHSNCode.Location = New System.Drawing.Point(144, 255)
-        Me.txtHSNCode.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtHSNCode.Margin = New System.Windows.Forms.Padding(4)
         Me.txtHSNCode.MaxLength = 20
         Me.txtHSNCode.Name = "txtHSNCode"
         Me.txtHSNCode.Size = New System.Drawing.Size(185, 30)
@@ -685,7 +685,7 @@ Partial Class FrmSalesItemMaster
         Me.txtValue.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtValue.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtValue.Location = New System.Drawing.Point(1059, 375)
-        Me.txtValue.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtValue.Margin = New System.Windows.Forms.Padding(4)
         Me.txtValue.MaxLength = 6
         Me.txtValue.Name = "txtValue"
         Me.txtValue.Size = New System.Drawing.Size(104, 30)
@@ -709,7 +709,7 @@ Partial Class FrmSalesItemMaster
         Me.txtPurchaseRate.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtPurchaseRate.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPurchaseRate.Location = New System.Drawing.Point(144, 138)
-        Me.txtPurchaseRate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPurchaseRate.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPurchaseRate.MaxLength = 6
         Me.txtPurchaseRate.Name = "txtPurchaseRate"
         Me.txtPurchaseRate.Size = New System.Drawing.Size(113, 30)
@@ -723,7 +723,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbItemSize.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbItemSize.FormattingEnabled = True
         Me.cmbItemSize.Location = New System.Drawing.Point(824, 62)
-        Me.cmbItemSize.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbItemSize.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbItemSize.Name = "cmbItemSize"
         Me.cmbItemSize.Size = New System.Drawing.Size(100, 31)
         Me.cmbItemSize.TabIndex = 18
@@ -758,7 +758,7 @@ Partial Class FrmSalesItemMaster
         Me.txtBarcode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtBarcode.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtBarcode.Location = New System.Drawing.Point(473, 21)
-        Me.txtBarcode.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtBarcode.Margin = New System.Windows.Forms.Padding(4)
         Me.txtBarcode.MaxLength = 50
         Me.txtBarcode.Name = "txtBarcode"
         Me.txtBarcode.Size = New System.Drawing.Size(203, 30)
@@ -769,7 +769,7 @@ Partial Class FrmSalesItemMaster
         Me.txtOpStk.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtOpStk.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtOpStk.Location = New System.Drawing.Point(824, 375)
-        Me.txtOpStk.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtOpStk.Margin = New System.Windows.Forms.Padding(4)
         Me.txtOpStk.MaxLength = 6
         Me.txtOpStk.Name = "txtOpStk"
         Me.txtOpStk.Size = New System.Drawing.Size(104, 30)
@@ -793,7 +793,7 @@ Partial Class FrmSalesItemMaster
         Me.txtReorderLevel.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtReorderLevel.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtReorderLevel.Location = New System.Drawing.Point(824, 414)
-        Me.txtReorderLevel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtReorderLevel.Margin = New System.Windows.Forms.Padding(4)
         Me.txtReorderLevel.MaxLength = 6
         Me.txtReorderLevel.Name = "txtReorderLevel"
         Me.txtReorderLevel.Size = New System.Drawing.Size(104, 30)
@@ -820,7 +820,7 @@ Partial Class FrmSalesItemMaster
         Me.pbImg.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.pbImg.InitialImage = CType(resources.GetObject("pbImg.InitialImage"), System.Drawing.Image)
         Me.pbImg.Location = New System.Drawing.Point(1059, 50)
-        Me.pbImg.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.pbImg.Margin = New System.Windows.Forms.Padding(4)
         Me.pbImg.Name = "pbImg"
         Me.pbImg.Size = New System.Drawing.Size(159, 135)
         Me.pbImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -866,7 +866,7 @@ Partial Class FrmSalesItemMaster
         Me.txtImgPath.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.txtImgPath.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtImgPath.Location = New System.Drawing.Point(1059, 249)
-        Me.txtImgPath.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtImgPath.Margin = New System.Windows.Forms.Padding(4)
         Me.txtImgPath.MaxLength = 500
         Me.txtImgPath.Name = "txtImgPath"
         Me.txtImgPath.ReadOnly = True
@@ -880,7 +880,7 @@ Partial Class FrmSalesItemMaster
         Me.chkIsActive.CheckState = System.Windows.Forms.CheckState.Checked
         Me.chkIsActive.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.chkIsActive.Location = New System.Drawing.Point(824, 338)
-        Me.chkIsActive.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.chkIsActive.Margin = New System.Windows.Forms.Padding(4)
         Me.chkIsActive.Name = "chkIsActive"
         Me.chkIsActive.Size = New System.Drawing.Size(99, 27)
         Me.chkIsActive.TabIndex = 26
@@ -905,7 +905,7 @@ Partial Class FrmSalesItemMaster
         Me.txtSalesRate.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtSalesRate.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSalesRate.Location = New System.Drawing.Point(144, 177)
-        Me.txtSalesRate.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtSalesRate.Margin = New System.Windows.Forms.Padding(4)
         Me.txtSalesRate.MaxLength = 12
         Me.txtSalesRate.Name = "txtSalesRate"
         Me.txtSalesRate.Size = New System.Drawing.Size(113, 30)
@@ -917,7 +917,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbUOM.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbUOM.FormattingEnabled = True
         Me.cmbUOM.Location = New System.Drawing.Point(316, 138)
-        Me.cmbUOM.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbUOM.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbUOM.Name = "cmbUOM"
         Me.cmbUOM.Size = New System.Drawing.Size(87, 31)
         Me.cmbUOM.TabIndex = 5
@@ -930,7 +930,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbSupplierName.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbSupplierName.FormattingEnabled = True
         Me.cmbSupplierName.Location = New System.Drawing.Point(144, 412)
-        Me.cmbSupplierName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbSupplierName.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbSupplierName.Name = "cmbSupplierName"
         Me.cmbSupplierName.Size = New System.Drawing.Size(532, 31)
         Me.cmbSupplierName.TabIndex = 17
@@ -955,7 +955,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbMfgName.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbMfgName.FormattingEnabled = True
         Me.cmbMfgName.Location = New System.Drawing.Point(144, 373)
-        Me.cmbMfgName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbMfgName.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbMfgName.Name = "cmbMfgName"
         Me.cmbMfgName.Size = New System.Drawing.Size(532, 31)
         Me.cmbMfgName.TabIndex = 16
@@ -980,7 +980,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbItemSubCategory.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbItemSubCategory.FormattingEnabled = True
         Me.cmbItemSubCategory.Location = New System.Drawing.Point(472, 331)
-        Me.cmbItemSubCategory.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbItemSubCategory.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbItemSubCategory.Name = "cmbItemSubCategory"
         Me.cmbItemSubCategory.Size = New System.Drawing.Size(203, 31)
         Me.cmbItemSubCategory.TabIndex = 15
@@ -1005,7 +1005,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbItemCategory.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbItemCategory.FormattingEnabled = True
         Me.cmbItemCategory.Location = New System.Drawing.Point(144, 331)
-        Me.cmbItemCategory.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbItemCategory.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbItemCategory.Name = "cmbItemCategory"
         Me.cmbItemCategory.Size = New System.Drawing.Size(185, 31)
         Me.cmbItemCategory.TabIndex = 14
@@ -1030,7 +1030,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbItemType.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbItemType.FormattingEnabled = True
         Me.cmbItemType.Location = New System.Drawing.Point(144, 293)
-        Me.cmbItemType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbItemType.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbItemType.Name = "cmbItemType"
         Me.cmbItemType.Size = New System.Drawing.Size(532, 31)
         Me.cmbItemType.TabIndex = 13
@@ -1052,7 +1052,7 @@ Partial Class FrmSalesItemMaster
         '
         Me.txtTItemName.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTItemName.Location = New System.Drawing.Point(144, 59)
-        Me.txtTItemName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTItemName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTItemName.MaxLength = 50
         Me.txtTItemName.Name = "txtTItemName"
         Me.txtTItemName.Size = New System.Drawing.Size(532, 30)
@@ -1076,7 +1076,7 @@ Partial Class FrmSalesItemMaster
         Me.txtTItemCode.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtTItemCode.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtTItemCode.Location = New System.Drawing.Point(824, 21)
-        Me.txtTItemCode.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTItemCode.Margin = New System.Windows.Forms.Padding(4)
         Me.txtTItemCode.MaxLength = 50
         Me.txtTItemCode.Name = "txtTItemCode"
         Me.txtTItemCode.Size = New System.Drawing.Size(220, 30)
@@ -1099,7 +1099,7 @@ Partial Class FrmSalesItemMaster
         Me.btnUpdateRates.BackColor = System.Drawing.SystemColors.Control
         Me.btnUpdateRates.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdateRates.Location = New System.Drawing.Point(1249, 386)
-        Me.btnUpdateRates.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnUpdateRates.Margin = New System.Windows.Forms.Padding(4)
         Me.btnUpdateRates.Name = "btnUpdateRates"
         Me.btnUpdateRates.Size = New System.Drawing.Size(168, 36)
         Me.btnUpdateRates.TabIndex = 189
@@ -1113,7 +1113,7 @@ Partial Class FrmSalesItemMaster
         Me.gcDetail.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gcDetail.ContextMenuStrip = Me.ContextMenuStrip2
-        Me.gcDetail.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gcDetail.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(4)
         Me.gcDetail.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         GridLevelNode1.RelationName = "Level1"
         Me.gcDetail.LevelTree.Nodes.AddRange(New DevExpress.XtraGrid.GridLevelNode() {GridLevelNode1})
@@ -1121,7 +1121,7 @@ Partial Class FrmSalesItemMaster
         Me.gcDetail.LookAndFeel.SkinName = "Office 2010 Blue"
         Me.gcDetail.LookAndFeel.UseDefaultLookAndFeel = False
         Me.gcDetail.MainView = Me.gvDetail
-        Me.gcDetail.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gcDetail.Margin = New System.Windows.Forms.Padding(4)
         Me.gcDetail.Name = "gcDetail"
         Me.gcDetail.RepositoryItems.AddRange(New DevExpress.XtraEditors.Repository.RepositoryItem() {Me.repYN})
         Me.gcDetail.Size = New System.Drawing.Size(269, 364)
@@ -1348,7 +1348,7 @@ Partial Class FrmSalesItemMaster
         Me.btnExit.BackColor = System.Drawing.SystemColors.Control
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnExit.Location = New System.Drawing.Point(480, 693)
-        Me.btnExit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(91, 39)
         Me.btnExit.TabIndex = 6
@@ -1363,7 +1363,7 @@ Partial Class FrmSalesItemMaster
         Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.btnCancel.Location = New System.Drawing.Point(379, 693)
-        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
         Me.btnCancel.Size = New System.Drawing.Size(99, 39)
         Me.btnCancel.TabIndex = 5
@@ -1378,7 +1378,7 @@ Partial Class FrmSalesItemMaster
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.ForeColor = System.Drawing.Color.Red
         Me.btnDelete.Location = New System.Drawing.Point(280, 693)
-        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(96, 39)
         Me.btnDelete.TabIndex = 4
@@ -1393,7 +1393,7 @@ Partial Class FrmSalesItemMaster
         Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave.ForeColor = System.Drawing.Color.DarkGreen
         Me.btnSave.Location = New System.Drawing.Point(189, 693)
-        Me.btnSave.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(88, 39)
         Me.btnSave.TabIndex = 3
@@ -1408,7 +1408,7 @@ Partial Class FrmSalesItemMaster
         Me.btnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEdit.ForeColor = System.Drawing.Color.Maroon
         Me.btnEdit.Location = New System.Drawing.Point(91, 693)
-        Me.btnEdit.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnEdit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEdit.Name = "btnEdit"
         Me.btnEdit.Size = New System.Drawing.Size(96, 39)
         Me.btnEdit.TabIndex = 2
@@ -1423,7 +1423,7 @@ Partial Class FrmSalesItemMaster
         Me.btnAdd.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnAdd.ForeColor = System.Drawing.Color.Blue
         Me.btnAdd.Location = New System.Drawing.Point(5, 693)
-        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnAdd.Margin = New System.Windows.Forms.Padding(4)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(83, 39)
         Me.btnAdd.TabIndex = 0
@@ -1437,7 +1437,7 @@ Partial Class FrmSalesItemMaster
         Me.btnRefresh.BackColor = System.Drawing.SystemColors.Control
         Me.btnRefresh.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnRefresh.Location = New System.Drawing.Point(1409, 697)
-        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(4)
         Me.btnRefresh.Name = "btnRefresh"
         Me.btnRefresh.Size = New System.Drawing.Size(105, 36)
         Me.btnRefresh.TabIndex = 14
@@ -1467,7 +1467,7 @@ Partial Class FrmSalesItemMaster
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Items.AddRange(New Object() {"Fabric", "Readymade", "PRN", "Crystal"})
         Me.ComboBox1.Location = New System.Drawing.Point(1139, 704)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(112, 25)
         Me.ComboBox1.TabIndex = 11
@@ -1479,7 +1479,7 @@ Partial Class FrmSalesItemMaster
         Me.btnPrint.BackColor = System.Drawing.SystemColors.Control
         Me.btnPrint.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrint.Location = New System.Drawing.Point(1319, 697)
-        Me.btnPrint.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnPrint.Margin = New System.Windows.Forms.Padding(4)
         Me.btnPrint.Name = "btnPrint"
         Me.btnPrint.Size = New System.Drawing.Size(87, 36)
         Me.btnPrint.TabIndex = 13
@@ -1506,7 +1506,7 @@ Partial Class FrmSalesItemMaster
         Me.txtPrintCopies.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtPrintCopies.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPrintCopies.Location = New System.Drawing.Point(1256, 704)
-        Me.txtPrintCopies.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtPrintCopies.Margin = New System.Windows.Forms.Padding(4)
         Me.txtPrintCopies.MaxLength = 3
         Me.txtPrintCopies.Name = "txtPrintCopies"
         Me.txtPrintCopies.Size = New System.Drawing.Size(56, 24)
@@ -1524,13 +1524,13 @@ Partial Class FrmSalesItemMaster
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gcData.ContextMenuStrip = Me.ContextMenuStrip1
-        Me.gcData.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gcData.EmbeddedNavigator.Margin = New System.Windows.Forms.Padding(4)
         Me.gcData.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gcData.Location = New System.Drawing.Point(11, 469)
         Me.gcData.LookAndFeel.SkinName = "Office 2010 Blue"
         Me.gcData.LookAndFeel.UseDefaultLookAndFeel = False
         Me.gcData.MainView = Me.gvData
-        Me.gcData.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.gcData.Margin = New System.Windows.Forms.Padding(4)
         Me.gcData.Name = "gcData"
         Me.gcData.Size = New System.Drawing.Size(1504, 191)
         Me.gcData.TabIndex = 12
@@ -1561,7 +1561,7 @@ Partial Class FrmSalesItemMaster
         Me.btnStockCheck.BackColor = System.Drawing.SystemColors.Control
         Me.btnStockCheck.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnStockCheck.Location = New System.Drawing.Point(1449, 667)
-        Me.btnStockCheck.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnStockCheck.Margin = New System.Windows.Forms.Padding(4)
         Me.btnStockCheck.Name = "btnStockCheck"
         Me.btnStockCheck.Size = New System.Drawing.Size(65, 36)
         Me.btnStockCheck.TabIndex = 10
@@ -1575,7 +1575,7 @@ Partial Class FrmSalesItemMaster
         Me.cmbF_Company.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cmbF_Company.EnterMoveNextControl = True
         Me.cmbF_Company.Location = New System.Drawing.Point(576, 700)
-        Me.cmbF_Company.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cmbF_Company.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbF_Company.Name = "cmbF_Company"
         Me.cmbF_Company.Properties.Appearance.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbF_Company.Properties.Appearance.Options.UseFont = True
@@ -1621,7 +1621,7 @@ Partial Class FrmSalesItemMaster
         Me.txtF_ItemName.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.txtF_ItemName.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtF_ItemName.Location = New System.Drawing.Point(999, 698)
-        Me.txtF_ItemName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtF_ItemName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtF_ItemName.MaxLength = 50
         Me.txtF_ItemName.Name = "txtF_ItemName"
         Me.txtF_ItemName.Size = New System.Drawing.Size(132, 30)
@@ -1633,7 +1633,7 @@ Partial Class FrmSalesItemMaster
         Me.txtF_BarcodeFrom.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtF_BarcodeFrom.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtF_BarcodeFrom.Location = New System.Drawing.Point(765, 698)
-        Me.txtF_BarcodeFrom.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtF_BarcodeFrom.Margin = New System.Windows.Forms.Padding(4)
         Me.txtF_BarcodeFrom.MaxLength = 50
         Me.txtF_BarcodeFrom.Name = "txtF_BarcodeFrom"
         Me.txtF_BarcodeFrom.Size = New System.Drawing.Size(109, 30)
@@ -1658,7 +1658,7 @@ Partial Class FrmSalesItemMaster
         Me.txtF_BarcodeTo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtF_BarcodeTo.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtF_BarcodeTo.Location = New System.Drawing.Point(883, 698)
-        Me.txtF_BarcodeTo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtF_BarcodeTo.Margin = New System.Windows.Forms.Padding(4)
         Me.txtF_BarcodeTo.MaxLength = 50
         Me.txtF_BarcodeTo.Name = "txtF_BarcodeTo"
         Me.txtF_BarcodeTo.Size = New System.Drawing.Size(101, 30)
@@ -1682,7 +1682,7 @@ Partial Class FrmSalesItemMaster
         Me.btnPrintItemBarcodes.BackColor = System.Drawing.SystemColors.Control
         Me.btnPrintItemBarcodes.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnPrintItemBarcodes.Location = New System.Drawing.Point(1423, 386)
-        Me.btnPrintItemBarcodes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.btnPrintItemBarcodes.Margin = New System.Windows.Forms.Padding(4)
         Me.btnPrintItemBarcodes.Name = "btnPrintItemBarcodes"
         Me.btnPrintItemBarcodes.Size = New System.Drawing.Size(223, 36)
         Me.btnPrintItemBarcodes.TabIndex = 193
@@ -1723,7 +1723,7 @@ Partial Class FrmSalesItemMaster
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.gbMainDetail)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.MaximizeBox = False
         Me.Name = "FrmSalesItemMaster"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

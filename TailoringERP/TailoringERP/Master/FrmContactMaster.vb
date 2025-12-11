@@ -5,6 +5,8 @@ Imports DevExpress.XtraSplashScreen
 Imports DevExpress.XtraGrid.Columns
 Imports TailoringERP.TailoringERP.DB
 Imports System.Data.SqlClient
+Imports System.Windows.Forms
+
 
 Public Class FrmContactMaster
 #Region "Declerations"
@@ -14,36 +16,11 @@ Public Class FrmContactMaster
     Dim dt As New DataTable
     Dim obj As New DBManager
     Dim sql_query As String
+    ' Dim edit_ins As Integer = -1   ' 1 ->  add    0-> edit   -1 -> default
+    ' Dim dtGridSource As New DataTable
     Dim edit_ins As Integer = -1   ' 1 ->  add    0-> edit   -1 -> default
     Dim dtGridSource As New DataTable
 
-    'Dim existCode, existBarCode, existDesignNo As String
-    'Dim oldCode As String
-    'Dim point As Boolean = False
-    'Dim minus As Boolean = False
-    'Dim dsUISetting As New Data.DataSet
-    'Dim prnCode, LabelText As String
-    'Dim flgIsAll As Boolean = False
-    'Dim dsReportQuery As New Data.DataSet
-
-    'Dim dsItemType As DataSet
-    'Dim dsItemCategory As New DataSet
-    'Dim dsItemSubCategory As New DataSet
-    'Dim dsMfgName As DataSet
-    'Dim dsSupplier As DataSet
-    'Dim dsItemSize As DataSet
-    'Dim dsItemSizeRange As DataSet
-    'Dim dsItemColor As New DataSet
-    'Dim ItemFormula, MiscItemFormula, MiscItemFormula_Text As String
-    'Dim dtBWRate As DataTable
-
-    Public strParam As String = ""
-    Public strInitial As String = ""
-
-    ''Public uploadExcel As Boolean = False
-    ''Dim dvMiscMaster As New DataView(dsMiscMaster.Tables(0))
-    ''Dim uploadType As String
-    ''Dim UpdFromExcel As Boolean = False
 
 #End Region
 
@@ -54,6 +31,19 @@ Public Class FrmContactMaster
     Private Function validateData() As Boolean
 
         Dim contact As String = txtContactNo.Text.Trim()
+
+        If isDuplicateContact(contact, Val(lblContactId.Text)) Then
+            MsgBox("This Contact Number already exists!", MsgBoxStyle.Critical)
+            txtContactNo.Focus()
+            Return False
+        End If
+
+        If IsDuplicateName(txtName.Text.Trim(), Val(lblContactId.Text)) Then
+            MsgBox("This Name already exists!", MsgBoxStyle.Critical)
+            txtName.Focus()
+            Return False
+        End If
+
 
         If contact = "" Then
             MsgBox("Contact Number is required.", MsgBoxStyle.Exclamation)
@@ -73,14 +63,11 @@ Public Class FrmContactMaster
             Return False
         End If
 
-
         If txtName.Text.Trim() = "" Then
             MsgBox("Person Name is required.", MsgBoxStyle.Exclamation)
             txtName.Focus()
             Return False
         End If
-
-
 
         If txtEmailID.Text.Trim() <> "" AndAlso Not txtEmailID.Text.Contains("@") Then
             MsgBox("Invalid Email ID.", MsgBoxStyle.Exclamation)
@@ -94,7 +81,7 @@ Public Class FrmContactMaster
 
     Public Sub saveData()
         If edit_ins = -1 Then Exit Sub
-        If Not validateData() Then Exit Sub
+        'If Not validateData() Then Exit Sub
 
         Try
             If con.State = ConnectionState.Closed Then con.Open()
@@ -182,6 +169,7 @@ Public Class FrmContactMaster
 
             End If
 
+
         Catch ex As Exception
             MsgBox("Error saving data: " & ex.Message, MsgBoxStyle.Critical)
         Finally
@@ -196,11 +184,7 @@ Public Class FrmContactMaster
         Try
             If con.State = ConnectionState.Closed Then con.Open()
 
-            Dim sql As String =
-            "SELECT LedgerId, LedgerName 
-             FROM tbl_LedgerMaster 
-             WHERE IsActive = 1 OR IsActive IS NULL 
-             ORDER BY LedgerName"
+            Dim sql As String = "SELECT LedgerId, LedgerName FROM tbl_LedgerMaster WHERE G_Id = 11 ORDER BY LedgerName"
 
             Dim dtLedger As New DataTable
             Using daLedger As New SqlDataAdapter(sql, con)
@@ -227,7 +211,7 @@ Public Class FrmContactMaster
 
         cmb.Items.AddRange(values)
 
-        cmb.SelectedIndex = 0   ' Default selection
+        cmb.SelectedIndex = 0
 
     End Sub
 
@@ -239,7 +223,7 @@ Public Class FrmContactMaster
             Dim sql As String =
             "SELECT ContactId, PersonName, ContactNo, CompanyName,
                     Designation, ContactType, Broadcast, LedgerID
-             FROM ContactMaster
+             FROM ContactMaster 
              ORDER BY PersonName"
 
             Using da As New SqlDataAdapter(sql, con)
@@ -277,12 +261,8 @@ Public Class FrmContactMaster
         Try
             If con.State = ConnectionState.Closed Then con.Open()
 
-            Dim sql As String = "DELETE FROM ContactMaster WHERE ContactId = @ContactId"
-
-            Using cmd As New SqlCommand(sql, con)
-                cmd.Parameters.AddWithValue("@ContactId", lblContactId.Text)
-                cmd.ExecuteNonQuery()
-            End Using
+            Dim sql As String = "DELETE FROM ContactMaster WHERE ContactId = " & Val(lblContactId.Text)
+            obj.QueryExecute(sql_query)
 
             MsgBox("Contact deleted successfully.", MsgBoxStyle.Information)
 
@@ -343,13 +323,10 @@ Public Class FrmContactMaster
         txtRemark2.Clear()
 
         dtpBirthDate.ResetText()
-        If cmbContactType.Items.Count > 0 Then cmbContactType.SelectedIndex = 0
-        If cmbDesignation.Items.Count > 0 Then cmbDesignation.SelectedIndex = 0
-        If cmbLedgerID.Items.Count > 0 Then cmbLedgerID.SelectedIndex = 0
-        If cmbBroadcast.Items.Count > 0 Then cmbBroadcast.SelectedIndex = 0
-
-
-
+        cmbContactType.SelectedIndex = -1
+        cmbDesignation.SelectedIndex = 0
+        cmbLedgerID.SelectedIndex = 0
+        cmbBroadcast.SelectedIndex = 0
 
         Try
 
@@ -382,8 +359,6 @@ Public Class FrmContactMaster
     End Sub
 
     Public Sub addClickTime()
-
-
         gbMainDetail.Enabled = True
         gcData.Enabled = False
 
@@ -447,6 +422,45 @@ Public Class FrmContactMaster
 
     End Sub
 
+    Private Function isDuplicateContact(contactNo As String, Optional contactId As Integer = 0) As Boolean
+        Dim sql As String = "SELECT COUNT(*) FROM ContactMaster WHERE ContactNo = @contactNo AND ContactId <> @contactId"
+        Using cmd As New SqlCommand(sql, con)
+            cmd.Parameters.AddWithValue("@contactNo", contactNo)
+            cmd.Parameters.AddWithValue("@contactId", contactId)
+
+            If con.State = ConnectionState.Closed Then con.Open()
+            Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+            con.Close()
+            Return count > 0
+
+        End Using
+    End Function
+
+
+    Private Function IsDuplicateName(name As String, Optional contactId As Integer = 0) As Boolean
+        Dim sql As String =
+        "SELECT COUNT(*) FROM ContactMaster 
+         WHERE PersonName = @Name AND ContactId <> @ContactId"
+
+        Using cmd As New SqlCommand(sql, con)
+            cmd.Parameters.AddWithValue("@Name", name)
+            cmd.Parameters.AddWithValue("@ContactId", contactId)
+
+            If con.State = ConnectionState.Closed Then con.Open()
+            Dim count As Integer = Convert.ToInt32(cmd.ExecuteScalar())
+            con.Close()
+
+            Return count > 0
+        End Using
+    End Function
+
+
+
+    Private Sub AllTextBoxes_keyPress(sender As Object, e As KeyPressEventArgs)
+        If Char.IsLetter(e.KeyChar) Then
+            e.KeyChar = Char.ToUpper(e.KeyChar)
+        End If
+    End Sub
 
 #End Region
 
@@ -455,9 +469,15 @@ Public Class FrmContactMaster
 
 
     Private Sub FrmContactMaster_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        LoadCombo(cmbContactType, {"-- Select --", "Customer", "Supplier", "Employee", "Other"})
-        LoadCombo(cmbDesignation, {"-- Select --", "Manager", "Sales", "Accountant", "Admin"})
-        LoadCombo(cmbBroadcast, {"-- Select --", "Broadcast 1", "Broadcast 2", "Broadcast 3", "broadcast 4", "No Broadcast"})
+
+        'For Each ctrl As Control In Me.Controls
+        '    If TypeOf ctrl Is TextBox Then
+        '        AddHandler ctrl.KeyPress, AddressOf AllTextBoxes_keyPress
+        '    End If
+        'Next
+        LoadCombo(cmbContactType, {"Customer", "Supplier", "Employee", "Other"})
+        LoadCombo(cmbDesignation, {"Manager", "Sales", "Accountant", "Admin"})
+        LoadCombo(cmbBroadcast, {"Broadcast 1", "Broadcast 2", "Broadcast 3", "broadcast 4", "No Broadcast"})
 
         LoadLedgerCombo()
 
@@ -475,8 +495,11 @@ Public Class FrmContactMaster
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
+
+        If Not validateData() Then
+            Return
+        End If
         saveClickTime()
-        ReloadGridData()
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
@@ -493,7 +516,30 @@ Public Class FrmContactMaster
         closeClickTime()
     End Sub
 
+    Protected Overrides Function ProcessCmdKey(ByRef msg As System.Windows.Forms.Message, keyData As Keys) As Boolean
 
+        If keyData = Keys.Enter Then
+            Dim currentCtrl As Control = Me.ActiveControl
+
+            Me.SelectNextControl(currentCtrl, True, True, True, True)
+            Dim nextCtrl As Control = Me.ActiveControl
+
+            Dim guard As Integer = 0
+            While nextCtrl IsNot Nothing AndAlso TypeOf nextCtrl Is Button AndAlso guard < Me.Controls.Count
+                Me.SelectNextControl(nextCtrl, True, True, True, True)
+                nextCtrl = Me.ActiveControl
+                guard += 1
+            End While
+
+            If nextCtrl Is Nothing OrElse TypeOf nextCtrl Is Button Then
+                txtName.Focus()
+            End If
+
+            Return True
+        End If
+
+        Return MyBase.ProcessCmdKey(msg, keyData)
+    End Function
 
 
     Private Sub gvData_RowClick(sender As Object, e As DevExpress.XtraGrid.Views.Grid.RowClickEventArgs) Handles gvData.RowClick
@@ -531,8 +577,6 @@ Public Class FrmContactMaster
             e.Handled = True
         End If
     End Sub
-
-
 
 
 
