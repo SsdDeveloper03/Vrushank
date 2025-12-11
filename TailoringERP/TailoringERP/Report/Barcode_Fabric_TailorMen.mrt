@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="0" />
+    <DataSources isList="true" count="1">
+      <Barcode Ref="2" type="DataTableSource" isKey="true">
+        <Alias>Barcode</Alias>
+        <Columns isList="true" count="17">
+          <value>TItemId,System.Int32</value>
+          <value>TItemCode,System.String</value>
+          <value>TItemName,System.String</value>
+          <value>Barcode,System.String</value>
+          <value>SalesPrice,System.String</value>
+          <value>PurchaseRate,System.String</value>
+          <value>PRCode,System.String</value>
+          <value>PurchaseDate,System.DateTime</value>
+          <value>ItemSize,System.String</value>
+          <value>MfgName,System.String</value>
+          <value>ItemType,System.String</value>
+          <value>ItemCategory,System.String</value>
+          <value>BillNo,System.String</value>
+          <value>SrNo,System.String</value>
+          <value>PartyName,System.String</value>
+          <value>ItemColor,System.String</value>
+          <value>CName,System.String</value>
+        </Columns>
+        <Dictionary isRef="1" />
+        <Name>Barcode</Name>
+        <NameInSource>Barcode</NameInSource>
+      </Barcode>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="3" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand1 Ref="4" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,4,97,20</ClientRectangle>
+          <ColumnGaps>4</ColumnGaps>
+          <Columns>1</Columns>
+          <Components isList="true" count="12">
+            <Text2 Ref="5" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>12,13.5,8,5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>5a122a25305a483d9c6fe62c4b37edcb</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>MRP :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="6" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>20,13.5,16,5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.SalesPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text6 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>4,18,38,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,7,Bold</Font>
+              <Guid>f1809da407de462fbbfb07b4bd10e8d1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.ItemSize}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text1 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,-0.5,46,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.TItemName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <BarCode1 Ref="9" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+              <AutoScale>True</AutoScale>
+              <BackColor>Transparent</BackColor>
+              <BarCodeType Ref="10" type="Stimulsoft.Report.BarCodes.StiCode128bBarCodeType" isKey="true" />
+              <ClientRectangle>0.1,2.5,43.94,9</ClientRectangle>
+              <Code>{Barcode.Barcode}</Code>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7,Bold,Pixel</Font>
+              <ForeColor>Black</ForeColor>
+              <Name>BarCode1</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <VertAlignment>Center</VertAlignment>
+            </BarCode1>
+            <Text4 Ref="11" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,11,44,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>92b5c2e53aa546cb9f5e5f74f7ab99b9</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.CName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="12" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>48,-0.5,46,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,10,Bold</Font>
+              <Guid>425440e9c7c24e9a860780974391ee19</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.TItemName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text7 Ref="13" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>60,13.5,8,5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>1fc0aa0b6df142adb134f0ec2117734f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>MRP :</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="14" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>68,13.5,16,5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>20e3a4add0e74d82b440f0a7f851c0c1</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.SalesPrice}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="15" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>52,18,38,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,7,Bold</Font>
+              <Guid>baae0188274a4f2ab7ef279911dcc6ce</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.ItemSize}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <BarCode2 Ref="16" type="Stimulsoft.Report.BarCodes.StiBarCode" isKey="true">
+              <AutoScale>True</AutoScale>
+              <BackColor>Transparent</BackColor>
+              <BarCodeType Ref="17" type="Stimulsoft.Report.BarCodes.StiCode128bBarCodeType" isKey="true" />
+              <ClientRectangle>48.1,2.5,43.94,9</ClientRectangle>
+              <Code>{Barcode.Barcode}</Code>
+              <Conditions isList="true" count="0" />
+              <Font>Arial,7,Bold,Pixel</Font>
+              <ForeColor>Black</ForeColor>
+              <Guid>c4f13b0af38244ebabcf41161c027ced</Guid>
+              <Name>BarCode2</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <VertAlignment>Center</VertAlignment>
+            </BarCode2>
+            <Text10 Ref="18" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>48,11,44,3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>0cc7d8ba41014af9ac214984d07a6c48</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="3" />
+              <Parent isRef="4" />
+              <Text>{Barcode.CName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>Barcode</DataSourceName>
+          <Filters isList="true" count="0" />
+          <KeepChildTogether>True</KeepChildTogether>
+          <KeepDetailsTogether>True</KeepDetailsTogether>
+          <Name>DataBand1</Name>
+          <Page isRef="3" />
+          <Parent isRef="3" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>65fb0fa427a641a298595af16d5f38ea</Guid>
+      <Margins>1.8,1.2,1.2,0</Margins>
+      <Name>Page1</Name>
+      <PageHeight>25</PageHeight>
+      <PageWidth>100</PageWidth>
+      <Report isRef="0" />
+      <Watermark Ref="19" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="20" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>10/18/2025 3:22:29 PM</ReportChanged>
+  <ReportCreated>10/14/2020 6:43:48 PM</ReportCreated>
+  <ReportFile>D:\Sunrise Tailoring Software\Report\Barcode_Fabric_TailorMen.mrt</ReportFile>
+  <ReportGuid>e6969d1abba449e0b4ecc5524beeab42</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2012.2.1304</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

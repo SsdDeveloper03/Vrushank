@@ -1,0 +1,2596 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection</Alias>
+        <ConnectionString>Integrated Security=False;Data Source=198.38.87.17;Initial Catalog=dbSTE_AliSons;Password=Ss.d@2017;User ID=sa</ConnectionString>
+        <Name>Connection</Name>
+      </Connection>
+    </Databases>
+    <DataSources isList="true" count="4">
+      <View_CompanyMaster Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>View_CompanyMaster</Alias>
+        <Columns isList="true" count="31">
+          <value>CId,System.Int64</value>
+          <value>CCode,System.String</value>
+          <value>CName,System.String</value>
+          <value>Add1,System.String</value>
+          <value>Add2,System.String</value>
+          <value>City,System.String</value>
+          <value>State,System.String</value>
+          <value>Pincode,System.String</value>
+          <value>Country,System.String</value>
+          <value>PhNo,System.String</value>
+          <value>FaxNo,System.String</value>
+          <value>EMail,System.String</value>
+          <value>PANNo,System.String</value>
+          <value>ServiceTaxNo,System.String</value>
+          <value>ECCNo,System.String</value>
+          <value>CSTTinNo,System.String</value>
+          <value>GSTTinNo,System.String</value>
+          <value>Invoice,System.String</value>
+          <value>TC1,System.String</value>
+          <value>TC2,System.String</value>
+          <value>TC3,System.String</value>
+          <value>TC4,System.String</value>
+          <value>TC5,System.String</value>
+          <value>TC6,System.String</value>
+          <value>TC7,System.String</value>
+          <value>ForCo,System.String</value>
+          <value>BankName,System.String</value>
+          <value>BankAcNo,System.String</value>
+          <value>BranchCode,System.String</value>
+          <value>IFSCCode,System.String</value>
+          <value>ImagePath,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>View_CompanyMaster</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from View_CompanyMaster Where {CId}</SqlCommand>
+      </View_CompanyMaster>
+      <View_TailoringInvoiceGST Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>View_TailoringInvoiceGST</Alias>
+        <Columns isList="true" count="172">
+          <value>InvId,System.Int64</value>
+          <value>InvDetailId,System.Int64</value>
+          <value>TItemId,System.Int64</value>
+          <value>TItemCode,System.String</value>
+          <value>BarCode,System.String</value>
+          <value>TItemName,System.String</value>
+          <value>TItemRate,System.Double</value>
+          <value>CuttingRate,System.Double</value>
+          <value>SewingRate,System.Double</value>
+          <value>MaterialRate,System.Double</value>
+          <value>ItemType,System.String</value>
+          <value>ItemCategory,System.String</value>
+          <value>MfgName,System.String</value>
+          <value>ItemSize,System.String</value>
+          <value>UOM_M,System.String</value>
+          <value>AUOM_M,System.String</value>
+          <value>UOMValue,System.Double</value>
+          <value>AUOMValue,System.Double</value>
+          <value>SalesRate,System.Double</value>
+          <value>SalesRateA,System.Double</value>
+          <value>SalesUOM,System.String</value>
+          <value>ItemSubType,System.String</value>
+          <value>IsActive,System.String</value>
+          <value>HSNCode,System.String</value>
+          <value>TaxPer,System.Double</value>
+          <value>Rate,System.Double</value>
+          <value>TItemQty,System.Double</value>
+          <value>Amt,System.Double</value>
+          <value>ReadyQty,System.Int64</value>
+          <value>DeliveredQty,System.Int64</value>
+          <value>Remark,System.String</value>
+          <value>SrNo,System.Int64</value>
+          <value>UOM_SD,System.String</value>
+          <value>Pcs,System.Double</value>
+          <value>ItemTot,System.Double</value>
+          <value>DiscPer,System.Double</value>
+          <value>DiscAmt,System.Double</value>
+          <value>AQty,System.Double</value>
+          <value>AUOM_SD,System.String</value>
+          <value>TS_Id,System.Int64</value>
+          <value>TS_Name,System.String</value>
+          <value>TS_ShortName,System.String</value>
+          <value>TS_Type,System.String</value>
+          <value>VATCST,System.String</value>
+          <value>IGSTPer_SD,System.Double</value>
+          <value>IGSTAmt_SD,System.Double</value>
+          <value>CST_AddPer_SD,System.Double</value>
+          <value>CST_AddAmt_SD,System.Double</value>
+          <value>SGSTPer_SD,System.Double</value>
+          <value>SGSTAmt_SD,System.Double</value>
+          <value>CGSTPer_SD,System.Double</value>
+          <value>CGSTAmt_SD,System.Double</value>
+          <value>Length,System.Double</value>
+          <value>Width,System.Double</value>
+          <value>SqMtr,System.Double</value>
+          <value>TotalAmt,System.Double</value>
+          <value>DiscPer_SB,System.Double</value>
+          <value>Discount,System.Double</value>
+          <value>BillAmt,System.Double</value>
+          <value>ReceivedAmt,System.Double</value>
+          <value>DueAmt,System.Double</value>
+          <value>Remarks,System.String</value>
+          <value>SalesAcType,System.String</value>
+          <value>InvoiceNumber,System.String</value>
+          <value>TIRINo,System.Int64</value>
+          <value>TIRINumber,System.String</value>
+          <value>Creditdays,System.Double</value>
+          <value>SalesDueDate,System.DateTime</value>
+          <value>V_Id,System.Int64</value>
+          <value>V_Name,System.String</value>
+          <value>V_Group,System.String</value>
+          <value>IGSTPer_SB,System.Double</value>
+          <value>IGSTAmt_SB,System.Double</value>
+          <value>CST_AddPer_SB,System.Double</value>
+          <value>CST_AddAmt_SB,System.Double</value>
+          <value>SGSTPer_SB,System.Double</value>
+          <value>SGSTAmt_SB,System.Double</value>
+          <value>CGSTPer_SB,System.Double</value>
+          <value>CGSTAmt_SB,System.Double</value>
+          <value>FreightAmt,System.Double</value>
+          <value>AdjustAmt,System.Double</value>
+          <value>SalesBillAmt,System.Double</value>
+          <value>AcInvoiceNo,System.Int64</value>
+          <value>AcInvoiceDate,System.DateTime</value>
+          <value>FeedbackDTM,System.DateTime</value>
+          <value>Rating,System.String</value>
+          <value>Feedback,System.String</value>
+          <value>PmtMode,System.String</value>
+          <value>PmtNarration,System.String</value>
+          <value>Remark1,System.String</value>
+          <value>Remark2,System.String</value>
+          <value>Remark3,System.String</value>
+          <value>RefLedgerId,System.Int64</value>
+          <value>RefLedgerName,System.String</value>
+          <value>CustName,System.String</value>
+          <value>TItemName1,System.String</value>
+          <value>CCode,System.String</value>
+          <value>CName,System.String</value>
+          <value>Add1,System.String</value>
+          <value>Add2,System.String</value>
+          <value>City_C,System.String</value>
+          <value>State_C,System.String</value>
+          <value>Pincode_C,System.String</value>
+          <value>Country_C,System.String</value>
+          <value>PhNo,System.String</value>
+          <value>FaxNo_C,System.String</value>
+          <value>EMail_C,System.String</value>
+          <value>PANNo_C,System.String</value>
+          <value>ServiceTaxNo,System.String</value>
+          <value>ECCNo,System.String</value>
+          <value>CSTTinNo,System.String</value>
+          <value>GSTTinNo,System.String</value>
+          <value>Invoice,System.String</value>
+          <value>TC1,System.String</value>
+          <value>TC2,System.String</value>
+          <value>TC3,System.String</value>
+          <value>TC4,System.String</value>
+          <value>TC5,System.String</value>
+          <value>TC6,System.String</value>
+          <value>TC7,System.String</value>
+          <value>ForCo,System.String</value>
+          <value>UId,System.Int64</value>
+          <value>Sys_Time,System.DateTime</value>
+          <value>SrNum,System.String</value>
+          <value>SP1,System.String</value>
+          <value>SP1Per,System.Double</value>
+          <value>SP1Amt,System.Double</value>
+          <value>SP1Comm,System.Double</value>
+          <value>SP2,System.String</value>
+          <value>SP2Per,System.Double</value>
+          <value>SP2Amt,System.Double</value>
+          <value>SP2Comm,System.Double</value>
+          <value>InvoiceNo,System.Int64</value>
+          <value>InvoiceDate,System.DateTime</value>
+          <value>LedgerId,System.Int64</value>
+          <value>Code,System.Int64</value>
+          <value>LedgerCode,System.String</value>
+          <value>LedgerName,System.String</value>
+          <value>Address1,System.String</value>
+          <value>Address2,System.String</value>
+          <value>City,System.String</value>
+          <value>PinCode,System.String</value>
+          <value>State,System.String</value>
+          <value>Country,System.String</value>
+          <value>PhoneNo,System.String</value>
+          <value>MobileNo,System.String</value>
+          <value>FaxNo,System.String</value>
+          <value>EMail,System.String</value>
+          <value>BirthDate,System.DateTime</value>
+          <value>AnniDate,System.DateTime</value>
+          <value>CustType,System.String</value>
+          <value>MobileNo2,System.String</value>
+          <value>BeneficiaryName,System.String</value>
+          <value>BankAcType,System.String</value>
+          <value>BankAcNo,System.String</value>
+          <value>IFSCCode,System.String</value>
+          <value>MICRCode,System.String</value>
+          <value>BankName,System.String</value>
+          <value>BankAddress,System.String</value>
+          <value>AcContactPerson,System.String</value>
+          <value>AcContactNo,System.String</value>
+          <value>AcEmailId,System.String</value>
+          <value>TranSMS,System.String</value>
+          <value>PromoSMS,System.String</value>
+          <value>GSTNo,System.String</value>
+          <value>PANNo,System.String</value>
+          <value>Taxation,System.String</value>
+          <value>CId,System.Int64</value>
+          <value>Reference,System.String</value>
+          <value>WorkDays,System.Int64</value>
+          <value>DeliveryDate,System.DateTime</value>
+          <value>TrialDate,System.DateTime</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>View_TailoringInvoiceGST</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * From View_TailoringInvoiceGST Where {Filter}
+</SqlCommand>
+      </View_TailoringInvoiceGST>
+      <tbl_ImageMaster Ref="5" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>tbl_ImageMaster</Alias>
+        <Columns isList="true" count="6">
+          <value>Id,System.Int64</value>
+          <value>ImageType,System.String</value>
+          <value>MasterId,System.Int64</value>
+          <value>Image1,System.Drawing.Image</value>
+          <value>Image2,System.String</value>
+          <value>Image3,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>tbl_ImageMaster</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from tbl_ImageMaster Where ImageType = 'CompanyImage'</SqlCommand>
+      </tbl_ImageMaster>
+      <View_TailoringInvoiceGST_HSN Ref="6" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>View_TailoringInvoiceGST_HSN</Alias>
+        <Columns isList="true" count="8">
+          <value>HSNCode,System.String</value>
+          <value>Amt,System.Double</value>
+          <value>IGSTPer_SB,System.Double</value>
+          <value>IGSTAmt_SB,System.Double</value>
+          <value>SGSTPer_SB,System.Double</value>
+          <value>SGSTAmt_SB,System.Double</value>
+          <value>CGSTPer_SB,System.Double</value>
+          <value>CGSTAmt_SB,System.Double</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>View_TailoringInvoiceGST_HSN</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select HSNCode, SUM(Amt) As Amt, MAX(CGSTper_SB) AS CGSTper_SB ,SUM(CGSTamt_SB) AS CGSTAmt_SB,
+MAX(SGSTper_SB) AS SGSTper_SB, SUM(SGSTamt_SB) AS SGSTAmt_SB, MAX(IGSTper_SB) AS IGSTper_SB, SUM(IGSTamt_SB) AS IGSTAmt_SB 
+From View_TailoringInvoiceGST Where {Filter} Group By HSNCode</SqlCommand>
+      </View_TailoringInvoiceGST_HSN>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="4">
+      <value>,Filter,Filter,System.String,,False,False</value>
+      <value>,CName,CName,System.String,,False,False</value>
+      <value>,CId,CId,System.String,,False,False</value>
+      <value>,AmtInWord,AmtInWord,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="7" type="Page" isKey="true">
+      <Border>All;[15:36:62];1;Solid;False;4;[15:36:62]</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="40">
+        <PageHeaderBand1 Ref="8" type="PageHeaderBand" isKey="true">
+          <Border>All;[15:36:62];1;Solid;False;4;[15:36:62]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,20,749,235</ClientRectangle>
+          <Components isList="true" count="11">
+            <Text4 Ref="9" type="Text" isKey="true">
+              <Border>All;[192:80:77];1;None;False;4;Black</Border>
+              <Brush>[15:36:62]</Brush>
+              <ClientRectangle>330,10,80,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>INVOICE</Text>
+              <TextBrush>White</TextBrush>
+              <Type>Expression</Type>
+            </Text4>
+            <Image2 Ref="10" type="Image" isKey="true">
+              <Border>All;[192:80:77];1;None;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>610,12,12,12</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Image>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</Image>
+              <Name>Image2</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Stretch>True</Stretch>
+            </Image2>
+            <Text5 Ref="11" type="Text" isKey="true">
+              <Border>All;[192:80:77];1;None;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>630,10,100,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>044-2534-2618</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+            </Text5>
+            <Text7 Ref="12" type="Text" isKey="true">
+              <Border>All;[192:80:77];1;None;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>560,25,180,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>GSTIN: 33BRPPA9143K1ZK</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+            </Text7>
+            <Panel1 Ref="13" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+              <Brush>[216:216:216]</Brush>
+              <ClientRectangle>0,130,748,60</ClientRectangle>
+              <Components isList="true" count="6">
+                <Text28 Ref="14" type="Text" isKey="true">
+                  <Border>All;[192:80:77];1;None;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>100,10,210,20</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Microsoft YaHei UI,9,Bold</Font>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text28</Name>
+                  <Page isRef="7" />
+                  <Parent isRef="13" />
+                  <Text>• Judges &amp; Advocates Attires</Text>
+                  <TextBrush>[15:36:62]</TextBrush>
+                  <Type>Expression</Type>
+                </Text28>
+                <Text29 Ref="15" type="Text" isKey="true">
+                  <Border>All;[192:80:77];1;None;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>310,10,170,20</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Microsoft YaHei UI,9,Bold</Font>
+                  <Guid>49c8e3c80e854ac0adc9659f68ada0ac</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text29</Name>
+                  <Page isRef="7" />
+                  <Parent isRef="13" />
+                  <Text>• Law Students Uniforms</Text>
+                  <TextBrush>[15:36:62]</TextBrush>
+                  <Type>Expression</Type>
+                </Text29>
+                <Text30 Ref="16" type="Text" isKey="true">
+                  <Border>All;[192:80:77];1;None;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>490,10,150,20</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Microsoft YaHei UI,9,Bold</Font>
+                  <Guid>0d28063edbf64dda903c588ae0d2cd01</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text30</Name>
+                  <Page isRef="7" />
+                  <Parent isRef="13" />
+                  <Text>• Convocation Dresses</Text>
+                  <TextBrush>[15:36:62]</TextBrush>
+                  <Type>Expression</Type>
+                </Text30>
+                <Text39 Ref="17" type="Text" isKey="true">
+                  <Border>All;[192:80:77];1;None;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>160,32,200,20</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Microsoft YaHei UI,9,Bold</Font>
+                  <Guid>028942a7fc014184ab930497c010aca5</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text39</Name>
+                  <Page isRef="7" />
+                  <Parent isRef="13" />
+                  <Text>• Graduation Gowns &amp; Dresses</Text>
+                  <TextBrush>[15:36:62]</TextBrush>
+                  <Type>Expression</Type>
+                </Text39>
+                <Text43 Ref="18" type="Text" isKey="true">
+                  <Border>All;[192:80:77];1;None;False;4;Black</Border>
+                  <Brush>Transparent</Brush>
+                  <ClientRectangle>370,32,260,20</ClientRectangle>
+                  <Conditions isList="true" count="0" />
+                  <Font>Microsoft YaHei UI,9,Bold</Font>
+                  <Guid>959e1e0950134dfb9e98395411b8c2f2</Guid>
+                  <Margins>0,0,0,0</Margins>
+                  <Name>Text43</Name>
+                  <Page isRef="7" />
+                  <Parent isRef="13" />
+                  <Text>• Tailored Formal &amp; Occational Wear</Text>
+                  <TextBrush>[15:36:62]</TextBrush>
+                  <Type>Expression</Type>
+                </Text43>
+                <Panel2 Ref="19" type="Stimulsoft.Report.Components.StiPanel" isKey="true">
+                  <Brush>White</Brush>
+                  <ClientRectangle>0,55,748,50</ClientRectangle>
+                  <Components isList="true" count="5">
+                    <Text44 Ref="20" type="Text" isKey="true">
+                      <Border>All;[192:80:77];1;None;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>0,25,750,20</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Font>Microsoft YaHei UI,9,Bold</Font>
+                      <HorAlignment>Center</HorAlignment>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text44</Name>
+                      <Page isRef="7" />
+                      <Parent isRef="19" />
+                      <Text># 160/348, Thambu Street, Opp Magdras High Court, Chennai - 600001</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Bottom</VertAlignment>
+                    </Text44>
+                    <Image1 Ref="21" type="Image" isKey="true">
+                      <Border>All;[15:36:62];1;None;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>90,4,20,15</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Guid>fc88f0715ee746fb96ee4d8a5f66a375</Guid>
+                      <Image>iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAABugAAAboB6KsBBgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAPiSURBVHhe5ZrLThRREIabeN9oeBGewUTiw+jasHUHBAIBokaNWzXe73cTeAIXLl2gCx/BjYmO/491THXxH6dn6Jnp4VTyJXR1nTp/FTPT3ed01ev1ikY6S0I6S0I6S0I6S0I6S0I6S0I6S0I6S6J+UFWz4Dy4BC4fMlgTa5ut1WyFz4CL4Aeg4zDDGlnrjG/ABvBBJbBhtVfz4DeIAYcd1szaqwfmiHwG58DZKYc1sBZVI2uvdp0jchsc4UdlGqF2qyHWlfgKao5f4ZjcAVPXBGo27bGeWGPtYAfcCj5yFxxVE3URajXNsQ7Wxhq9r3awDXhJvOl8iXug802gRtMa9bMm1sYavb92sG1JGHjDfJ77oLNNoDbTGHWzlr/X/SYNsEA24br5Pfzl7FwTqMm0Rb2sYa94i2vWAAtmE67ZOc9DcMzHThJqMU1RJ7X/K95imzfABrAJV+285xGYeBOowbREfdRcK97iB2uADWITrliM5zGYWBM4t2mIuqh1X/E2ZvAGJGBbLjbxFBxX8aOEc9rcUc+Wik/Ahm8AgW26+MQzMLYmcC6bM+rYVPEe2MEaQGDq6fE5GHkTOIfNFeffe7rrB+zgDSCwdTcu8QKcUPFtwNw2R5x3XcUrYO00gMDW3NjES9B6E5jTcsf51lR8Dlh7DSCwVTc+8Qq01gTmspxxnlUV/z9g7TaAwFZcjsRrcFLFDwJzWK6Yf0XF9wPWfgMIbNnlSbwFQzeBYy1HzLus4psAG00DCGzJ5Uq8AwM3gWNsbMy3pOKbAht7A8h7cEqNUTDWxsQ8pJsNgKmvgOcD6NsExlhsHO/p1lcApn4EvwnfR3Ba5SA8ZzFxnMrVjR9BmLoM7v23waLzJVjMvMjDJWpVKHPkPhWTvQzC1I1Q7fsOU00g3wEfZgj/VjGLLk/ud2EyN0IwdSssL3uwBfATxPgcjF0QeXKXxfHeCsPUw9AbkL3cwebAJxDHRRgzp3IQGJvAueK48TwMwdTjcKNbXxgXMC4ALll/AdyeIvybPp7ru8ACy90aj/ZxGKYWRIZ++IGdIepcPzgnUA9H7S+IwHJLYmNZA8jBuU1D1NXekhgstyg61lWgHNRgWqK+gy+KwnLL4k9A15bFqSnqHH5ZHMbi1cZIJ5bDI9Rk2qLewTdGYCxebY11akMkQm2mMepuvjUGWLzaHO30vmCCGk1r1N9oczS3Pc7d1mnbHqfmWEff7XH1gsRUvRuQoGbTHuvZ94LEbnB4inhFpviXpMp+Tc4+KuW+KGkN4OWh3FdlE7AyX5YuGeksCeksCeksCeksCeksCeksCeksCeksh171B2e50SevBDrrAAAAAElFTkSuQmCC</Image>
+                      <Name>Image1</Name>
+                      <Page isRef="7" />
+                      <Parent isRef="19" />
+                      <Stretch>True</Stretch>
+                    </Image1>
+                    <Text45 Ref="22" type="Text" isKey="true">
+                      <Border>All;[192:80:77];1;None;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>110,0,410,20</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Font>Microsoft YaHei UI,9</Font>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text45</Name>
+                      <Page isRef="7" />
+                      <Parent isRef="19" />
+                      <Text>sarfarraz.ali@alisonslawavenues.com</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Bottom</VertAlignment>
+                    </Text45>
+                    <Image3 Ref="23" type="Image" isKey="true">
+                      <Border>All;[15:36:62];1;None;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>430,4,20,15</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Guid>36c4550c87d04f6bba1b4c7316b00baf</Guid>
+                      <Image>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</Image>
+                      <Name>Image3</Name>
+                      <Page isRef="7" />
+                      <Parent isRef="19" />
+                      <Stretch>True</Stretch>
+                    </Image3>
+                    <Text46 Ref="24" type="Text" isKey="true">
+                      <Border>All;[192:80:77];1;None;False;4;Black</Border>
+                      <Brush>Transparent</Brush>
+                      <ClientRectangle>460,0,260,20</ClientRectangle>
+                      <Conditions isList="true" count="0" />
+                      <Font>Microsoft YaHei UI,9</Font>
+                      <Guid>e9c8e4f729164c32bdc4d52d897db278</Guid>
+                      <Margins>0,0,0,0</Margins>
+                      <Name>Text46</Name>
+                      <Page isRef="7" />
+                      <Parent isRef="19" />
+                      <Text>www.alisonslawavenues.com</Text>
+                      <TextBrush>Black</TextBrush>
+                      <Type>Expression</Type>
+                      <VertAlignment>Bottom</VertAlignment>
+                    </Text46>
+                  </Components>
+                  <Conditions isList="true" count="0" />
+                  <Name>Panel2</Name>
+                  <Page isRef="7" />
+                  <Parent isRef="13" />
+                </Panel2>
+              </Components>
+              <Conditions isList="true" count="0" />
+              <Name>Panel1</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+            </Panel1>
+            <Image4 Ref="25" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <CanShrink>True</CanShrink>
+              <ClientRectangle>210,30,60,90</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Guid>3ee78c8e13484016a5f05ff2f6b1ada5</Guid>
+              <Image>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</Image>
+              <Name>Image4</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Stretch>True</Stretch>
+            </Image4>
+            <Text8 Ref="26" type="Text" isKey="true">
+              <Border>All;[192:80:77];1;None;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>280,40,150,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,22,Bold</Font>
+              <Guid>6bc65b4e308d4ccb8ffe2989299b6aff</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>ALISONS</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+            </Text8>
+            <Text20 Ref="27" type="Text" isKey="true">
+              <Border>All;[192:80:77];1;None;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>280,80,240,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,22,Bold</Font>
+              <Guid>040d43f2501c44a8a3019cffd7260bd8</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>LAW AVENEUS</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+            </Text20>
+            <Text21 Ref="28" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>420,40,120,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,8</Font>
+              <Guid>3bd2d8a587b343bbb6f71458bb1cb29b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <Text>TAILORED FOR FINEST GESTURE</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <StartPointPrimitive8 Ref="29" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>330,10,0,0</ClientRectangle>
+              <Name>StartPointPrimitive8</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>4097dc2a40624af090e083a31c4d25db</ReferenceToGuid>
+            </StartPointPrimitive8>
+            <EndPointPrimitive8 Ref="30" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>410,30,0,0</ClientRectangle>
+              <Name>EndPointPrimitive8</Name>
+              <Page isRef="7" />
+              <Parent isRef="8" />
+              <ReferenceToGuid>4097dc2a40624af090e083a31c4d25db</ReferenceToGuid>
+            </EndPointPrimitive8>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </PageHeaderBand1>
+        <PageFooterBand1 Ref="31" type="PageFooterBand" isKey="true">
+          <Border>All;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,981,749,110</ClientRectangle>
+          <Components isList="true" count="13">
+            <Text16 Ref="32" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,69,280,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>1156d3cd4296452c96107d9c7433a837</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>Goods once sold cannot be taken back 
+Subject to Chennai jurisdiction</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text83 Ref="33" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>530,89,210,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,12,Bold| Italic</Font>
+              <Guid>4e64256fdf514fc4a9862ee238a94c6c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text83</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>For AliSons Law Avenues</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text83>
+            <Text177 Ref="34" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,150,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>d666ab2953f840eba64d8361670fc476</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text177</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>Bank Name</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text177>
+            <Text178 Ref="35" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>160,0,260,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>e1c3a5a811e246499870160711446cd3</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text178</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>{View_CompanyMaster.BankName}</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text178>
+            <Text179 Ref="36" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,21,150,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>13bd355493b94753b16406bf0f12245a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text179</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>Ac Number</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text179>
+            <Text180 Ref="37" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,41,150,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>f6e1882c46e24ccca0d0cac35609aaba</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text180</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>IFSC Code</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text180>
+            <Text181 Ref="38" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>160,21,260,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>7389ec992dd947ddaf69193b5bf32f75</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text181</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>{View_CompanyMaster.BankAcNo}</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text181>
+            <Text182 Ref="39" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>160,41,260,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>ed64196d5a7b459f98e744b70268bba4</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text182</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>{View_CompanyMaster.IFSCCode}</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text182>
+            <Text183 Ref="40" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>150,0,10,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>b6c07ce7a7634af4a8846070b220511f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text183</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>:	
+</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text183>
+            <Text184 Ref="41" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>150,21,10,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>694b6d3f906e40de9485ec7ca4f9cb35</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text184</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>:	
+</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text184>
+            <Text185 Ref="42" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>150,41,10,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>da9c03c257784d47ae036bb87c4adac6</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text185</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <Text>:	
+</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text185>
+            <StartPointPrimitive6 Ref="43" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0,-1,0,0</ClientRectangle>
+              <Name>StartPointPrimitive6</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <ReferenceToGuid>db0ffdcff52d46bf85b9bf0c80994e69</ReferenceToGuid>
+            </StartPointPrimitive6>
+            <EndPointPrimitive14 Ref="44" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>420,63,0,0</ClientRectangle>
+              <Name>EndPointPrimitive14</Name>
+              <Page isRef="7" />
+              <Parent isRef="31" />
+              <ReferenceToGuid>db0ffdcff52d46bf85b9bf0c80994e69</ReferenceToGuid>
+            </EndPointPrimitive14>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageFooterBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </PageFooterBand1>
+        <Text48 Ref="45" type="Text" isKey="true">
+          <Border>Top, Left, Bottom;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>600,1200,85,20</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Microsoft YaHei UI,10,Bold</Font>
+          <Guid>d382ff4b882e44a1bda4a6bb0eef9448</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text48</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Text>{View_TailoringInvoiceGST.DueAmt}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text48>
+        <Text49 Ref="46" type="Text" isKey="true">
+          <Border>All;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>490,1200,110,20</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Microsoft YaHei UI,10</Font>
+          <Guid>e7d720b9761c40b1a7af756459bb4485</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text49</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Text>Grand Total</Text>
+          <TextBrush>[15:36:62]</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text49>
+        <Text52 Ref="47" type="Text" isKey="true">
+          <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>490,1140,110,20</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Microsoft YaHei UI,9</Font>
+          <Guid>b74030a5f8bd4feea44301c737e81a1c</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text52</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Text>CGST %</Text>
+          <TextBrush>[15:36:62]</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text52>
+        <Text53 Ref="48" type="Text" isKey="true">
+          <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>490,1160,110,20</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Microsoft YaHei UI,9</Font>
+          <Guid>9137691b15a747818f48f70915ef7dc8</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text53</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Text>SGST %</Text>
+          <TextBrush>[15:36:62]</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text53>
+        <Text54 Ref="49" type="Text" isKey="true">
+          <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>490,1180,110,20</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Microsoft YaHei UI,9</Font>
+          <Guid>754cac3af7674debaae897a5c3f30c2d</Guid>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text54</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Text>IGST %</Text>
+          <TextBrush>[15:36:62]</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text54>
+        <Text55 Ref="50" type="Text" isKey="true">
+          <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>600,1140,85,20</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Microsoft YaHei UI,9,Bold</Font>
+          <Guid>7846448246cf4f64b32b60c7219a1fdd</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text55</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Text>{View_TailoringInvoiceGST.CGSTAmt_SB}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text55>
+        <Text56 Ref="51" type="Text" isKey="true">
+          <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>600,1160,85,20</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Microsoft YaHei UI,9,Bold</Font>
+          <Guid>951cb47e4d88498ab35875690d1f7715</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text56</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Text>{View_TailoringInvoiceGST.SGSTAmt_SB}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text56>
+        <Text57 Ref="52" type="Text" isKey="true">
+          <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>600,1180,85,20</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Microsoft YaHei UI,9,Bold</Font>
+          <Guid>88f64134550a4cd7aefd1544af4e61e1</Guid>
+          <HorAlignment>Right</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text57</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Text>{View_TailoringInvoiceGST.IGSTAmt_SB}</Text>
+          <TextBrush>Black</TextBrush>
+          <Type>DataColumn</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text57>
+        <Text51 Ref="53" type="Text" isKey="true">
+          <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>540,1166,210,50</ClientRectangle>
+          <Conditions isList="true" count="0" />
+          <Font>Microsoft YaHei UI,12,Bold| Italic</Font>
+          <Guid>6b6f9966c73e4d28a7ec26dd4a6eb547</Guid>
+          <HorAlignment>Center</HorAlignment>
+          <Margins>0,0,0,0</Margins>
+          <Name>Text51</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Text>For AliSons Law Avenues</Text>
+          <TextBrush>[15:36:62]</TextBrush>
+          <Type>Expression</Type>
+          <VertAlignment>Center</VertAlignment>
+        </Text51>
+        <GroupHeaderBand1 Ref="54" type="GroupHeaderBand" isKey="true">
+          <Border>All;[15:36:62];1;Solid;False;1;[15:36:62]</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,295,749,150</ClientRectangle>
+          <Components isList="true" count="32">
+            <Text3 Ref="55" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>10,0,550,30</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>No. {View_TailoringInvoiceGST.InvoiceNumber}</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text6 Ref="56" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>560,0,80,30</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10</Font>
+              <Guid>ef9017ce79954237a8d1d8048a7a261e</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>Date:</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text10 Ref="57" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>640,0,110,30</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>0a778e44fdb742ff90feae5930ad6959</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>{View_TailoringInvoiceGST.InvoiceDate}</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <TextFormat Ref="58" type="DateFormat" isKey="true" />
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text11 Ref="59" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,110,40,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>36f7e0a550cb47ff9a31a55072bf9b6f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>Sr.
+No.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="60" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>40,110,260,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>a8ca62fa2c054dbb87eb3c983245d7f2</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>Particulars</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text13 Ref="61" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>450,110,50,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>cd921aec13954842915d226907fb34f6</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>Qty.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text14 Ref="62" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>500,110,80,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>e94dc4c957684ba68340672a7820230a</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>Rate</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text15 Ref="63" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>630,110,120,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>5bb17697bbe44095a9908b3271ac3ce7</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>Amount</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text15>
+            <Text42 Ref="64" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>80,50,470,30</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>7bc279958dd348c899c62fb0a5683a6e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>{View_TailoringInvoiceGST.Address1} {View_TailoringInvoiceGST.Address2} </Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text42>
+            <Text40 Ref="65" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Dot;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>80,30,470,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>{View_TailoringInvoiceGST.LedgerName}    </Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text40>
+            <Text9 Ref="66" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>80,80,470,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>{View_TailoringInvoiceGST.City}, {View_TailoringInvoiceGST.State}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text41 Ref="67" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>30,30,50,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>M/s</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text41>
+            <Text50 Ref="68" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>300,110,90,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>5661c4fa2bdf4b3abb1b3f1dba54d48e</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text50</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>HSN Code</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text50>
+            <Text1 Ref="69" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>560,25,80,30</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10</Font>
+              <Guid>6f0c3084058c4092bdcf9b7a6f34549e</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>Code:</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="70" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>640,25,110,30</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>0577793d65f943558223142770a96aef</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>{View_TailoringInvoiceGST.LedgerCode}</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <TextFormat Ref="71" type="DateFormat" isKey="true" />
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text23 Ref="72" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>580,110,50,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>5c2ee778de384028ab0f1cd00f464e1c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>Disc.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text71 Ref="73" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>390,110,60,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>fae25248bdae42c882cef857c9ae8a33</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text71</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <Text>GST
+Rate</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text71>
+            <HorizontalLinePrimitive1 Ref="74" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,110,745,1</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="75" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <StartCap Ref="76" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+            <StartPointPrimitive1 Ref="77" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>500,110,0,0</ClientRectangle>
+              <Name>StartPointPrimitive1</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <ReferenceToGuid>be34dc647bae478d9ffcf9883c65f9c6</ReferenceToGuid>
+            </StartPointPrimitive1>
+            <StartPointPrimitive4 Ref="78" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>40,110,0,0</ClientRectangle>
+              <Name>StartPointPrimitive4</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <ReferenceToGuid>56d4831b0c3e4a5f9eb9cabd1b0a90ef</ReferenceToGuid>
+            </StartPointPrimitive4>
+            <HorizontalLinePrimitive2 Ref="79" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0,745,1</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="80" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>04c56e8a08564ebeab4c5cc49e81c2e9</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <StartCap Ref="81" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+            <StartPointPrimitive3 Ref="82" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>450,110,0,0</ClientRectangle>
+              <Name>StartPointPrimitive3</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <ReferenceToGuid>0ec67e9f661245cd954efc81076281cb</ReferenceToGuid>
+            </StartPointPrimitive3>
+            <StartPointPrimitive7 Ref="83" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>300,110,0,0</ClientRectangle>
+              <Name>StartPointPrimitive7</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <ReferenceToGuid>2fe0090eb06545708ad0375414f441dc</ReferenceToGuid>
+            </StartPointPrimitive7>
+            <StartPointPrimitive5 Ref="84" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>0,110,0,0</ClientRectangle>
+              <Name>StartPointPrimitive5</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <ReferenceToGuid>2e1e9efc2bcd427986b1263a1bcb4415</ReferenceToGuid>
+            </StartPointPrimitive5>
+            <HorizontalLinePrimitive5 Ref="85" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>80,50,470,1</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="86" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive5</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <StartCap Ref="87" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </HorizontalLinePrimitive5>
+            <HorizontalLinePrimitive8 Ref="88" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>80,100,470,1</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="89" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>f3e615d83e2942fa8e735c911f464408</Guid>
+              <Name>HorizontalLinePrimitive8</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <StartCap Ref="90" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </HorizontalLinePrimitive8>
+            <HorizontalLinePrimitive9 Ref="91" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>80,80,470,1</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="92" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>c526ea1d4ae74bc59f8488f0f5e4c0ff</Guid>
+              <Name>HorizontalLinePrimitive9</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <StartCap Ref="93" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </HorizontalLinePrimitive9>
+            <HorizontalLinePrimitive10 Ref="94" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>640,30,110,1</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="95" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>7441223f5ddf4c7ba96c2a863ea070b2</Guid>
+              <Name>HorizontalLinePrimitive10</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <StartCap Ref="96" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dot</Style>
+            </HorizontalLinePrimitive10>
+            <HorizontalLinePrimitive12 Ref="97" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>640,50,110,1</ClientRectangle>
+              <Color>MidnightBlue</Color>
+              <EndCap Ref="98" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive12</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <StartCap Ref="99" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+              <Style>Dash</Style>
+            </HorizontalLinePrimitive12>
+            <StartPointPrimitive13 Ref="100" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>580,110,0,0</ClientRectangle>
+              <Name>StartPointPrimitive13</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <ReferenceToGuid>74ad737f17624e33becf9ca52c1b9330</ReferenceToGuid>
+            </StartPointPrimitive13>
+            <StartPointPrimitive14 Ref="101" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>390,110,0,0</ClientRectangle>
+              <Name>StartPointPrimitive14</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <ReferenceToGuid>ae3e6516e2dc45caaaab769f2541fcd0</ReferenceToGuid>
+            </StartPointPrimitive14>
+            <StartPointPrimitive2 Ref="102" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>630,110,0,0</ClientRectangle>
+              <Name>StartPointPrimitive2</Name>
+              <Page isRef="7" />
+              <Parent isRef="54" />
+              <ReferenceToGuid>b40fb69c9c9b41f7876522b77418f088</ReferenceToGuid>
+            </StartPointPrimitive2>
+          </Components>
+          <Condition>{View_TailoringInvoiceGST.InvId}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </GroupHeaderBand1>
+        <DataBand1 Ref="103" type="DataBand" isKey="true">
+          <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,485,749,24</ClientRectangle>
+          <Components isList="true" count="8">
+            <Text34 Ref="104" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,40,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9</Font>
+              <Guid>f0c46c87f6d14856847fb87e4cb01cba</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="7" />
+              <Parent isRef="103" />
+              <Text>{View_TailoringInvoiceGST.SrNo}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+            <Text35 Ref="105" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>40,0,260,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9,Bold</Font>
+              <Guid>d8d951329bc04568b3b3417551898ac2</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="7" />
+              <Parent isRef="103" />
+              <Text>{View_TailoringInvoiceGST.TItemName} {View_TailoringInvoiceGST.CustName}</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text35>
+            <Text36 Ref="106" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>450,0,50,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9,Bold</Font>
+              <Guid>28377c34c19d4c808e074e0a2ffb30a0</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="7" />
+              <Parent isRef="103" />
+              <Text>{View_TailoringInvoiceGST.TItemQty}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text36>
+            <Text37 Ref="107" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>500,0,80,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9,Bold</Font>
+              <Guid>5f41c2d13b784b9896e42b3f829cf965</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="7" />
+              <Parent isRef="103" />
+              <Text>{View_TailoringInvoiceGST.Rate}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text37>
+            <Text38 Ref="108" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>630,0,119,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9,Bold</Font>
+              <Guid>edb41744f8c84017a328d404179b52b4</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="7" />
+              <Parent isRef="103" />
+              <Text>{View_TailoringInvoiceGST.Amt}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text38>
+            <Text27 Ref="109" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>300,0,90,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9,Bold</Font>
+              <Guid>f7afd27c752944efa4be950707eecf96</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="7" />
+              <Parent isRef="103" />
+              <Text>{View_TailoringInvoiceGST.HSNCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text33 Ref="110" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>580,1,50,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9,Bold</Font>
+              <Guid>4966af8ee15447e780577b2006400ee9</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="7" />
+              <Parent isRef="103" />
+              <Text>{View_TailoringInvoiceGST.DiscAmt}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+            <Text72 Ref="111" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>390,0,60,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9,Bold</Font>
+              <Guid>14bfe92481634da1927c08cc0505ecb4</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text72</Name>
+              <Page isRef="7" />
+              <Parent isRef="103" />
+              <Text>{View_TailoringInvoiceGST.TaxPer}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text72>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>View_TailoringInvoiceGST</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="2">
+            <value>ASC</value>
+            <value>InvDetailId</value>
+          </Sort>
+        </DataBand1>
+        <GroupFooterBand1 Ref="112" type="GroupFooterBand" isKey="true">
+          <Border>Bottom;[15:36:62];1;Solid;False;1;[15:36:62]</Border>
+          <Brush>EmptyBrush</Brush>
+          <ClientRectangle>0,549,749,170</ClientRectangle>
+          <Components isList="true" count="23">
+            <Text75 Ref="113" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>210,45,90,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>1d6f52530dab421ba6127aac6a2d9bac</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text75</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>SGST</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text75>
+            <Text74 Ref="114" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>210,25,90,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>0ba0d0e5e9f146999fff4330a543e352</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text74</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>CGST</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text74>
+            <Text76 Ref="115" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>200,85,100,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>ba03ffc5f5ff4866809cef66b50c8b9e</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text76</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>ROUND OFF.</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text76>
+            <Text77 Ref="116" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>660,25,90,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>94c51f9b41c147aca4a2eed0547d8a0a</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text77</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>{View_TailoringInvoiceGST.CGSTAmt_SB}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text77>
+            <Text78 Ref="117" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>660,45,90,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>c240941397ec4f47b7576ebb0a7e9682</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text78</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>{View_TailoringInvoiceGST.SGSTAmt_SB}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text78>
+            <Text79 Ref="118" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>660,85,90,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>01aa9aaeb97e4c20865fbf04955760c0</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text79</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>{View_TailoringInvoiceGST.AdjustAmt}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text79>
+            <Text19 Ref="119" type="Text" isKey="true">
+              <Border>Top;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>630,0,120,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10</Font>
+              <Guid>186c69340dad4b00832e709ce702f903</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>{Sum(DataBand1,View_TailoringInvoiceGST.Rate)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="120" type="NumberFormat" isKey="true">
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>1</NegativePattern>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Text17 Ref="121" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>660,65,90,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>b559366d1c4840f8bba476fe17af2fe8</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>{View_TailoringInvoiceGST.IGSTAmt_SB}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text25 Ref="122" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>210,65,90,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>62139638a52b4aa497cab9b722e020f3</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>IGST</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text47 Ref="123" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>630,125,120,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>4e4abc39b8f3406e9ddfcaf856c58661</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text47</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>{View_TailoringInvoiceGST.ReceivedAmt}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text47>
+            <Text32 Ref="124" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>40,145,260,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>1ae6f77653424a4688dc8a59f407d0ea</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>Grand Total</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+            <Text81 Ref="125" type="Text" isKey="true">
+              <Border>Top;Black;1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>630,145,120,25</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>68fa9e0a06714b9f92cbd9649a6da0be</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text81</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>{View_TailoringInvoiceGST.DueAmt}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="126" type="CurrencyFormat" isKey="true">
+                <GroupSeparator>,</GroupSeparator>
+                <NegativePattern>0</NegativePattern>
+                <PositivePattern>0</PositivePattern>
+              </TextFormat>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text81>
+            <Text31 Ref="127" type="Text" isKey="true">
+              <Border>None;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>40,120,260,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>b0a05e4b7a71435ba17bcb5fa67becf7</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <Text>Advance amt</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <EndPointPrimitive5 Ref="128" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>0,0,0,0</ClientRectangle>
+              <Name>EndPointPrimitive5</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <ReferenceToGuid>2e1e9efc2bcd427986b1263a1bcb4415</ReferenceToGuid>
+            </EndPointPrimitive5>
+            <EndPointPrimitive2 Ref="129" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>630,100,0,0</ClientRectangle>
+              <Name>EndPointPrimitive2</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <ReferenceToGuid>b40fb69c9c9b41f7876522b77418f088</ReferenceToGuid>
+            </EndPointPrimitive2>
+            <StartPointPrimitive15 Ref="130" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+              <ClientRectangle>630,-15,0,0</ClientRectangle>
+              <Name>StartPointPrimitive15</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <ReferenceToGuid>923c2f442f9948e8b27697a80b7a6c51</ReferenceToGuid>
+            </StartPointPrimitive15>
+            <EndPointPrimitive21 Ref="131" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>630,169,0,0</ClientRectangle>
+              <Name>EndPointPrimitive21</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <ReferenceToGuid>923c2f442f9948e8b27697a80b7a6c51</ReferenceToGuid>
+            </EndPointPrimitive21>
+            <EndPointPrimitive7 Ref="132" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>300,167,0,0</ClientRectangle>
+              <Name>EndPointPrimitive7</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <ReferenceToGuid>2fe0090eb06545708ad0375414f441dc</ReferenceToGuid>
+            </EndPointPrimitive7>
+            <EndPointPrimitive20 Ref="133" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>390,170,0,0</ClientRectangle>
+              <Name>EndPointPrimitive20</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <ReferenceToGuid>ae3e6516e2dc45caaaab769f2541fcd0</ReferenceToGuid>
+            </EndPointPrimitive20>
+            <EndPointPrimitive3 Ref="134" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>450,170,0,0</ClientRectangle>
+              <Name>EndPointPrimitive3</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <ReferenceToGuid>0ec67e9f661245cd954efc81076281cb</ReferenceToGuid>
+            </EndPointPrimitive3>
+            <EndPointPrimitive4 Ref="135" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>40,167,0,0</ClientRectangle>
+              <Name>EndPointPrimitive4</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <ReferenceToGuid>56d4831b0c3e4a5f9eb9cabd1b0a90ef</ReferenceToGuid>
+            </EndPointPrimitive4>
+            <EndPointPrimitive1 Ref="136" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>500,170,0,0</ClientRectangle>
+              <Name>EndPointPrimitive1</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <ReferenceToGuid>be34dc647bae478d9ffcf9883c65f9c6</ReferenceToGuid>
+            </EndPointPrimitive1>
+            <EndPointPrimitive19 Ref="137" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+              <ClientRectangle>580,170,0,0</ClientRectangle>
+              <Name>EndPointPrimitive19</Name>
+              <Page isRef="7" />
+              <Parent isRef="112" />
+              <ReferenceToGuid>74ad737f17624e33becf9ca52c1b9330</ReferenceToGuid>
+            </EndPointPrimitive19>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <PrintAtBottom>True</PrintAtBottom>
+        </GroupFooterBand1>
+        <GroupHeaderBand2 Ref="138" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,759,749,50</ClientRectangle>
+          <Components isList="true" count="9">
+            <Text65 Ref="139" type="Text" isKey="true">
+              <Border>All;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>280,30,70,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9</Font>
+              <Guid>4fe1be9f76e44b4ca42dd05176b82ac6</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text65</Name>
+              <Page isRef="7" />
+              <Parent isRef="138" />
+              <Text>Rate</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text65>
+            <Text66 Ref="140" type="Text" isKey="true">
+              <Border>All;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>350,30,70,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9</Font>
+              <Guid>c0dda16d87bb47f2b6d6d006a7c519db</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text66</Name>
+              <Page isRef="7" />
+              <Parent isRef="138" />
+              <Text>Amount</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text66>
+            <Text69 Ref="141" type="Text" isKey="true">
+              <Border>All;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>420,30,70,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9</Font>
+              <Guid>46b57e2e17aa4f148abe3eaa458e1847</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text69</Name>
+              <Page isRef="7" />
+              <Parent isRef="138" />
+              <Text>Rate</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text69>
+            <Text18 Ref="142" type="Text" isKey="true">
+              <Border>All;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>490,30,70,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9</Font>
+              <Guid>18ac50674ae741e782166dc34ddc7425</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="7" />
+              <Parent isRef="138" />
+              <Text>Amount</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text18>
+            <Text63 Ref="143" type="Text" isKey="true">
+              <Border>All;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,10,180,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10</Font>
+              <Guid>4d66de8f520d41bd94edcff50f7b5bbc</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text63</Name>
+              <Page isRef="7" />
+              <Parent isRef="138" />
+              <Text>HSN/SAC</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text63>
+            <Text62 Ref="144" type="Text" isKey="true">
+              <Border>All;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>180,10,100,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9</Font>
+              <Guid>effadcce36084083a7a86b823f932c27</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text62</Name>
+              <Page isRef="7" />
+              <Parent isRef="138" />
+              <Text>Taxable 
+Value</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text62>
+            <Text64 Ref="145" type="Text" isKey="true">
+              <Border>All;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>280,10,140,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9</Font>
+              <Guid>494006c55b7d42fe9c6da8eb0dbf93de</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text64</Name>
+              <Page isRef="7" />
+              <Parent isRef="138" />
+              <Text>Central Tax</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text64>
+            <Text68 Ref="146" type="Text" isKey="true">
+              <Border>Top, Left, Bottom;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>560,10,188,40</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9</Font>
+              <Guid>779e9cbeaffd409fbcc9be5694841623</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text68</Name>
+              <Page isRef="7" />
+              <Parent isRef="138" />
+              <Text>Total 
+Tax Amount</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text68>
+            <Text67 Ref="147" type="Text" isKey="true">
+              <Border>All;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>420,10,140,20</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,9</Font>
+              <Guid>1a3a0f30584d41aa8976f32fc68523d1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text67</Name>
+              <Page isRef="7" />
+              <Parent isRef="138" />
+              <Text>State Tax</Text>
+              <TextBrush>[15:36:62]</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text67>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </GroupHeaderBand2>
+        <DataBand2 Ref="148" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,849,749,22</ClientRectangle>
+          <Components isList="true" count="7">
+            <Text22 Ref="149" type="Text" isKey="true">
+              <Border>Top, Left, Right;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>280,0,70,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>a6a87c511d4e420ea2dadd83ff0dc9ad</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="7" />
+              <Parent isRef="148" />
+              <Text>{View_TailoringInvoiceGST_HSN.CGSTPer_SB}%</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text24 Ref="150" type="Text" isKey="true">
+              <Border>Top, Left, Right;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>350,0,70,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>9f861db20c5d41dd800e41ef0983ef9c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="7" />
+              <Parent isRef="148" />
+              <Text>{View_TailoringInvoiceGST_HSN.CGSTAmt_SB}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text73 Ref="151" type="Text" isKey="true">
+              <Border>Top, Left;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>560,0,190,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>7371727fe0574077a2a5e9a6a79da895</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text73</Name>
+              <Page isRef="7" />
+              <Parent isRef="148" />
+              <Text>{View_TailoringInvoiceGST_HSN.CGSTAmt_SB + View_TailoringInvoiceGST_HSN.SGSTAmt_SB}
+</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text73>
+            <Text26 Ref="152" type="Text" isKey="true">
+              <Border>Top, Left, Right;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>180,0,100,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>c7eaeb4bc5fe4cd7971a57c1ca4246d9</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="7" />
+              <Parent isRef="148" />
+              <Text>{View_TailoringInvoiceGST_HSN.Amt}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text58 Ref="153" type="Text" isKey="true">
+              <Border>Top, Left, Right;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>420,0,70,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>3bd6c2bcbca24c08ba779216b62cd980</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text58</Name>
+              <Page isRef="7" />
+              <Parent isRef="148" />
+              <Text>{View_TailoringInvoiceGST_HSN.SGSTPer_SB}%</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text58>
+            <Text59 Ref="154" type="Text" isKey="true">
+              <Border>Top, Left, Right;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>490,0,70,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>e679dd4cef024ad6b4eef42e6201d2bf</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text59</Name>
+              <Page isRef="7" />
+              <Parent isRef="148" />
+              <Text>{View_TailoringInvoiceGST_HSN.SGSTAmt_SB}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text59>
+            <Text70 Ref="155" type="Text" isKey="true">
+              <Border>Top, Left, Right;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,180,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>93df2a52e86147edadf0e5dbfb4a3600</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text70</Name>
+              <Page isRef="7" />
+              <Parent isRef="148" />
+              <Text>{View_TailoringInvoiceGST_HSN.HSNCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text70>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>View_TailoringInvoiceGST_HSN</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+        <GroupFooterBand2 Ref="156" type="GroupFooterBand" isKey="true">
+          <Border>Top;Black;1;Solid;False;4;Black</Border>
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,911,749,39</ClientRectangle>
+          <Components isList="true" count="6">
+            <Text85 Ref="157" type="Text" isKey="true">
+              <Border>Top, Left;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>560,0,190,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>73d9b5b1c65742ecaefe83fc5021f968</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text85</Name>
+              <Page isRef="7" />
+              <Parent isRef="156" />
+              <Text>{Sum(DataBand2,View_TailoringInvoiceGST_HSN.CGSTAmt_SB) + Sum(DataBand2,View_TailoringInvoiceGST_HSN.SGSTAmt_SB)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text85>
+            <Text86 Ref="158" type="Text" isKey="true">
+              <Border>Top, Left, Right;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>180,0,100,23</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>a75997ce386d41799decab5ea4041e3d</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text86</Name>
+              <Page isRef="7" />
+              <Parent isRef="156" />
+              <Text>{Sum(DataBand2,View_TailoringInvoiceGST_HSN.Amt)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text86>
+            <Text88 Ref="159" type="Text" isKey="true">
+              <Border>Top, Left, Right;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>490,0,70,23</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>bdebd3ace4784863bc9c8596b0c3521c</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text88</Name>
+              <Page isRef="7" />
+              <Parent isRef="156" />
+              <Text>{Sum(DataBand2,View_TailoringInvoiceGST_HSN.SGSTAmt_SB)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text88>
+            <Text90 Ref="160" type="Text" isKey="true">
+              <Border>Top, Left, Right;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>350,0,70,23</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>6511418c70334ca2b89b8d1669f53999</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text90</Name>
+              <Page isRef="7" />
+              <Parent isRef="156" />
+              <Text>{Sum(DataBand2,View_TailoringInvoiceGST_HSN.CGSTAmt_SB)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text90>
+            <Text89 Ref="161" type="Text" isKey="true">
+              <Border>Top;[15:36:62];1;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,180,23</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Microsoft YaHei UI,10,Bold</Font>
+              <Guid>51fbfa850fb74328b1e41ce625b34d7d</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text89</Name>
+              <Page isRef="7" />
+              <Parent isRef="156" />
+              <Text>Total:	</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text89>
+            <HorizontalLinePrimitive21 Ref="162" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,25,750,1</ClientRectangle>
+              <Color>15, 36, 62</Color>
+              <EndCap Ref="163" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive21</Name>
+              <Page isRef="7" />
+              <Parent isRef="156" />
+              <StartCap Ref="164" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive21>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </GroupFooterBand2>
+        <VerticalLinePrimitive1 Ref="165" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>500,405,1,314</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="166" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>be34dc647bae478d9ffcf9883c65f9c6</Guid>
+          <Name>VerticalLinePrimitive1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="167" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive1>
+        <VerticalLinePrimitive2 Ref="168" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>630,405,1,244</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="169" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>b40fb69c9c9b41f7876522b77418f088</Guid>
+          <Name>VerticalLinePrimitive2</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="170" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive2>
+        <VerticalLinePrimitive3 Ref="171" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>450,405,1,314</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="172" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>0ec67e9f661245cd954efc81076281cb</Guid>
+          <Name>VerticalLinePrimitive3</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="173" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive3>
+        <VerticalLinePrimitive4 Ref="174" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>40,405,1,311</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="175" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>56d4831b0c3e4a5f9eb9cabd1b0a90ef</Guid>
+          <Name>VerticalLinePrimitive4</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="176" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive4>
+        <VerticalLinePrimitive5 Ref="177" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>0,405,1,144</ClientRectangle>
+          <Color>MidnightBlue</Color>
+          <EndCap Ref="178" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>2e1e9efc2bcd427986b1263a1bcb4415</Guid>
+          <Name>VerticalLinePrimitive5</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="179" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive5>
+        <VerticalLinePrimitive7 Ref="180" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>300,405,1,311</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="181" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>2fe0090eb06545708ad0375414f441dc</Guid>
+          <Name>VerticalLinePrimitive7</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="182" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive7>
+        <RoundedRectanglePrimitive1 Ref="183" type="Stimulsoft.Report.Components.StiRoundedRectanglePrimitive" isKey="true">
+          <ClientRectangle>330,30,80,20</ClientRectangle>
+          <Color>Black</Color>
+          <Guid>4097dc2a40624af090e083a31c4d25db</Guid>
+          <Name>RoundedRectanglePrimitive1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <Round>0.2</Round>
+          <Size>4</Size>
+        </RoundedRectanglePrimitive1>
+        <HorizontalLinePrimitive13 Ref="184" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>490,1160,195,1</ClientRectangle>
+          <Color>MidnightBlue</Color>
+          <EndCap Ref="185" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>dfa0de963aea459885d24a380a990ac7</Guid>
+          <Name>HorizontalLinePrimitive13</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="186" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive13>
+        <HorizontalLinePrimitive14 Ref="187" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>490,1180,195,1</ClientRectangle>
+          <Color>MidnightBlue</Color>
+          <EndCap Ref="188" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>f31262d4dae34b20ae6e2175f67f135d</Guid>
+          <Name>HorizontalLinePrimitive14</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="189" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive14>
+        <HorizontalLinePrimitive15 Ref="190" type="HorizontalLinePrimitive" isKey="true">
+          <ClientRectangle>490,1200,195,1</ClientRectangle>
+          <Color>MidnightBlue</Color>
+          <EndCap Ref="191" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>190a065240bd424ea9297384a1b7e1e5</Guid>
+          <Name>HorizontalLinePrimitive15</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="192" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </HorizontalLinePrimitive15>
+        <VerticalLinePrimitive8 Ref="193" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>850,870,1,290</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="194" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>70ef278040b24e6f8f2025004cfc4862</Guid>
+          <Name>VerticalLinePrimitive8</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="195" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive8>
+        <StartPointPrimitive9 Ref="196" type="Stimulsoft.Report.Components.StiStartPointPrimitive" isKey="true">
+          <ClientRectangle>850,870,0,0</ClientRectangle>
+          <Name>StartPointPrimitive9</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <ReferenceToGuid>70ef278040b24e6f8f2025004cfc4862</ReferenceToGuid>
+        </StartPointPrimitive9>
+        <EndPointPrimitive15 Ref="197" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>850,1160,0,0</ClientRectangle>
+          <Name>EndPointPrimitive15</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <ReferenceToGuid>70ef278040b24e6f8f2025004cfc4862</ReferenceToGuid>
+        </EndPointPrimitive15>
+        <EndPointPrimitive10 Ref="198" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>850,875,0,0</ClientRectangle>
+          <Guid>20bf8e24fdfa427da0ff6f31488fc5cc</Guid>
+          <Name>EndPointPrimitive10</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <ReferenceToGuid>70ef278040b24e6f8f2025004cfc4862</ReferenceToGuid>
+        </EndPointPrimitive10>
+        <VerticalLinePrimitive11 Ref="199" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>580,405,1,314</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="200" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>74ad737f17624e33becf9ca52c1b9330</Guid>
+          <Name>VerticalLinePrimitive11</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="201" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive11>
+        <VerticalLinePrimitive12 Ref="202" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>390,405,1,314</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="203" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>ae3e6516e2dc45caaaab769f2541fcd0</Guid>
+          <Name>VerticalLinePrimitive12</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="204" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive12>
+        <VerticalLinePrimitive13 Ref="205" type="VerticalLinePrimitive" isKey="true">
+          <ClientRectangle>630,534,1,184</ClientRectangle>
+          <Color>Black</Color>
+          <EndCap Ref="206" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </EndCap>
+          <Guid>923c2f442f9948e8b27697a80b7a6c51</Guid>
+          <Name>VerticalLinePrimitive13</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <StartCap Ref="207" type="Cap" isKey="true">
+            <Color>Black</Color>
+          </StartCap>
+        </VerticalLinePrimitive13>
+        <EndPointPrimitive6 Ref="208" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>220,1120,0,0</ClientRectangle>
+          <Guid>3c4f61afea0e4f1ca7565f4433b42d28</Guid>
+          <Name>EndPointPrimitive6</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <ReferenceToGuid>0a006b9fedbf4530b3322cdcd9537115</ReferenceToGuid>
+        </EndPointPrimitive6>
+        <EndPointPrimitive9 Ref="209" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>750,1120,0,0</ClientRectangle>
+          <Guid>f02d0039ce03475eb41c659e7862e764</Guid>
+          <Name>EndPointPrimitive9</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <ReferenceToGuid>8b487b0013c04bfc91641f550467ea62</ReferenceToGuid>
+        </EndPointPrimitive9>
+        <EndPointPrimitive11 Ref="210" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>670,1125,0,0</ClientRectangle>
+          <Guid>22c8e2c523494b6b8715a5c2078cacc4</Guid>
+          <Name>EndPointPrimitive11</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <ReferenceToGuid>3610c211e4b54ca9b8292c66c8c03410</ReferenceToGuid>
+        </EndPointPrimitive11>
+        <EndPointPrimitive12 Ref="211" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>580,1122,0,0</ClientRectangle>
+          <Guid>42276bb339414b5abb516f7c087e1d78</Guid>
+          <Name>EndPointPrimitive12</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <ReferenceToGuid>66751956553a433c8999c770432ee79f</ReferenceToGuid>
+        </EndPointPrimitive12>
+        <EndPointPrimitive13 Ref="212" type="Stimulsoft.Report.Components.StiEndPointPrimitive" isKey="true">
+          <ClientRectangle>260,1122,0,0</ClientRectangle>
+          <Guid>34f5004d41b941d8a70c2c08ecfcd41f</Guid>
+          <Name>EndPointPrimitive13</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+          <ReferenceToGuid>aebd3afd339d42a5b5c9da590fd08aa2</ReferenceToGuid>
+        </EndPointPrimitive13>
+        <RectanglePrimitive1 Ref="213" type="RectanglePrimitive" isKey="true">
+          <ClientRectangle>0,980,420,64</ClientRectangle>
+          <Color>15, 36, 62</Color>
+          <Guid>db0ffdcff52d46bf85b9bf0c80994e69</Guid>
+          <Name>RectanglePrimitive1</Name>
+          <Page isRef="7" />
+          <Parent isRef="7" />
+        </RectanglePrimitive1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>65fb0fa427a641a298595af16d5f38ea</Guid>
+      <Margins>39,39,39,39</Margins>
+      <Name>Page1</Name>
+      <PaperSize>A4</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="214" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[15:36:62]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="215" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>6/5/2025 5:51:33 PM</ReportChanged>
+  <ReportCreated>10/14/2020 6:43:48 PM</ReportCreated>
+  <ReportFile>E:\SD2021\TailoringERP\TailoringERP\Report\TailoringInvoice_ALI.mrt</ReportFile>
+  <ReportGuid>755990708ea249809b62c77ec50c357b</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>HundredthsOfInch</ReportUnit>
+  <ReportVersion>2012.2.1304</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection</Alias>
+        <ConnectionString>Integrated Security=False;Data Source=MAHESH\SUNRISE;Initial Catalog=dbSTE_Demo;Password=Ss.d@2017;User ID=sa</ConnectionString>
+        <Name>Connection</Name>
+      </Connection>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <View_BankTransaction Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>View_BankTransaction</Alias>
+        <Columns isList="true" count="36">
+          <value>VId,System.Int64</value>
+          <value>VDate,System.DateTime</value>
+          <value>VDt,System.String</value>
+          <value>VDocDate,System.DateTime</value>
+          <value>VDocDt,System.String</value>
+          <value>V_Id,System.Int64</value>
+          <value>V_Name,System.String</value>
+          <value>V_No,System.Int64</value>
+          <value>MasterId,System.Int64</value>
+          <value>DrLedgerId,System.Int64</value>
+          <value>DrLedgerName,System.String</value>
+          <value>DrG_Id,System.Int64</value>
+          <value>CrLedgerId,System.Int64</value>
+          <value>CrLedgerName,System.String</value>
+          <value>CrG_Id,System.Int64</value>
+          <value>DrAmt,System.Double</value>
+          <value>CrAmt,System.Double</value>
+          <value>Narration1,System.String</value>
+          <value>Narration2,System.String</value>
+          <value>DocNo,System.String</value>
+          <value>RefV_Id,System.Int64</value>
+          <value>RefMasterId,System.Int64</value>
+          <value>Sys_Name,System.String</value>
+          <value>Sys_Time,System.DateTime</value>
+          <value>CurrUsr,System.String</value>
+          <value>TranMode,System.String</value>
+          <value>Amt,System.Double</value>
+          <value>TdsAmt,System.Double</value>
+          <value>CNAmt,System.Double</value>
+          <value>CNNo,System.String</value>
+          <value>ChequeNo,System.Int64</value>
+          <value>PrintId,System.Int64</value>
+          <value>PrintName,System.String</value>
+          <value>IsReconciled,System.String</value>
+          <value>ReconcileDate,System.DateTime</value>
+          <value>CId,System.Int64</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>View_BankTransaction</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from View_BankTransaction Where {Filter}</SqlCommand>
+      </View_BankTransaction>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="3">
+      <value>,Filter,Filter,System.String,,False,False</value>
+      <value>,AmtInWord,AmtInWord,System.String,,False,False</value>
+      <value>,vdocdate,vdocdate,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="1">
+        <DataBand1 Ref="5" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,0.2,8,3.5</ClientRectangle>
+          <Components isList="true" count="5">
+            <TextInCells1 Ref="6" type="Stimulsoft.Report.Components.StiTextInCells" isKey="true">
+              <Border>All;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>5.7,0.4,1.6,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>TextInCells1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{vdocdate}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </TextInCells1>
+            <Text1 Ref="7" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.4,1.1,4.7,0.2</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{View_BankTransaction.DrLedgerName}</Text>
+              <TextBrush>Black</TextBrush>
+              <VertAlignment>Center</VertAlignment>
+            </Text1>
+            <Text2 Ref="8" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>6.1,1.6,1.2,0.3</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,12,Bold</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{View_BankTransaction.DrAmt} /**</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text2>
+            <Text3 Ref="9" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>1.3,1.6,4.7,0.6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,11</Font>
+              <Guid>e30d3e7857594e1ea4c2a3a1a24d66dc</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+              <Text>{AmtInWord}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text3>
+            <Image1 Ref="10" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,1,0.8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Image>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</Image>
+              <Name>Image1</Name>
+              <Page isRef="4" />
+              <Parent isRef="5" />
+            </Image1>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>View_BankTransaction</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>65fb0fa427a641a298595af16d5f38ea</Guid>
+      <Margins>0,0,0,0</Margins>
+      <Name>Page1</Name>
+      <PageHeight>3.75</PageHeight>
+      <PageWidth>8</PageWidth>
+      <Report isRef="0" />
+      <UnlimitedBreakable>False</UnlimitedBreakable>
+      <UnlimitedHeight>True</UnlimitedHeight>
+      <Watermark Ref="11" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="12" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>9/26/2022 1:05:09 PM</ReportChanged>
+  <ReportCreated>10/14/2020 6:43:48 PM</ReportCreated>
+  <ReportFile>D:\PROJECTS\BhavikaGit17\TailoringERP\TailoringERP\Report\AXIS_Cheque.mrt</ReportFile>
+  <ReportGuid>6f0d43c99dd14cb3b7eb8c31d37b10b9</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Inches</ReportUnit>
+  <ReportVersion>2012.2.1304</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

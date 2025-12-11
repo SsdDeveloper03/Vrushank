@@ -1,0 +1,1438 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection</Alias>
+        <ConnectionString>Integrated Security=False;Data Source=BHAVIKA_PC\SUNRISE;Initial Catalog=dbSTE_Demo;Password=Ss.d@2017;User ID=sa</ConnectionString>
+        <Name>Connection</Name>
+      </Connection>
+    </Databases>
+    <DataSources isList="true" count="2">
+      <View_CompanyMaster Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>View_CompanyMaster</Alias>
+        <Columns isList="true" count="31">
+          <value>CId,System.Int64</value>
+          <value>CCode,System.String</value>
+          <value>CName,System.String</value>
+          <value>Add1,System.String</value>
+          <value>Add2,System.String</value>
+          <value>City,System.String</value>
+          <value>State,System.String</value>
+          <value>Pincode,System.String</value>
+          <value>Country,System.String</value>
+          <value>PhNo,System.String</value>
+          <value>FaxNo,System.String</value>
+          <value>EMail,System.String</value>
+          <value>PANNo,System.String</value>
+          <value>ServiceTaxNo,System.String</value>
+          <value>ECCNo,System.String</value>
+          <value>CSTTinNo,System.String</value>
+          <value>GSTTinNo,System.String</value>
+          <value>Invoice,System.String</value>
+          <value>TC1,System.String</value>
+          <value>TC2,System.String</value>
+          <value>TC3,System.String</value>
+          <value>TC4,System.String</value>
+          <value>TC5,System.String</value>
+          <value>TC6,System.String</value>
+          <value>TC7,System.String</value>
+          <value>ForCo,System.String</value>
+          <value>BankName,System.String</value>
+          <value>BankAcNo,System.String</value>
+          <value>BranchCode,System.String</value>
+          <value>IFSCCode,System.String</value>
+          <value>ImagePath,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>View_CompanyMaster</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from View_CompanyMaster Where {CId}</SqlCommand>
+      </View_CompanyMaster>
+      <View_TailoringInvoiceGST Ref="4" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>View_TailoringInvoiceGST</Alias>
+        <Columns isList="true" count="172">
+          <value>InvId,System.Int64</value>
+          <value>InvDetailId,System.Int64</value>
+          <value>TItemId,System.Int64</value>
+          <value>TItemCode,System.String</value>
+          <value>BarCode,System.String</value>
+          <value>TItemName,System.String</value>
+          <value>TItemRate,System.Double</value>
+          <value>CuttingRate,System.Double</value>
+          <value>SewingRate,System.Double</value>
+          <value>MaterialRate,System.Double</value>
+          <value>ItemType,System.String</value>
+          <value>ItemCategory,System.String</value>
+          <value>MfgName,System.String</value>
+          <value>ItemSize,System.String</value>
+          <value>UOM_M,System.String</value>
+          <value>AUOM_M,System.String</value>
+          <value>UOMValue,System.Double</value>
+          <value>AUOMValue,System.Double</value>
+          <value>SalesRate,System.Double</value>
+          <value>SalesRateA,System.Double</value>
+          <value>SalesUOM,System.String</value>
+          <value>ItemSubType,System.String</value>
+          <value>IsActive,System.String</value>
+          <value>HSNCode,System.String</value>
+          <value>TaxPer,System.Double</value>
+          <value>Rate,System.Double</value>
+          <value>TItemQty,System.Double</value>
+          <value>Amt,System.Double</value>
+          <value>ReadyQty,System.Int64</value>
+          <value>DeliveredQty,System.Int64</value>
+          <value>Remark,System.String</value>
+          <value>SrNo,System.Int64</value>
+          <value>UOM_SD,System.String</value>
+          <value>Pcs,System.Double</value>
+          <value>ItemTot,System.Double</value>
+          <value>DiscPer,System.Double</value>
+          <value>DiscAmt,System.Double</value>
+          <value>AQty,System.Double</value>
+          <value>AUOM_SD,System.String</value>
+          <value>TS_Id,System.Int64</value>
+          <value>TS_Name,System.String</value>
+          <value>TS_ShortName,System.String</value>
+          <value>TS_Type,System.String</value>
+          <value>VATCST,System.String</value>
+          <value>IGSTPer_SD,System.Double</value>
+          <value>IGSTAmt_SD,System.Double</value>
+          <value>CST_AddPer_SD,System.Double</value>
+          <value>CST_AddAmt_SD,System.Double</value>
+          <value>SGSTPer_SD,System.Double</value>
+          <value>SGSTAmt_SD,System.Double</value>
+          <value>CGSTPer_SD,System.Double</value>
+          <value>CGSTAmt_SD,System.Double</value>
+          <value>Length,System.Double</value>
+          <value>Width,System.Double</value>
+          <value>SqMtr,System.Double</value>
+          <value>TotalAmt,System.Double</value>
+          <value>DiscPer_SB,System.Double</value>
+          <value>Discount,System.Double</value>
+          <value>BillAmt,System.Double</value>
+          <value>ReceivedAmt,System.Double</value>
+          <value>DueAmt,System.Double</value>
+          <value>Remarks,System.String</value>
+          <value>SalesAcType,System.String</value>
+          <value>InvoiceNumber,System.String</value>
+          <value>TIRINo,System.Int64</value>
+          <value>TIRINumber,System.String</value>
+          <value>Creditdays,System.Double</value>
+          <value>SalesDueDate,System.DateTime</value>
+          <value>V_Id,System.Int64</value>
+          <value>V_Name,System.String</value>
+          <value>V_Group,System.String</value>
+          <value>IGSTPer_SB,System.Double</value>
+          <value>IGSTAmt_SB,System.Double</value>
+          <value>CST_AddPer_SB,System.Double</value>
+          <value>CST_AddAmt_SB,System.Double</value>
+          <value>SGSTPer_SB,System.Double</value>
+          <value>SGSTAmt_SB,System.Double</value>
+          <value>CGSTPer_SB,System.Double</value>
+          <value>CGSTAmt_SB,System.Double</value>
+          <value>FreightAmt,System.Double</value>
+          <value>AdjustAmt,System.Double</value>
+          <value>SalesBillAmt,System.Double</value>
+          <value>AcInvoiceNo,System.Int64</value>
+          <value>AcInvoiceDate,System.DateTime</value>
+          <value>FeedbackDTM,System.DateTime</value>
+          <value>Rating,System.String</value>
+          <value>Feedback,System.String</value>
+          <value>PmtMode,System.String</value>
+          <value>PmtNarration,System.String</value>
+          <value>Remark1,System.String</value>
+          <value>Remark2,System.String</value>
+          <value>Remark3,System.String</value>
+          <value>RefLedgerId,System.Int64</value>
+          <value>RefLedgerName,System.String</value>
+          <value>CustName,System.String</value>
+          <value>TItemName1,System.String</value>
+          <value>CCode,System.String</value>
+          <value>CName,System.String</value>
+          <value>Add1,System.String</value>
+          <value>Add2,System.String</value>
+          <value>City_C,System.String</value>
+          <value>State_C,System.String</value>
+          <value>Pincode_C,System.String</value>
+          <value>Country_C,System.String</value>
+          <value>PhNo,System.String</value>
+          <value>FaxNo_C,System.String</value>
+          <value>EMail_C,System.String</value>
+          <value>PANNo_C,System.String</value>
+          <value>ServiceTaxNo,System.String</value>
+          <value>ECCNo,System.String</value>
+          <value>CSTTinNo,System.String</value>
+          <value>GSTTinNo,System.String</value>
+          <value>Invoice,System.String</value>
+          <value>TC1,System.String</value>
+          <value>TC2,System.String</value>
+          <value>TC3,System.String</value>
+          <value>TC4,System.String</value>
+          <value>TC5,System.String</value>
+          <value>TC6,System.String</value>
+          <value>TC7,System.String</value>
+          <value>ForCo,System.String</value>
+          <value>UId,System.Int64</value>
+          <value>Sys_Time,System.DateTime</value>
+          <value>SrNum,System.String</value>
+          <value>SP1,System.String</value>
+          <value>SP1Per,System.Double</value>
+          <value>SP1Amt,System.Double</value>
+          <value>SP1Comm,System.Double</value>
+          <value>SP2,System.String</value>
+          <value>SP2Per,System.Double</value>
+          <value>SP2Amt,System.Double</value>
+          <value>SP2Comm,System.Double</value>
+          <value>InvoiceNo,System.Int64</value>
+          <value>InvoiceDate,System.DateTime</value>
+          <value>LedgerId,System.Int64</value>
+          <value>Code,System.Int64</value>
+          <value>LedgerCode,System.String</value>
+          <value>LedgerName,System.String</value>
+          <value>Address1,System.String</value>
+          <value>Address2,System.String</value>
+          <value>City,System.String</value>
+          <value>PinCode,System.String</value>
+          <value>State,System.String</value>
+          <value>Country,System.String</value>
+          <value>PhoneNo,System.String</value>
+          <value>MobileNo,System.String</value>
+          <value>FaxNo,System.String</value>
+          <value>EMail,System.String</value>
+          <value>BirthDate,System.DateTime</value>
+          <value>AnniDate,System.DateTime</value>
+          <value>CustType,System.String</value>
+          <value>MobileNo2,System.String</value>
+          <value>BeneficiaryName,System.String</value>
+          <value>BankAcType,System.String</value>
+          <value>BankAcNo,System.String</value>
+          <value>IFSCCode,System.String</value>
+          <value>MICRCode,System.String</value>
+          <value>BankName,System.String</value>
+          <value>BankAddress,System.String</value>
+          <value>AcContactPerson,System.String</value>
+          <value>AcContactNo,System.String</value>
+          <value>AcEmailId,System.String</value>
+          <value>TranSMS,System.String</value>
+          <value>PromoSMS,System.String</value>
+          <value>GSTNo,System.String</value>
+          <value>PANNo,System.String</value>
+          <value>Taxation,System.String</value>
+          <value>CId,System.Int64</value>
+          <value>Reference,System.String</value>
+          <value>WorkDays,System.Int64</value>
+          <value>DeliveryDate,System.DateTime</value>
+          <value>TrialDate,System.DateTime</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>View_TailoringInvoiceGST</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from View_TailoringInvoiceGST Where {Filter}</SqlCommand>
+      </View_TailoringInvoiceGST>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="4">
+      <value>,CName,CName,System.String,,False,False</value>
+      <value>,CId,CId,System.String,,False,False</value>
+      <value>,Filter,Filter,System.String,,False,False</value>
+      <value>,AmtInWord,AmtInWord,System.String,,False,False</value>
+    </Variables>
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="5" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <PageHeaderBand1 Ref="6" type="PageHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4,74.2,26</ClientRectangle>
+          <Components isList="true" count="8">
+            <Text1 Ref="7" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,0,74,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>INVOICE</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text1>
+            <Text22 Ref="8" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>28,16,46,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>80f880aaad7d447082f9b49f911e0f7a</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text22</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>CONTACT : {View_CompanyMaster.PhNo}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text22>
+            <Text2 Ref="9" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>28,4,46,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>d1966f3711ca41999431066d1529f43b</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text2</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{View_CompanyMaster.CName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text2>
+            <Text15 Ref="10" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>28,8,46,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>875caa33ad73407ead8ce9f6feca6ef7</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text15</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{View_CompanyMaster.Add1},{View_CompanyMaster.Add2}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text15>
+            <Text18 Ref="11" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>28,12,46,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>c989370819b342a29a421445dc4d9b35</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text18</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>{View_CompanyMaster.City},{View_CompanyMaster.State}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+            </Text18>
+            <Text19 Ref="12" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>28,20,46,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>ffe2cd8ebea840ee8f8dfa8fd08d81b4</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text19</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Text>GSTIN : {View_CompanyMaster.GSTTinNo}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text19>
+            <Image1 Ref="13" type="Image" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>0,4,26,22</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Image>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAgMDAwMDBAcFBAQEBAkGBwUHCgkLCwoJCgoMDREODAwQDAoKDhQPEBESExMTCw4UFhQSFhESExL/2wBDAQMDAwQEBAgFBQgSDAoMEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhL/wAARCAGGAbIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD9UKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAPWobi6is4JJrqRIooVLSSOwCqBySSegpbi5itYpJbiRIo41LO7nAUAZJJ+lfK3xo+NUvjKZ9I8OyvHokTfvJF+Vrth3PonoO/U+g8rNc2o5fS5579F3PSyvK62OrckNur7HrPh/9oDQte8Zz6LzBbMwjsr2RsJcP0II/hyeF9fYnFep7xX57rxX0T8D/jgbryPD3jK4Hn8JZXsjf6zsI3J7+jd+nXr87knE7rVXSxOjez/Q9/OuGvYU1Vw+qW6/U+gaKarDA96dX29z44KKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKRjjtmlpKTQI+Zf2iviJq9zq8vhmOCfTdOhw0hbre+jZH8AI4GecHPPA8Pr7c+I/w4074h6ObW/QQ3UWWtbpR80LY/VT3Hf8Aa+O/FXhTUfButT6ZrkLR3EJ4cAlZV7MpxyD/iOtfl/E+AxVPEOtUfNB7eXkfpPDOPw08OqEFyyW/n5mPS/nSUV8sr731Pqmrn0V8D/jd9q8jw94xuP33CWV67f63PASQ/3ugDd+nXr7+G49/bvX57/wAx/n/Gvon4I/HD7UYPD3jG4/fcJY3sjf6zsI3P97sG79OvX77h3iLbDYh69H/mfB8Q8PWviMOtOq/VH0CKKarDFOr7y58QFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFH9aLgFJmory8hsLWW4vpUgghUvJJI21VAHJJ7V5h4V/aA0PxN4un0fDWkDuEsLqVsLct0IIP3ST9319icVy18bQozjCpJJy2OmjhK9aEp043Udz1WikDdOvNLXUjmExzXIfEj4cad8Q9FNrfqsV1CGNrdBctCx/mp7jv9QCOwpMVjXoU69N06iuma0a06NRVKbs0fBvivwnqPgzWptM1yExXER+Vv4ZV5w6nuDj+nWsevtz4jfDjTviJorWmpDybmIE2t2ijfC3f6qe47/XBHx34q8K6j4N1qbTNeh8q5iOVZeUlU9GU9wf8A63XivyrPMjqYCpzR1pvb/gn6dkmdwx0OWWlRb/8AAMeiiivAXdbn0DjfQ+ivgf8AG/7V5Hh7xlcfv+Esb2Rv9Z2Ebn+92DHr069foBT8oPHPpX57ZI6cEc/4V9EfBH43/ajB4e8ZTnzeEsb2Rv8AWdhHIT/F0APfp16/fcOcRXthsQ9ej/zPg+IeH7XxOHWnVf5H0FRTVYHvmnV94fEBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUmfrQAtQXl5DY2stxeSrDBCpaSR2wFUDJJPai8vINPtpbm+lSC3hQvJI7YCqBkkn6V8ofGb4yz+ObqTTNDeSDQ4Gx3VrpgeGb0UEcD8TzwPJzbNqWX0eaWsnsj08qyurj6vLDRLdh8ZfjNN46uX03QmeHQoG6jKtdsDwzei+gP1PPA8r3ENkEjGcUlFfk2MxtbFVXWqPX8j9VwmDo4WiqVNafmfR/wR+N/wDaXkeH/GE/+ljCWd7I3+u7BHP970PfoecZ96DDj3r89x8rA9MHOf5/4V9Tfs9/ELWPFmmT2GuW9xOunKFTUj0lPA2OTyXAxyO3X1P3HDOfSrWw1bV9H/mfE8R5HGjfE0dF1X+R7JRSDpS19ufGiGuR+JHw5074haKbXUAIrqEE2t0qjdCx9fVT3Hf64I6+krGvQp16bp1FdM0o1p0aiqU3Zo+DfFnhTUfBetTaZrkLRTxH5W/hmXsynuD/APW61j19t/Ef4b6d8RNFa01ICG5iBNrdhfmhY4z9VPcd/rg18eeKvCuo+Ddam03XITFcRnIYcrKpzhlPcHB/l1r8qzzI6mAqc0dab2/4J+n5JncMdT5JaTW6/VGPRRRXgLutz32k/i1Por4H/HD7Sbfw94yuMTnCWV9I3+s9I3J/i9G75weevv4YYHoelfntX0V8D/jgbn7P4e8ZXH7/AISyvZG/1vpHIT/F2Dd+nXr99w5xFe2GxD16P/M+E4h4f5b4nDrTqv1R9A0U1WBXj9KdX3dz4gKKKKYBRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAJUV5eQWFtLcXsqQQQqWkkkbaqqOSST0pLq8hsLeW4vZEgghUtJI7BQqgZJJNfKHxm+M0/jq6k0zQneDQ4Wx6G7YH7zf7PoPxPPA8jN82pZfR5pfE9kenlWVVcfW5YaJbsT4yfGafx5cNpuhu8Ggwt24N2R/E3cL6D2yeeB5XS/ypK/JsZjauLqurWd2/wP1bB4OlhKSpUlZL8QpQCe1Fdt8L/hdffEfVtqK0GlWzD7ZdY6f7C+rEfgO/oYwuGqYisqUFeTLxWIp4ek6k3aKD4W/C+++I+rbYw9tpcDA3V1t4/3F7Fjjp26ntn7A8P+HrHwxpUGnaJAlvaW64RVHP1J6knuT1pfD/h2x8M6Tb6dosCQWtuuFVR949yT3J6k9TWkBX6tkuSU8vp66ze7Py3OM5qY+p2gtkLRSZ7VQ13XLLw5pk+o6xOltaWy7pJH6DtwByT0AHfIr25zjCLlLRI8aEZSkopXbL+f1/Wlrgfhx8YdI+Iz3MFir2l7A5xazON0keeHGOvGMjsfwJ73IwKyw+JpYinz0pXRrXw9ShPkqRswIrkPiN8ONN+ImjNaagoiuohutrpV+eFj/NT3Hf64I7Ckp4jD069N06iumKjWqUaiqU3Zo+DfFXhTUvButTaZr0DRXEXKtg7ZVPRlPcH/AOt1rHr7b+I3w3074haKbXUVSK6hBa1ugvMLf1U9x3+uCPjzxV4U1HwbrU2l63CYp4j8rfwyr2dT3B/+t14r8qzzI54GpzR1pvb/AIJ+n5JndPHU+Sek1uv1Rj0fzo9D60V4Hmtz32r7n0T8D/jh9oNv4e8Y3H73hLK9lbHmdhG5P8XQBu/APPX6AVuB3OPzr89v0xX0T8EPjh9o8jw94yuP33C2N7I3MnYRufXsG79OvX77h3iLbD4l+j/zPg+IOH7XxGHWnVfqj6BHI45paarjbTq+8uuh8QFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFHp70AFQXl7Bp9vLcX0qQQQqWkkdgqqB1JPYUXl5DYWstxeSJDBCpaSRzgKo5JJr5Q+Mvxmm8dXT6boTvBoUL9VyrXbA8M3ovoPxPPA8jNs2pZfR5pfE9kenlWVVcfW5YaJbsPjN8ZpvHVw+maGzw6FC3+612w/ib0XPQfieeB5VRRX5NjcbVxdZ1azu3+B+rYPB0sJSVKkrJfiFL+dJ/Wu3+F3wvvviPquIw1vpduw+1XW3I5/gXsW/l1PoYwuGqYiqqcFeTLxOIp4ek6lR2ig+F/wuvviPquxN9tpcDf6Vd7en+wvYv+gzz7/YPh/w/Y+GdKg03RbdLe1tl2quOSe5J7k9Se9J4f8ADtj4Z0i307RIEt7W3QKijnPuT1J7k9TWpX6vkuS08vpa6ze7/Q/Lc4zipj6naC2X+YUZorP1zXLHw7pc+o6xcJbWluu55G/kB3J4AHc17U5xhFylsjxoRlKSitWw1zXLHw7pdxqGsXEdvaWylnkY/kB6kngDuSK+QPit8Vr34kaoQu+20e2c/ZbXPJ6/O+DyxHHXgdO5K/FX4rXvxI1TC+ZbaPbsfstqW69t7+renpnA7k8HX5lxBxBLFS9jRdoL8f8AgH6RkGQLCpVqyvPou3/BLOl6pd6LqEF9pc8ltd2zBopUOCp/w7Y7ivrn4R/F21+Ilh9nvCltrlsgNxAOko6eYg9D3HYnHoT8eVb0vVLvRdQgvtLnktrq2cPHJG2CCP5j1HevNybOa2X1r7we6/U9LOMno46l2ktn/mff4PA9+lLXm3wh+L1p8QtPW2vTHb63bJ/pFv0Ey/8APRPbPbqPpgn0jPTjmv1jC4uliaSq03dM/K8ThqmHqOnUVmgIrkPiR8OdN+IeitaagvlXMQLW12qjfC3f6qeMjv8AXBHYUlXiMPTr03TqK6ZFGtOjNVKbs0fBvizwpqXg3Wp9M16ExXMXzKRysqnoynuD/wDW61j19ufEj4c6d8QtFa11ACK6hBa0ugvzQv7+qnuO/wBcEfHfirwnqPg3Wp9M1yFo54j8rgZWZezKe4P/ANbrX5VnmR1MBU54awez/Rn6fkmdwx1PknpNbr9UY9L/APrpK9h+CvwVfxbLHrPieJ49GjbMMDcG7I9f9j37/rXmYDBVsZWjTpL/AIB6mPxtLC0ZVKr0/M9V+AGu+Ita8JA+KIme2hISwu5WPmTp/teoGAA3fn6n1QdOlRQwJbxrHbqsccahUVVwFA6AD6YqXOOtfseDw8qFCNOUuZrqz8hxdeNatKpGPKn0QtFA9qK6zmCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooATj8ahvb6DT7WW4vZUgghQySSO2AqjqSe1F5eQWFvLcXkscEEKF5JJGChVHUknoPevlD4yfGafx1cPpuiPJDoULdOQbth/E3ouei/ieeB5Gb5tSy+jzS1k9l3PTyrKquPrcsNEt32D4zfGSbxxdPpmhs8GhQN7q10wPDN6LkZA/E88Dyukor8mxmMq4us6tZ3b/A/VcFg6WEoqlSVkvxCij8/wAq7f4XfC2++JGqbUDW2lwMPtV3t7f3F7FiPyHJ9DGFw1TEVVTgryZpicRTw9KU6jtFC/C34X33xG1bbGHt9Kt2AvLrHH+4uerkfgOp9D9gaB4fsfDOk2+m6LAkFpbrtVV7+pJ7knknqTRoPh2x8M6Tb6dosCW9rbrtRF7+pJ6knrnqa0xxX6rkuS08vpa6ze7/AEPy3OM4qY+p2gtl+ofrRRWdr2uWXh3SrjUNWuI7a0t1LPIzfkB6k9AO5Ne5OcYRcpbI8aMJSkox3Ya7rlj4d0u41HWZ0trO1XdJKx4HYYHck8AeuK+Qfip8VL34japtXfa6Pbt/otpnr6O+Dy2PyHA7knxV+K178R9U+UyW2kWzk2lrnr1G9/ViPyzx6ng6/MuIOIJYqXsaLtBde/8AwD9HyDIFhYqtW1n08v8AghRRRXyZ9XbsFFL+X50lMC1peqXei6hBfaTPJbXds++KVDyp/wA8H2r65+EXxctPiJp4trzZba3br/pFuDxKP+eie3qOx/An48q1peqXei6hBfaVPJbXds++KSNsEEfzHqO9ezk2c1cvrXWsHuv1PGzjJ6WOp66TWz/zP0AX7opa83+EPxetPiFp/wBmvClvrdsg+0QZwJB08xPb26jPpgn0fI/pX6xhcVSxNFVaTumfluJw1XD1HTqKzQd65H4j/DnTviHorWmoKIrmJWNrdqvzQsev1U8ZHf6gGuvpKuvQp16bp1FdMzo1qlGoqlN2aPmn4c/s5303iKeTx3EI9P0+basKtkXpHIOR/wAs/wBT0wK+kYYEtoUjgVI441CoqrgKB0AHp04qQALnjH9a8z+P3x98Nfs9+CJtf8XS+bcSbo9M0yJv32oThciNeu1f7zEYUepIB48uyvD4GLVJb9Trx+ZYjGzUqr26dA+P3x+8M/s9eCJte8XzCWeXMWm6XHIBPqE3HyID2GQWbBCg9yQD+bnw/wD+Chnj/QvjNdeK/GVxJq3h3WWWG+0BH2xWsCt8htgeFdATz/Hk7jzuHh/xp+NXiT48eNrrxL42uhJLLlLO1jJ8myhz8sUSknC46nqTyetcH64yDXpHAfv34B8f6F8TvCen+JPBWoQ6lpOpxeZDNHxjnDKynlWU5BUgEEHNdEDnmvxU/ZX/AGqNd/Zt8Wb4fO1HwnqUijVtI39QOBNCCQFlUfgwwpxwR+xPgH4gaF8TfClh4j8FahFqWk6lGJIZkPK+qOOqup4KnkHg0AdFRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAQ3VrFeQSQ3UaSwzKVkjdQyuD1BB6ivlT40fBebwTcyat4diebQ5m+ZQMmzY4wD3KHPB7dPTP1jUN1ax3kMkN0iSwzIUkjdQyspHIIPUV5Oa5TRx9Lkktej7HpZZmlbA1ueGq6rufn11+7yO1LXrPxp+C8vgm4k1fw+sk2hzPmRfvNZkn7p77CTgHt0Pqed+FvwtvviPqmxQ9tpds2Lq6x0P9xOxfH5ZyfQ/llTKcVTxX1XlfP07H6fTzXC1MK8Spe5/WgfC34XX3xH1XbGHt9KtmH2y62+v8C+rEd+g7+/1/4f8O2HhnSbfTtFgS3tYE2qqjr6knuT1J6k0vh/w/Y+GdJt9P0aBLe1t1wir39ST3J6k960lG0Y6/1r9MybJaWAp95vd/oj84zfOKuPqdoLZfqLSbuvtS1na9r1j4b0u41HWLiO3tLZN8kjN+QHqSeAO5Ne3OcYRcpaJHjQjKUuVK7Yuua5ZeHNLn1HWLhLa0tl3SSN27cAckngAetfIHxV+K198SNUwpkttIt2P2W13df9t/Vuv0BwO5J8Vfipe/EbVSF322j2zn7Lak9evzvg8sc468Dp3J4OvzLiDiCWKl7Gi7QXXv8A8A/SMgyBYVKtWV59F2/4IUUUtfJ+R9V6CV6h8Hfg7cePrxb/AFdZINCt5Pmbo10w6oncD1P1A55CfBz4PT+PrxNQ1hZINCgcbmHDXRHVFPoD1P4DnkfWdjp9vplnDaafDFBbQRiOKJEwqqOgA9K+x4e4eliGq+I+BbLufIZ/xAqF6GHfvvd9v+CeSfFr4E2fiLTEvPCFtBZ6nYxBVt4wEjuI1HC+gYAAA/gexHy7dW8tncSwXkckM0LFJEkUqysOoIPQ5r9A2Xgbuf615H8afgvF4ygfVvD6Rw63Evzr0W7UdmPZsdD36HsR63EPDka0fb4dWkt1/XU8rIOIJUZKjiHeL2f9dD5UPBIPBHB9qSpLi2lsriS3u43gmgbZJHINrIwOMEHoaj9zkAevavzqSadnufocWpK62LWl6pd6LqFvfaXcSWt1avvjlU8oR3+nY19hfB/4mf8ACxtBeW6t3g1CxKx3WF/duxHDIff06j8ifmj4Y/DG/wDiLqwjhD22m27f6Xd7eFH91fV/5da+wPDnhuw8K6Tb6dokCW9rbjCqByx7sT3J7mvuuEMLjIydW9qb6Pq/I+F4sxOElana9Rdui8zWFJntzRnHBrzH9oD4/eGf2e/A82v+LZhLcyhk0zTIm/f6hOBwiDnCjILPjCg9zgH78+HHfH74/eGf2evBE2v+Lp/NnlzHpumxOPOv5scIgPRe7N0UepwD+NXxo+NPiX47+NrrxN44uhLcS/Ja2sefIsogcrFEpPC989Scknml+NPxo8S/Hbxxd+JfHF0ZZ5WKWlqhxDYwZJWGIdlGeT1JySc81wdAB+f55ooooAO3PSv0/wD+CbfwN8c/D3w7qHijxdqF5pWh+I4Vex8NyLjzD8uLtwR+7JUbVAwWXGeAorhP2Gf2Gjetp/xG+M+nlYBtn0LQ7mP/AFh/huJ1PYcFUPXqeOD+i4TaoCgDHT2+lACiloooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigCG6tY7yGSG6jSWGVSro6gqynqCDVPQ/D9h4b02LT9FtobS0gXCRxrwPc9yfXPJ9a0qKlwi5c1tRqckuVbAKKKz9c1yy8O6XPqGsTpbWlsu6SRu309SeAB3NE6kYRcpbDjFykox3DXNcsvDulz6hrE6W1rbLud34/ADuT0A7mvkD4rfFW9+JGqYUvbaPbsTa2p79t7+rEdPTOB3JT4p/FW9+JGp/KXttHt2/0a13df9t/Vuv0HA7k8JX5lxBxBLFSdGi7Q6vv/AMA/R8hyBYVKtWV59PL/AIIUUUV8mfVW7bB0r1D4O/Bu48eXiX+sJJb6HA/zNyrXTD+BD6erfUDnkJ8Hfg7P48vF1DWFkt9Cgf52HDXRHVFPYDu34DnkfWdjYW+m2cNrp8MVvbwIEjijXCqoHAA9K+x4e4eeIar117i2Xf8A4B8hn/ECoXoUPj6vt/wRLHT7fTrOK1sIY4LeGMJHGi7VVR0AHYVZHajH6UtfpMYqKstEfnjd3d7hTWXNO/nRTEeQ/Gj4Lw+MYG1bw8kcOuQJ8yZAW7X0J7N6N+B7EeF/Dn4T6p46157OWOWxtLGTbfTyxkGIjjaAf4+CMdu9faG36HFNjt44txjRVLnL4UDcemT6nAA/CvnMbw1hcTio1np3Xc97B8Q4rDYaVBa9n2M3w34bsPCuk2+naHbx29rbrhV7se5Y9ye5rVz7dKK8y+P3x/8ADP7PXgqXXvF8yy3MuYtM0uN1E+oTf3EB/hGRubkKD3JAP0EKcacVGKskeHKcpycm7th8f/j94a/Z78Dza/4um82ebdFpumxOBNfz44RfRRxuboox3IB/Gv40fGjxL8ePG934l8c3XmzTHZa2cRIgs4e0USknC+p6seSc80fGf40eJPjt44uvE3ji6824k+S1tYyRDZQgnbFEOwGTzySSSSc1wfpVki0UUlAC4/Wv0E/YZ/YZ+3HT/iN8aNP/ANG+WfQ9CuU/1vQrcXCEfd6FUPX7x44J+wz+wybw2HxE+NWnlYBtn0PQrqP/AFndbi4U/wAPQqh69Txwf0XCADC4H07fSgAC4HyjHFKOBilooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAEIr5x/ae0/wASSXVtdTMZfDUYAjSJTiKUjBMuPU8A9unBPP0fVbUdOt9Vs5bXUIY7i3nUrJFIu5XBGCCK87NMD9cw0qSlytndluN+p4mNXlukfn9y3PP+e1JXpvxi+Dtx8P7xr3Sw9xoM7YjkPLWzHojnuOwP0HWvMq/H8Xg6uFrOlUVmj9bwmLpYqiqtN3TCvUPg78HLjx5eJqGrpJb6HA/zN91rph/Ah9OuSPcDnkJ8Hfg7P49vFv8AWlkg0GB/mPRrojqiHqB6t+A55H1nY2NvptpDa2EMdvbwoEjijUBVUdAB6V9Pw9w88Q1Xr/Atl3/4B8zn+fqhehQfv9X2/wCCJY2NvptnFa6fFFb20EYSKNFwEUcAADtVkdq+Sf2mP2/tB+CPjjT/AAx4WsYvFF/a3S/8JF5c21LSH+KGNhwbjkHB4XGDy3H0f8N/iT4f+LHg+w8TeB9Qj1DStQTcki8NGw+9G69VdTwQf5EV+kRikuVaI/PW7u73OoopB0paoQUUUUAFJnnFG7615n8fvj94a/Z58Ey6/wCLpvNnlzHpumQuBPfzY4RM9AONzdFHvgEAT4//AB+8Nfs9+B5tf8WTCW5lVk0vTI2/fahOBkIv91R1Zzwo9SQD+Nfxo+NXiX47+N7rxL42uzNLLlLS0jdvIsoM8RRKTwB3PUnJJyTSfGj40eJfjx42uvEvjq6Es83yW1rFkQWUP8MUSk8KOuepOSTk1wpJbk9TQAfrRRRQAV+gn7DP7DX23+z/AIjfGiwP2cFZ9C0K5j/1ndbi4U/w91jI5zluOCv7DP7DP2z7B8RfjTp/+j/LPoehXUePM6FbidT/AA9CqHr1PHFfosF2jC8f/qoAFQKoCgDHYDGPpThRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQBW1DT7fVLOa11CGOe3nQpLG6gh1PUEGvB0/ZhjXxr5jXX/ABTIIlEW4+dnP+qz6f7Wc49+a+gaTFcGNyzDYxxdWN+X+vuO7B5jicJzeyla/wDX3lax0+302zitdPhjt7eBAkcUa4VVHAAA7V8W/twftwR/DeK88BfCO9STxW4MOq6rC24aQOhjQjrOc4z/AMs/dvu+j/t4fFjx18J/g+918L9MuD/aEhttR1yH5m0eIgYkCjkM3KiToh92XH49TzS3Ezy3LvJNI5aR5CdzMT8xJPfPP1rtjFRjZKyOFu8uZ6sSaaS4leW4d5ZZWLu7MSzMTkkn1zznrXs37MP7TviD9m3xh9s01nv/AA5qDousaQz4SZenmJk4WVRnB79DkGvF/rR79+1UB++vw2+JXh74s+D9P8TeBr+PUNK1GPKOvDRMB80ci9Vdc4Kn/wCvXUV+JX7MP7T3iD9m3xiLzTS+oeHL9lXWNId8LOg4EiE8LKuTg9+h4NfsZ8NfiV4f+LXg6x8TeB7+PUNKv03K4IDRMPvRyL/A6ngqen0wSAdTSZo3fj9K8y/aA+Pvhr9nnwPNr/i6bzLibdHpmmxMPOv5wMhFHZe7MeFHqSAQA/aA+P3hr9nvwTNrvi6XzrmXdHpemRuBNqEwx8iA5woyCz4woPckA/jX8aPjR4l+O3ji78TeOLoyTysUtLWM4hsYMkrFGOyjPXqTySTzR8afjR4l+O/ji78S+OrvzppTstbRCfIsoc8RRKScLj8ScknJNcJQAUUUenv+tABX6C/sM/sNG6Nh8RfjRp5EA2z6HoVxH/rD1W4uFPboVQ9ep44J+wz+wz9s+wfEb40WH7j5Z9C0G5TmTutxcIR93+6h69W4wD+iyptUY4wPpigACgDC4AHT2+lOoFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAVdS0211jT7qx1a2t72yvIWhuLa4jEkcqMMMrKeGUg4INflN+2v+xVc/BO/n8X/DqCa68CXcpM8I+Z9GdiAEY9WhJOFbt91jnBb9Y6rahptrq1jcWWp28N3aXcbRXEE0YdJUYYZWUjDAgkYPFAH89eO2OR7UV9dftrfsUXXwVv7jxd8ObeW78C3cmZoVy8mjSMeFb/AKYk4CuTwflbsW+RaAD+n+TXtH7MP7T3iH9m3xd9r01pdQ8OX7KNY0dpMJOuR+8TPCSgdG/A5zXi9Hp/n/IoA/ajxx+2P8OvCPwYtviJa6rHq1lqyMulabA4S5vLgD5odjcoUJ+ckYX3yob8kvjR8Z/Evx28cXXibxzdCW4l/d2ttHkQ2UIPyxRL2Uc5zySSSck1wu9ioUsdoOdvbJ6n60lABRRRQAf5/wA/pX6DfsM/sM/azY/EX406eRD8s+h6DdR48zutxcKe3Qoh64yeOCn7DP7DX2z7B8RfjRp7eQNs+haDdR/6zutxcKf4e6xkc9T2FfottA+7gAdMdqADbxx/ninUCigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAr6hp9rq1jcWeqW8N1aXUbRTwzRh0ljYYZWU8EEE8Hivyk/bU/YnufgrqFx4u+G9vNeeBbqQGe3UF30Zz0Rj95oiT8rnpwp7Fv1jqtqWm2usWFxY6rbw3lleRtFcW88YeOWNhhlZTwQQSCDxzQB/PX29uKK+uv21v2Kbr4K31x4w+HUEt14GvJs3EIO59GkduEY9TCSQFY9OA3Yt8idvSgBaKKT9B6+lAC+3c1+gv7DH7DX2w2HxF+NGn4g+WfQtCuo8eZ0K3FwpH3ehRD6ZPYUv7DP7DP2o6f8AEX406eRCCs+h6DdR/fPVbi4U9uhRD9SOgr9Fdv4f0oANuOnH9KcKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAK+oafbatY3FnqUEN1aXUbRTwTRh0lRhhlZTwQQSMGvyk/bW/YnufgpfT+L/hvbz3fga7k/fW67pJNHdv4WJyTCeiuTwcKexb9Y6q6lpttrFjcWWqW8F3Z3cTQ3FvPGHSWNgQysp4IIPQ+tAH89f3QT2FfoP8AsM/sM/am0/4jfGjT8QjbPoWh3Mf+s7rcXCn+HuiHr948YFexeB/+CdPgTwh8bLvxhNI2o+HoGW40fw7OhaO0uCTu3uTmSNTgop9cNu2gn602/n6igBAu1QFAGP04pw96KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAoopM0ALRRmjNABRRRQAUUmaA3Xg8UALRRRQAUUUUAFFFFABRRRQAUUUmfrQK4tFFFAwooozQAUUUUIAooooAKKKQkDrxQAtFFFABRRRQAUUUUAFFFFABRRRQAUUmaWgAoozRQAUUUUAFFFFABRRRQAUUZpM/U0ALRSbsetG4UkwFooopgFFFFAHOeOvHFj8P9GOp6xHcyweasQW3UMxZs9iQOx7159/w1J4W3f8eOt4/wCuMY/9qVsfHfRW8SaFouko5jOo63bw7wMlQVfLY9hk/lXV+HPAmh+F9PitdH021iSNcMxjBdz6sx5Jrxa7zCpipRoyUYJLdddT1aH1Gnh1KrFym2+ttDz3/hqTwqP+XHXf+/Ef/wAcpP8AhqTwsf8Alx13jHH2ePj6/PVz9oiwtrf4Z3rwwQxsLiAbkjAI+cZrz/8AZXtYbrVteFxFHKBbw43KDjLHpmvHrY7MqeYQwjnG8utvU9ijgcuqZfPF8kvddrX9Dtf+GpPC3/Pjrv8A4Dx//HK6bwH8YtG+Imo3NnotvqEUtrD5zfaY0UFcgcEMc8murvPDul6hbtBeadZTwuMMkkCsCPQgivMPBvgS28A/GW+i0dSmn6no7zxRnny2EqB1z3GcH8a9R/2lRrQ9pNSg3rZWaPL/AOE6pSn7ODjNK6u7o3PEXxmtfC6vJrXh3xTb28chQ3Bsl8onOAQ2/GD2rBX9qLwwxAjsNeLMQBi3j5J6D7/XmvRPHdnHeeDdciuFDI+nzjBGf4Dzz+FfJPwVtY7v4peH0mRWH2h36d1jZh+oFefm2YY7CYulSjNWm+y0/q56GU4DBYrC1ak4O8NdHvoz6u8MeN28TXHl/wBg6/pieUZBNqFqsSNyBgfMTnnPTsa19b1ZtG02W7SyvdQMZA+z2aB5WyccAkA9fWr4XGKBX1EYVFC0pXfex81KcOe8Y2XY8o1X9ovRNCujbazo3iWxuAM+VcWaI2PXBfnv+VO0n9ojRdeuvs2i6L4mv59u4x29mjkL6kB+B0/OuY/avsozpugXe1fOSeWLd3KsoOM/Vc1N+ynZoNB1y5A/eSXqxk+oVAf/AGY18t/aGYf2t9Sc1be9vK59NLAYH+yvrnI+ba19N7HqFz40lt9BttSXw94gla4kKGyjtka4ixn5mXfjHHYnqK4q+/aV8P6TdyWmqaT4jtLmE4eGe0SNl/AvnpXrW3jtXzL+1Raxx+J9HmVQHms2VyONwV+M/wDfRruzvEYzB4V16U72to0jhyXDYXF4pUKsLJ31TO6H7Unhc/dsNeP0t4//AIv3pf8AhqLwv/z4a9/4Dx//ABdXf2c4ll+GNkZAGP2ifr/vV6f9mi6bE/KqwX9oYihGr7VLmV9icX9Qw9eVL2TfK7fF/wAA8gP7Unhbr9h13Hf9xHx/4/XqHhjxBb+K9Bs9W01ZUtr1N6LMoDqMkYIBIzketZ/jDwPpfjDRbmx1G0hYyRkRTeWC0TnoynqMH8+h4NY/wPt7ix+G2mWd8hjuLKS4gkQjoVncflgCt8NLHU8V7OtJSi1dWVuxjiFg6mH9pRi4yTs7u+mp3neqmqagdMsZrlba5uzCu7ybdQ0j+ygkAn8at9aTb+Ves07aaHlq3XU8s1r9oPSPDsyw67oXiewkcEotxZpHvA64y/P4VQH7UXhY522Oudv+WEffp/y0+v5U39qO3WTwHZSsBvj1NMH2KPkf59K5v9k+NZG8S7wG2i2Iz/20r5Kvj8wjmccGqis1e9vU+qo4HAyyyWMcHdO1ub0On/4ag8L7ebDXuf8Ap3j/APjlN/4ak8Kjj7DrvHX/AEePj/x+vX/s8f8AzzQ/gK5zxl8PtG8aaXNZ6paQb3XEVwsY8yFuzKeoINepWo5pGDcKybX908uhWy1ySnSaT/vf8At+C/F9n450GDV9JS4jtp2dVWdQHBVipzgkdR61u1518B9NuNF8DHTr9GSew1G5hfcpGcSHkZ6ivRa9HBVKlTDxlU+JpXOHFwhTryjT+FN2Cub8f+NLfwD4buNXvI/O8oqkcO/aZWY4Cg/mfwro6+ZP2nPFb6rr0GhWYL2+jxC4uyuSBI+Au7HTAK4P/TTFcmdY/wCp4SVSPxbL1OvJ8D9cxcaT+Hd+h9F6DrVt4h0Wy1PT2LW99AsseeoDDOD7jofpWjXhn7MPjA6hod3oF5KDNpshlt1bqYXPI99rkn/gYr3L0xW2W4xYvCwrLd/n1McwwksLip0XstvToLXMeKfHDeF7jy20LX9Tj8rzGm0+1WZF5Pyn5gc8Z6dCK6Y57U1lyDkc111lOUXyOzOWk4ppyV0ePt+1H4WTIksddVl4I+zx8f8AkSnx/tOeGpziHTfEEhIzhbaM8f8AfdeDfGKyj0/4m+IYbdVRTdb8Dpl1DH9WNfYXhm3iTw7poijRB9ljPCgfwj0r5PLcfmWLxFWk6iXI7fDufUZlgcvwuHpVVBvnV/i2/A89tP2mPCM0wjuo9Wsuxaa1yB+CFj+ldz4b8eaB4uUnw7qlpelRlo0f51HqVOCB+FXNa8M6X4itXttcsLW8hkGCJYwcfQ9Qfcc18q/F74fy/CnxRa3fh25uILO9zJZyLIQ8DqRuTdnPAIOc8g45xk9eOxuPy+Ptatpw69GjjwWDwOPl7KneE+mt0z6+yK5nxR42bwxcCM6Fr+qIYvMM2n2qyqvJG0/MDnjPToRWL8FvH8nj7wilxqBzqVlIYLzaMB2AyGA9wR+Oa70ple1ezSrfWsPGrRlbmWh5NSi8PiHTqxvbc8fb9qLwvGzLJp+uqVOCDbxgg+n+s4NH/DUXhY/8uOun6QR//HK8Q+NlrHa/FPxBHCqqrTo2AO7Rqx/UmvrLwTY26+E9HKwQhnsIS2FHOUGa+ay7H5ji8TVoqolyO3wn0WYYLL8Lh6VX2bfOr/F/wDi9N/aQ8HahJsuJr3Ts9GurY4/NC3r1r0XR9csNfs1u9FvLe9tn6SQuHH046GuL+KXwl0vxvotw9rbQW+swxlrW6jQKSwHCvjqp6e2SRXzJ8N/Hl98PfEkFzDJKLRpAl7bZ+WRMgHjgbgMkHjn8c7V83xeX4mNLFpSjLaS0MsPlOFx+HnUwrcZx+y9T7drB8UeKn8M+QV0bWdWE27P9m26ymPGPvAsDznjGehrbglSeGOSJg6SKGVh0IPenlc/jX081KcfddmfNwtGXvK6PIbj9pzw1aXEkF1puvwzRMUkjkto1KMDgggvwa09D+O2n+JlZtB8O+Kr5I22vJDZIyqfQtvxn2rxT9pK0S3+JcjxqoNzZRO3uclc/kor374J2Mdn8MdBEKgCW3MrY7lmLEn8TXyuAx+Or5hUw0ppRjfW3mfT4/AYGjgKeJjBtztpfbQ7aOTzI1bay5GcN1H1pWYL14FLnaOetfN/xz+Mlxd38/hrwjM8cKHyr65hYhpXPBiUjooPBx1PHTO73MxzCngaPtKnyXdnh5fl9TG1uSn9/RHp3i345eGPCd01q1xLqV8r7GtrFfMZWzjBOQoOeMZzntWcnxd8Q3IEln8PtfeBhkNM3lsR9CtSfB74P2ngfSoL7U4I5deuEDSyPhvs4I/1a9uO57nPavTwoFYYaGOxEVUqT5L9Ev1OivLA0ZclOHPbq3+SR5pZ/HTSre+jsvF2m6v4ZuJBlG1G2Kxt9GH88AVtSfEzSZPGGj6Bpc8F/Pq0UsvnW8wdYVVNy5xnO7DY+ma6HXPD9h4k0+Wx1u1hvLWYYaORc/iD1B9CMH3r500vwC/wv+O2gQxkyabezSNZSMRkho2Uq2APmBYDPoQe5AwxmIx+FlTV1KDkk3s1r2N8JQwWKjO14yUW0t07I+m16ClpF+7S176PDCiiimBFLbpMymRVYo25cgHB9R+HFSDilopW1v3F5M8u/aO/5Jfe/9fMH/oYrz79k/wD5C+v/APXvD/6E1eg/tHf8kvvf+vmD/wBDFeffsn/8hfX/APr3h/8AQmr4vG/8lFR9P8z7HB/8iCt6/wCR9I9h9KjNvG04mKKZFBAbHIB6jPpwPyqXsPpRX2lr7nx/oY3jD/kU9Y/68Jv/AEA18k/Avj4raB7SS/8Aop6+t/GH/Iq6x/14zf8AoBr41+Gd1qlj440qfwzZx3+pxs5t7eVwiyHy2zliQBgZPWvieJZcuOwzfRr80fY8Nx5sFiYrez/Jn3CvSlryD/hLfix/0JWlf+B0f/x2j/hLfix/0JWlf+B0f/x2vpP7Wo/yy/8AAT53+zqn88f/AAJGR+1d/wAi/onT/j8fv/sVY/ZV/wCRT1f/ALCP/tNK4L44a14y1LSdOXx1odppFulwxge3uVkLvt6EK7V3v7Kq/wDFJ6v7al/7TSvmMPWVbiHmimtOvofS1qUqXD9m09enqe3Cvmn9qz/kP6F/16yf+hLX0tXzV+1Z/wAh/Q/+vWT/ANCWvY4p/wCRbL5fmeTw1/yMYfP8j0P9nD/kl9l/18z/APoVeo8Cvnj4MzeP18D2w8GweGZNNE0u03xm83O75s7TjrmuzuLr4vLGRHa+DM4/5ZmbP4bmxSyvMFTwNJezk7JdPIMzwLnjar9pFXb6nbap4oXT/FWjaKIVkfV455PM348oRKD93HOd2Oo6Gt1RtxjFfOHgKTxVL8dLL/hYgmGoLZzeWGC7Fi2nGzb8uM56c+tfR/QfSu/LMZLFKc3GyTtrv0OHMMIsNKEb3bjfTbdjqKKK9Q888g/ag/5J7bf9hKP/ANAeuX/ZN+/4m9xbf+1a6f8Aag/5J7bf9hKP/wBAevKPgbN4xibWP+Few6XMT5P2r7cen39uOR718Lj63seIISs3p016M+zwVH2mQVI3Su93ot0fWu4L+dYsPiVJvF9xoUceXt7GO6eXf03Oy7dvY/Ln8a8zvr74zNbv5FloAbHWArv/AA3vjP1rI+AUmszfEHxUfGBuP7X+zxC585cMDu46cYxjGOMV7zzZzr06UaclzPqrdzxFlfLRqVZVIvlXR36o99UbfugDP86dSL+NLXuI8czfEmtW/h3Qr/U74gQWVu8r89cDOB7np+NeKfCvwGfHHhPxPrniIN9q8WvIsTkf6tAxIZc848wDj/YFav7Qmrz6tJongvSObrXLpHmxztjDfLkehYE+2yvWNC0mDQ9Hs9Os1KwWUCRR7upCjGT7mvBqQWNxzi9YU1b5v/JHs05yweDUlpKbv8l/m/yPjf4d+ILj4b/EK2l1D/RktbhrXUEb+FCdr5+hwf8AgIr7WRg6hgQQa+Vf2kvCP9h+Mk1e1RlttaXc/okq4DY+o2n3ya9o+BPjD/hK/h/Z/aHVrzTP9EuAOvygbSfqu3n1zXlcP1JYTGVcBPZO6PVz+CxWFo46O70f9feeiUjdKWkbpX2XRnyJ8X/HD/kq3iD2mj/9FJX194a/5F3TOf8Al0i/9AFfIPxy/wCSqeID6TR/+ikx9K9r0HxB8VV0ezWDw5oTwLCgiZrnaWXaME/vD2xXwuS4mNDMMVeLevRX6s+2znDyrZfhbNLTq7dEey+1fOX7VXiC1uLrR9JhkV7i2WSecD/lmGwFGex4Y/lWj4w8YfF2OxdF8OwWEZ63FgguZAPb52x9dteNeG20XVPEjz/ErUNWjDzZmKRl2kOeQ7k7lHbhSeeMVrn2be3p/VacXHmtrLQxyPK/Y1PrU5J8t9I6s9y/ZZ0m5tfC+qXs6MkN9eBYc/xBBgke2SR+Br2/0rJ8MSaS2hWY8LtbnTFjVbb7PjYFHAAx9MVremOgr6bK8NHDYSFNO9lufOZjiZYjFTqNWu9j4z+O3/JWNf7fvIT/AOQUr6z8G/8AIo6L7afB/wCixXyZ8duPixr/AGzJD/6JSvXIvjRrHhvwhZTSeCtWa3tLSJGuppNkRAUANuCnAJx+dfIZPi6WFzDFOo+vr1Pqs3wlXEYDCqmr6d0uiPZdT1C30vT7i8vpEigt42kkdjgAKMk/kK+DhDLresGLT4jJPfXW2GNe7O2AP1Femah4+8VfHTVI9As57DS7aYFltfPMazbefmY5ZyODtAx3xxmvXfhX8C7DwHLHqWpTDUdZVcJIFxHb5GDsB6nBxuPbpjJzpjefPa9NUF+7i9W/kTgnHI6NR1n+8ktEvwPSNHszpuk2doTu+zQJHn12qB/SrnegdBR3FfcwjyxUV0PjJS5m2z5P/aa/5KRF/wBg6L/0N69/+D3/ACTHw5/14pXgH7TX/JSIv+wdF/6G9e//AAe/5Jj4c/68Ur47J/8Akc4n+up9Zm3/ACJ8N/XQX4seKW8H+BdVv4X2XJi8q2I6iRztVh9M5/4DXy98F9ETxJ8TNJjvFMsUMjXUgPOSilhn1+bb9a9t/ajmMfgOyVf+WmqRhvp5ch/mK85/ZdiD/EC8dsHZpTlfqZIx/jWGcSeIzujQl8KszfKVGhktatH4ndf5H1So2qB6UtFFfdHxQVznizwiniS60W5V0huNH1GO7R2XJKr95PbI/kK6OioqU41FyyWhUJyg7xEXgYpaKKtEhRRRQAUUUmaAPL/2jv8Akl97/wBfMH/oYrz79k//AJDGv/8AXvD/AOhNXf8A7R8ir8MbwMQCbqDGeM/PXnv7Kcqx63ryMwDG2iwPUBzn+n518TjX/wAZFR9P8z7DB/8AIgrev+R9K+lFJupa+2PjzH8Yf8iprH/XjN/6Aa+SfgX/AMlW0A9vMl/9EvX1p4ycL4T1ktkAWE56f7Br5J+BjBfip4fLHgzSDPqfKeviuJP+RhhWu6/NH1/D1vqOK9P0Z9ngYpf89KTcKM19pZHyB4X+1Z8vh/RD63j/APoFTfsq8eE9X/7CP/tNKrftXSD+w9CTOGN27Y9gnP8AOrH7Ksg/4RbWE/iGoBsexRf8DXxi/wCSj07fofXu/wDq7r3/APbj3Cvmn9qz/kP6H/16yf8AoS19K7hjvXzT+1YwPiDQx3FrIfzYY/ka9Hin/kWz+R5/DP8AyMYfM9F/Zx/5JfZj1uZ//Q69Rx7cV5b+ziw/4VfZjI4uZ8+3zV6l716GTf7jS9F+RwZt/v1b1f5nO6t4V/tDxhoetxuiHSo7iORSOZBIoA59iM/jXRcCkZwn3jivMvD/AIyl+IHxPuotFupBoXhq3KyNCxCXdxIcDOOqqFbHuM9MVrUqUsPNRS96bMYU6teLk/hgv+G+9np/60UinIHvzS13HKjyD9qD/kntt/2Eo/8A0B65b9k77/ib2Fr/AO1c10/7UDf8W/tBzltTjx/3w9cv+ya6+b4mGeStsf8A0bXxeI/5KOn6foz6/Dr/AIx6p6/qj6H21hW/hlYfGF1r0ToDd6fHaPF5fJKOzbie/DAfhW9u4zQK+xnTjK1+h8lGco3t1Bc4+bGaZNKkMbySMFVFJLHoAM55p5NeXftCeMV8N+B5bK3bF7rRNtGoOCIyP3jfkdv/AAIVhjMTHD0ZVJdF/wAMbYXDyxFaNJdf6Z5z4ftvFfxJ8f6x4z8FyaXAtrOba1k1DdgJtwNoCnnb1/3z61339mfGH/oKeE/++X/+N12Hwz8Kr4O8FaXpuB5yRCS4bH3pW+Zv1OB7AV1GPlHtXlYHKn7FTqVJKUtXZ2V2enjczTquMIRcY6K6u7I+f/iL4G+Jfibw3OviW58O3ltYZuVjtd4lJVTnb8nJwTxn0rjv2cfGH9geNv7OuJFW11tPK+bjEy5ZPzG5cepFfWDAFcNgfWviz4neH5PAPxHvYrBjGsdwt3ZMBjYrHeoH0bK5/wBmvDzrCf2fXpYynJvWzu7ns5Lio5hQq4OpFK6urK39a2PtUcAD0oboawfBHimHxh4X07VrfA+1xAuq8hHHDL+DAj8K3j0PBr7alUjUpqpHZo+NqU5U5uEt0z4v+OH/ACVXX/8ArtH/AOikr6+8M/8AIu6Z/wBekX/oAr4/+Nzh/il4gZTkCZB+IjUH+VfYHhr/AJF3Te/+iRD/AMdFfI8O2/tDFvz/AFZ9bxCv9gwvp+iNFl9cV4P+0t4As20VfEunQJDdW0qR3rJwJY2+UFh0LBioB9CfQV7wSBXin7THjS0s/C48PW8scl9qMiNNGDkxQo24MfTLquPXmvY4gjR+oVPa2209eh4+QussfTVK++vp1OI/Zl8XXVj4sk0KSRmsdSheRY2OdkqDO4emVDA+pwa+o+mK+Wv2ZfC9xfeLptcMZFnpkLxiQ/xSvgAD1+Xdn6ivqQN0HpXJwr7X+z0qnd29Dq4n9l/aEuTsr+v/AAx8afHYf8XY8QD1kh/9EJX1Z4as4tQ8E6Zb3kaTQXGlxRyRuMh1aMAgjvwa+Uvjowb4ra+QePMi/wDRKV9ZeCXDeD9DZTw2nwH8DGuK4OH4xlmGLXRt/mzuz66wOEfl+iPlD4k+Cb74S+M45dLlmjtXk8/TboZyuDnaT3ZT+YPua+mPhb8RLb4heGY71Skd9BiO+gH/ACzkA6j/AGSOQf14NW/iF4HtPH3hq4029ASRhvtptuTBKB8rD+R9QTXyt4R8Sar8G/HUiX0Ui+RJ5F/a54ljznKj1AIZT0596hqWR466/gz/AAf9fgXHlzrBWf8AGh+KPtEUdxVDRdaste0u2v8ASbhLm1uYw8ciHIIP9c8fWr26vtoTjOPNHY+OcXF8stz5Q/aa/wCSkRf9g6L/ANDevf8A4Pf8kx8O/wDXitfP37TDhviQuP4NPhB/77f/ABr3/wCDsgb4Y+HipyBZqPxBIr43J/8AkcYj5/mfW5v/AMifDfL8mc/+0hpEmqfDaaW3Us2n3UVwQOu3lCfwD5rxf9nLVk034mW8bkBdQtprfJ9cCQf+i/1r6w1TToNY0+5sr5BJbXUTRSof4lYYI9uM18YeLvCuqfCnxoiDeptZ1n0+5/hlVWypz6jgMP6EGs+IqVTDY6ljoq8VZP5F5BVhiMHVwUnaT1R9sjgY9KWuU+HfxA0/x/4egvtPdFuFULdW27LQPjke49D3/Ouq3CvsqFenWpqpTd0z5KtSnSqOE1ZoWkLBep60jN0I5FcHrnii48SeJYvD3g+Zh9jlSTWL+I5FqgOfJB/56NjHsM/gq1eNJa7/AJjpUpVH5fkd9RSL90UtbmQUUUUAIarag1yllO2mxwyXSxkwpM5VGfHAYgEgZ9jVqj9alxvowXc8U+JPgX4g/Eizt7O6Xw3Y2UEvm7IrqVi7gEDcTHyACePf2rB8A/Bnx78Pdc/tLSZfD0rvE0UkU1xLsdDg44QYOQDmvojHHy0c+teLPIcNOusRKUuddbnsQzvEQw7oRiuR9LGV4dl1iWzc+JrawtblZDtWzuGlQpgYJLKpBznt0xzWqc4x1paK9mMXGNrnkyleV7WPMvHGl/EHxNpd5pmmw+HbC1vA0TTG7lkkaI8Ecx4BI479Tjsa8u0P9nnxx4c1a01PTLzQku7KQSRsbiQgkdiPL5B5H419Pf56Um3k15GJyPD4msqtSUuZba7Hq4bOsRh6TpU0uV76bnNeGZvFjT7PFdnokEKx8S2N1I7M+RgbWQADGe/pWvrUuox6fI3h+G0uL4EeXHdTNEhGecsFY9M9utX6K9SFJxhy8zfm9zzZVOafNypfkeCfEj4XeP8A4lX1tLqTeHLWCzDeRbw3EuFLY3MxMfJIAHpgfjT/AIbfDP4gfDOa6/s0+HLu2vNvnQzXMoyVyAQwTg4OO9e8UleV/YOH+sfWOaXP3uen/beI+r/V+Vcna3zObuLjxV/Yls9rYaMdWaQieF76QRKvOCriPJP3cjaO9eO+Pvg54/8AiJrY1HWJ/D0ZjjEUMMM8m2NAScZKZPJzmvob2o6f/qroxuVUsXDkqybj2uYYPMqmEqe0pRV/Q8F8H/Dj4peB7E2Whan4fFoZDJ5U0jOFY4zg+XkV0H9m/GEf8xDwqf8AgL//ABFet0mKypZLSpwUI1JpL+8a1M3qVJuc6cG3/dPCfEXgP4t+KLWS11HXdHjtphh4reVogw9CRHuIPcZwf0rt/g38O7j4deF5bPU2tpL+6uGlmaAkqBgKqhiATwPTua7/AB7UfyrTD5RRpV/bXbl3buZ180rVaPsbKMd7JWCquptdpYztpMdvNdhT5cc8hRCe2WAJA/A1apa9Jq67HmrR33PEPiV4C+IPxKgtrW8HhqysreTzRDDcyMWfGMljH2yeMd+c1lfD/wCEPj/4c6w99pM3h6dbiPy5oJriXbIoOR/BkEHp9a+hP5UV488iw88QsQ5S511uexHO8RHDvDqK5H0sZfh+TVprEnxJb2NtdB8KlpO0yFcDByyqc5z29K1KPyor2IR5Va55MpXd7GfrUmox6fK2gw2s96MeUl1KY4zyM5IBPTPb0rwTxh8GfiH441sanrF9oSyIAsEcU8gSBQc4UeX+eevtX0X+tJtrgx+WUsbFRqt28mduBzGpg5OVNK/dq5yfhFvGCukPjK30Py0iw1xY3Ehd3GMfIyADjPOfwrrPyo459aM47110qSpw5U2/XU46s/aSva3oUNafUI9NlbQIbSe+GPLjupmjQ8jOWAJHGe3WvBPHnwV8eePtffVdVl8PRyGMRxxxXEuEQZwMlCTySa+i6Tb27/SuTH5ZSxseWq3bsnY7MDmNXBy5qSV+7Vzwv4c/Dv4jfDhpYtPn8P3WnzNuktZ7mXG7j5lITIOAPUe1ela1ceMVigj8P2OgOzW6+c91dyARy/xBVVOV6YOQevArqvpRt6dMUsPllPD0XShOVvX8h4jMZ4ir7WpCN/Tf1Pl/WP2dfG+uapd6jqF3ob3V7M0spFxJjcxycfu+K7TTPCvxi0uGGGHXdCkihUKqS/MAAMDnys/rXtgpa46XD2GozlOEpJvfU66uf4irGMJxi0tro8W1Hwz8Y9TjaJtf0G1Rhg+QSh59G8skfhWVov7Lr3F0Lvxrrkl5K77po7YH94feR8k/ln3r336daF5XOcg81pLIsLOXNVvL1dzJZ1iYRapWj6KxnaH4fsfDemw2Gi28VraQLhI0H5kk8k+561meJpfFMdwqeE7PRZoTHky3t1IjK+TxtVDkYxzkd+K6SjHzfWvUlRi4ckfdXkeaqsufnl73qfMWu/s8+OPEesXep6pdaC1zeymSTbPIF57AeXwAMCvUPBGl/ELwxpVhpWox+G7+2sVWJJheSpIIhxgjZgkDAHTpXptBWvLw2RYfD1XUpykm99dz1MTnVfEU1Tqxi0ttNhu09u9eV/Gf4Mn4grb3uhNb2+r2/wC7ZpmKpNF6MQCcjt9T+Hq360c134zB0sVRdKqrpnn4XFVcNVVSm9UeBeBfhj8TfADkaNqOhyWbtuezuLiR4mPqAEBU+4xnjNelyXfjr7DH5emeHDeFmEm7UJvLA+XaR+7yTnfkey8nJx2WDijFc2Hyunh6fs6c5W9TpxOZTxE+epCLfofNni74FePPGmvXOravcaAtxcEfJHcSBUUDCqMoTgAV2/w+8M/EPwHoseleV4b1CygZjD5l5KjxhiSRkRnIySenevXMUY/GsKORYejWdaEpcz63Nq2dYitRVGcY8q2Vhse7y18xVDEDcAcgH2NYnjDwVpXjjS3sfEFsJozzG44eJv7yt2P+TkcVu80tetUpRqQcJq6fc8qnUlTkpwdmj5uu/wBn/wAXeDtW+3fDzV0lC/dJlMEv+6R9xh9Tg+groNN1/wCNNmogutA0u+Zf+W0zxAn3+SUD9K9wxRivIpZFSoyboTlBPonoetVzqrWS9tCM2urWv4Hk8Phz4k+MGKeLNZsvDunOuJINIXMzg9RvOdv1DH6V6D4a8K6d4S0tLDQ7dYIFyWPVnY9XZjyzH1Na+00vNehh8FCjLnu5S7t3OGvi51VypKMeyVhBnHPWloorsOUKKKKACiiigAooooAKKKKACiiigAooooAKP60UUAeH/tFftNf8M26bZ6t4p8JX+paJqF4LO3vbC+iyJihcK8bgFchHwRkfIemQK7r4X+O9V+I3hvTte1HwzP4dsNWs47u0jurxJZykgDLvRBhcqQfvZGcEA5x81/8ABVIf8Y9+Hv8Asc7X/wBI7yvqX4ZqF+G/hQKAANDsx9P3CUAdLRRRQAV5h8Wv2gvDnwo1TS9Cmh1DxB4v15saX4b0eNZby5HPzlSQqR/K3zsQPlbGcHHo2o30Wl6fdXt222C0heaVsdEVST/I18G/8E+dQufjZ8bPit8VvFiefqLeRb2HnfP9kjnaRvLjJ6BI4Y04xwT6mgD6avPid8VNL0/+0tS+EdtcWSrvks9L8XR3GoInfEDQJG7gfwrMc9Bk10vwh+NXhb42+H5NT8EXjvJZyeTqOn3Ufk3enTZIMc8R5VshhnlTg4JxXd7f/r+9fAHxD8QH9nj/AIKNaJPoYNpo/wASrSyXV7OH5YpWuZHtvMZem4TRLKT1JLf3jkA/QAc0yTcI2MahnAO1ScZPYZ7U4UtAHzf4+/bCm+HXxb0n4cax8PtZufEeveQdN+y6lbtDcLM7Irb227RuRgdwGNpPTmvoXS7i7urGGXVbVLK6YfvLdZvOEfJ/iAGeMdq+HP2kPl/4KN/BbnH/ABLbP/0pvK+7VGMf5/CgDx/x58dNZ8DfEDwz4Sk8CX+qXfjCa4j0q5tdUhETCFd8hkL4KbU+Y8HI6ZPFetWMk81nE99ClvOy5kiSTeEPcBsDP5V4r8YR/wAZGfAbgY+2a77f8uA5r3AcAUABzyeOPXvXzz8aP2uG/Z/1jTYfiX4D1630bU7gQw65Y3cNzb9csCMhw4XLbCASAcZxX0P+hr50/bK8C6X8TLX4XeFvEyyNpmt+OEt7jynKOoOn3mGVh0IIB/D8KAPfND1yw8SaNZarod3Bf6fqNulxa3Vu4eOaNwGVlYcEEHIrzf43fG7UPgvb2N7P4Ov/ABBpuo6jBp0M9hfRK63Ex2xhkfGAX+UEE84zivlj9nv4k69+xz8Wp/gp8bruWTwlqdwZfC+uTE+TEJGwpBJwkUjZDDOI5M54YtX0h+1lj/hX/ho9R/wnXh/34+3xUAeu6Hd6hfaek2uaemmXLHLW63In2/8AAgAM/Tj3NaNIBwOlLQBW1PU7TRdOub/VrmCzsbKJprm4nkCRwxqMszMeAABnJrxTQP2ktT+KdxdN8B/At74o0W0laE+I9X1AaPp07qcN5LtHJLKAcjIixkda8R/4KRfEi+urrwN8IvDd29vN4zu45tWVOC9u0yxQRk/3Wk8xiO/lL719k+DfCemeBfCuleH/AAxax2el6PaJbWsMf8KKAASe5PUk8kkk8mgDx/4iftKa18GfDtzq/wAW/h5qdlZRxsI9R0HUU1SzEuPkjlcrFLFuYqu4xbcsBmva9B1aPXtD07U7YYh1G1iuY/mz8siBhz9DWB421Lwhq2lar4Z8ZatoaW+o2j217ZXd7EjGORCCCrHPIbI49DT/AIZrpWmeCtF0PQ9ds9fXw9pttYSXkE6SNJ5USoHcISAzbc496AOqriPi58Qr/wCF3g7U/E1n4en8QWGjWct5qEdteRwyxxRrud1V+GCqGY8g4BxngV29cB+0F/yQb4k+3hHVSPr9kloA83+F/wC1Vr/xk8Lp4i+HPwl8Q6no0lxJbrcNrunQHehAYbJJQ3GfSugtPj14gtPHXhvw946+F/iTwvD4ountLTVJtQs7u3WZYZJQjmCRypYRsADjPOOleO/8E6vHnhrw/wDs22lpr3iHRNNul1m8Yw3moxQuFLLglWbOD/SvoXTPHnhD4o+Mr3w9o95p2vv4VjstWkubO7EsdvcPJKIhuQ43gRMxXPRgCMGgD0SigDHHpRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUlAHxt/wAFUmH/AAz34e/7HK2P/kneV9TfDQ/8W58K/wDYEs//AESleD/tgfAH4i/tKeH7PwzoU/gzR9C07VU1CK6u765e4nZYZIwGRYNqD99J0Zs8cjpWx4T0H9o/wr4X0jRVuvgxfJpFlDaJc3H9pCSZY0Chn2gDcQBnAAzngdKAPeb/AFa00yS0S+mWJ764FvbryTJIVZtoA5Pyqx+ik9qt14V4B+GfxT1P4uQ+MPjtrvhO8sNFsZYtB0bw5HOkFrcy4WSd/NXcz+WHUEscbzgDv7rQBQ1zTE1zRdQ06Ztkd/ayW7MBkqHUqT+tfB//AATFW58D+Mviz4A8SotvrOmXFtI0OepheaGYj1GWiwfRs+lff3Oa8M+K37Nj6/8AETTviZ8KNYj8JfETTY/LluZIDNZ6xFgDybuMEEqVG3cpyBg8lVIAPcwwP+etfnt+0Nosnxe/4KOeAdC0X94PC1ppsupsvIhjgmlvXyexKOi/Vlr6futS+P8AqFibK38P/DHSrt12Nqza5d3McfYulv8AZ1JI5IBf0yaufAX9nHSvgq+saxdahc+JvGniedrjW/EV5GEluGZtxREHEce7J2jr36AAA9fopF4ApaAPhT9qKF9L/wCCgXwM1W8Ux2N3BaWkUzfdaYXc4K59f38f/fQ9q+689q8e/aU/Zx039ojw3plvNqdzoGv+H7v7Xoms20Yd7SXjIKkjKkqh4IOUUg8EHntEuP2ldH0uHT9W0z4Va/d26CMau2p3dr52OA8kSw43HvtwM9AKAL/xakFx+0x8CreL5pIW164dfRBZqpP0yw5969z7CvI/hX8HNa0bxjf+Pvizrtv4j8b6nZrZRiztzDY6Pab95trVGJYgvgtI2GbaOBzn1ygA/SvFv2hj/wAVZ8FD/wBVEh/A/wBn3v69q9orwf41/Dz4pfELxZ4Su/CQ8CWOmeDPEKavb/b9QummvtsbxhJFW3xGCsjg4Zu3pQBsftOfs56N+0d8PZdF1LyrXWbIPNouplPmtJyOhIGTG2FDKPQHqBj4z8OfH7Xm8K6T8FPjdFc2vjrwl450GOymuAc3trHfQ/KzYwzKu0q/8aFT1GT+jmgtqk2kwP4ot7C11NgftENjcvPCp3HGyR0Rjxg8qMHPpk+JftEfst2Hxf8AFng3xnoZtrDxZ4T1qyuJJ2BVb6zjuFd4pCATuUBih9SQeGyAD30DaMUtIPzpaAPzx/4KW+Gbvwn8Vvhn8UrdJJbSzaGxmwp2xS21wbmPJ9XEkn/fs19/6Drll4l0Ww1bRLmO8sNSto7m1uImyssbqGVgfQg1kfEb4c6D8V/B2o+GPG9kt/pGpptljJ2srDBV0Ycq6kAg9iPwrwv4b/Bv4u/s52reH/hlrfhvx74IjYvY6d4kml0+803JJ8uKaJJFdDnPzLx2A5yAYP8AwUw8O6Zdfs6XGq3FhayalYataG3uzEPNjDMVZQ2N2CCeM84Fezfsv6LY6L+z38PE0m1trVZ/DdjPL5MYTzZHhV2dsdWLMSSckkmvNvjJ8I/iv+0t4YXwh42h8D+BvDM11FcXdxY39xq96xjOVWNTHDGBnqSTXv3gPwnB4D8E6B4asZ5bm30DTbewimlADyLDGEDEDgEhc0AbtcB+0Ef+LDfEgc8+ENV7dP8ARJa7+vNfjx4Z8aeOPAes+GPh0vhqIeItLubC8vdYvJozbJMhjJjjjifedrNyWXBA4NAHzr/wTy+Fvgvxb+znaX/irwj4Y1m/bWLyNrrUNIguZdoK4Bd0JwM9M4r6O8N/Cjwf8JfE3iLxX4ZsNH8MWOpaTAmpRWkCWtuotmmczEKAq/LKQWwOEFeK/s9/A/44/s9+Az4U0W8+Fmr2S30t3FLeXF+skZkC7l+WLBGVJ/Gui8cfDP44fFe50XSPGmsfDzRvBq6lBca9a6G149zqNvHIHNuWlQAI23BAIzk5JGVIB9FwTLcQxyxHckihlOMZBGRxT6KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigBM4peaxvEnhHS/FkcCa5FcSLbMWj8m7ltyCRgkmNlJ49awv+FN+FP+fPUv/B3ef/HaAO2orif+FN+FP+fTUv8AwdXn/wAdo/4U34U/59NS/wDB1ef/AB2gDtqK4n/hTfhT/n01L/wdXn/x2j/hTfhT/n01L/wdXn/x2gDtqK4n/hTfhT/n01L/AMHV5/8AHaP+FN+FP+fTUv8AwdXn/wAdoA7aiuJ/4U34U/59NS/8HV5/8do/4U34U/59NS/8HV5/8doA7aiuJ/4U34U/59NS/wDB1ef/AB2j/hTfhT/n01L/AMHV5/8AHaAO3/Ckrif+FN+FP+fTUv8AwdXn/wAdo/4U34U/59NS/wDB1ef/AB2gDtqK4n/hTfhT/n01L/wdXn/x2j/hTfhT/n01L/wdXn/x2gDtqMH061xP/Cm/Cn/PpqX/AIOrz/47R/wpvwp/z6al/wCDq8/+O0Adtt9qMfWuJ/4U34U/59NS/wDB1ef/AB2j/hTfhT/n01L/AMHV5/8AHaAO2orif+FN+FP+fTUv/B1ef/HaP+FN+FP+fPUv/B1e/wDx2gDtse2aPzrif+FN+FP+fPUv/B1ef/HaP+FN+FP+fTUv/B1ef/HaAO2waK4n/hTfhT/n01L/AMHV5/8AHaP+FN+FP+fTUv8AwdXn/wAdoA7al5riP+FN+FP+fPUv/B1ef/HaP+FN+FP+fTUv/B3ef/HaAO2owfSuJ/4U34U/59NS/wDB1ef/AB2j/hTfhT/n01L/AMHV5/8AHaAO2x7UVxP/AApvwp/z6al/4Orz/wCO0f8ACm/Cn/PpqX/g6vP/AI7QB21HPvXE/wDCm/Cn/PpqX/g6vP8A47R/wpvwp/z6al/4Orz/AOO0AdtijmuJ/wCFN+FP+fTUv/B1ef8Ax2j/AIU34U/59NS/8HV5/wDHaAO2pfzriP8AhTfhT/n01L/wdXn/AMdo/wCFN+FP+fTUv/B1ef8Ax2gDtqX8K4j/AIU34U/59NS/8HV5/wDHaP8AhTfhT/n01L/wdXn/AMdoA7aiuJ/4U34U/wCfTUv/AAdXn/x2j/hTfhT/AJ9NS/8AB1ef/HaAO2orif8AhTfhT/n01L/wdXn/AMdo/wCFN+FP+fTUv/B1ef8Ax2gDtqK4n/hTfhT/AJ9NS/8AB1ef/HaP+FN+FP8An01L/wAHV5/8doA7aiuJ/wCFN+FP+fTUv/B1ef8Ax2j/AIU34U/59NS/8HV5/wDHaAO2orif+FN+FP8An01L/wAHV5/8do/4U34U/wCfTUv/AAdXn/x2gDtqK4n/AIU34U/59NS/8HV5/wDHafF8H/C8MqSRWmoho2DLu1m8YZB44MuD0oA7OikAxS0AFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAVk+LPE2n+DPDOr6/4gm+z6ZollLe3ku0sY4okLswABJOFPAGT0HNa1Y3jLwrYeOvCes+HPECPLpmvWE9heIjbWaKVCjgN2OGODQB87+EvjB+0D8WNBs/F3w68C/D3SfCuqL5+m2viPVrkX11bknZJ+6TZHuXBAPQEHnqfX9R+KF34C+Dd142+LmjNpF1o1i91q+m6ZcLemLaxGInJUPkbWHTrXiXh/wAE/tB/s4eF7bSfA1z4Q+Kng7w+nl2Ol36y6fq4tFPyQxuMxMVUADdk8AAdBWR8d/FXhf8Aag/Yn1r4i2MOsWcmnaTdyQWZ1CaA2tyrqksc6RuEmAKAgOCpyDgZoA+tfD+uQeI9B03V7FZEttUtIruFZVAcRyIHXcATg4IzzWhur5r8O/s36Vcfs23dh4DvfEWna74s8J2bQ3c3iS9m8m7WFZYWj3ykRDzCM7NuQcdOKwvEv7RWqeKv2RdDvPDDy2/xD8cTQ+EYbd1xNBq7ube5baOVKbJpQx6YXNAHpHxq+JGv+D/jJ8F9A8P3iW+l+MdYvrfV4TCjmaOK2DoAxG5TuPYivRNL1HxNJ451u01TSbC28L29vbtpOpR3W6a5lYHzkeP+AKduD3zXz18WvDMXgv4t/sraDbXd5fx6Rqd/ai7vJjLNcbLFQZJHPLOxBYn1Jrpfh/q1/cftqfFjT5728ksLTw1o729q0zGKJmVtzKmcKTxnA5oA+hQe2Dn0pc18afs7/BPSvjp4R8U6n8XdW8T+JILXxdrFjpenSa5cQW2nxpcudyJE67pMu3zOThQoUDFZHhX46eJ/AP7DXjvV4tRudU1/wb4gvfDekajev5sxBu44YZZGfIZkE/U8fIAaAPuKk3Drmvkn4tfs06R8L/gD4t8UeH9f8Yw+P9I8N3Vzd+Jh4gunn1KRYCZFlV3MZRucAKCvBUhhmvd/2fLqfUPgJ8Nbq+nmubm58IaVLNPM5d5Xa0iLMzHkkkkknuaAPNfiJ408a+PP2jU+Ffw58TDwXp+jeGF1zWdWi06K7ubh5JvKjgjWUFFUKdxbGecele9eH7K70vQ7C01jUZNWvba3SO4v5Ilia5cABpCi/KpY84HAzXxfpX7PnhHWP24PGegXh8SDT4/BVvqC+V4mv4pTNJcgMPNWYPs54jzsHYDArtf+Edh/aC/aU8eeCvGl9rDeBfhNpulW9voVrqU1rHqF1eQtMZrh42Eku1UCgM2MjPc5SA+qtwo3AdeBXzN4B0ub4F/tP2/w68Nalq114F8W+F5tWsdL1G+kvP7HvLeUI4geQl1hZGB2sSNw4PauZ/Zt+GNv8ZI/Guq/E/W/Emu2egfEbWLbSNHfVp4LW1EdwHDlY2VpWy2AHJVQoAUc5YH1/njPTNGa89/aIup9P/Z/+JtzYzS21zb+DtWkhmhco8brZylWVhyCCMgjkGvnDS/gTYeJv2TbL4ieLPEHizVfH48ER61Y69/btzBJp8qWYlijhjjkEahQAGJUs53MxyeAD7SzSZzxXxyPgrafEf8AZj/4Wd481/xPqvxEvfCLa9aa5Hq09p/ZkwtfOjjt4InWKNFIUEBcv8xJyeIfiH8bPE99+y/8FG+1eIZNZ+Jc+n2etXfh2DfqUlv5DSXJtlHCzOExkDje2McYAPszcOPejdXw1o1u/gj4p+ANS/Z++HHxr0CG71yGx8X22v2N61jeadNlHuZTLNJiWJiHDcfxZPFd14j8Hy/FT9sjxN4W8R6/4kt/CVv4K0++u9F0/VJbSK/l8+VFEjRkOEwzEqpXcduThcEA+q9wpa+XPgppqfCX9rDxr8MvCtzfr4NufCdpr9npl3ey3Sadcef5MiwtKzMqPvyVz1A6Yr6joAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACsrxRb6tdeHdUi8JXVpZa3LayLp1xdxGSGKfadjSIOWXdjIB6Vq0UAfOeof8ADUmrafPpixfBrSJbhDE2sW8t/I0AbgyRwsMbxnIDEjI5BFbOj/ssaX4d/Zd1D4PaXqs7rqWmXME2sTRZeS6mLO07JnpvI+Xd90AZzzXuWB7UtAHk3wJsfid4f0S00H4tWXhCKz0PSobOzvdFvp5JLtolCb3SSNQg2qCcE8njHSvFPhL8LbLVv20/iDquhXk03g7wLfNe21goH2eDxBqNtGt4UPchIyWGflaQDAxz9hlc98fSuN+Fnwp0f4R6DfaZ4clvrkanqlzql7d30iyT3NzcPukd2VVHoBgDhR6UAct8WPhNq3jz4qfCXxLpNzYxWPgPU7271BJ3YSSpNAI1EQCkE7hk7iOPXpS+E/hLq2hftIeO/iBdXFg+keKNG0+ytII3czJJbghy4KhdpzxhifYV63+VFAHlf7Ofwr1X4Q+Dda0nxFcWNxcal4m1LVIms2YqIriYuincqncB1HT0Jrz/AMIfsoSy/AP4h/DX4iX1kU8a+Ir/AFOC6sN0othNLHJA5DquXSSNWK9DjGTX0p+lZnibQ/8AhJNBv9M+36jpf26Bovtmm3HkXNuSMb4nwdrjscH6GgD5L+Oy/HHSf2bfGel/EW9+Hdvo2n+HJ4b7xBbS3Ml3qSCPaqrA6hI5Zm2ozFjgyEqM7RX0P+z3aTWHwD+GtreRNDcW3hDSopo2GCjraRBlI9QQRXF6j+yfYeLJrJPij49+IXjnSNPmSWLRdWv7eKzlZGDIZ0t4IjMQQD85Pf1Ne5qu1QAAAOw7UAeR6N8IdX0/9qPxD8SJriwbRNW8J2+kQ26u32hZo5g5Zht27cDghic9qxPGvwk8b+F/jDqPxK+Bdx4duL3xNp8Fl4k0PXmlhhu/s4xBcxTRKxWVV/d4ZSu0k9eK94o/KgDxH4W/CHxbN8VNQ+J/xrvtIk8SyaZ/ZGj6PohZrLSrIuJH/eSKHkldxkscADIGRgLrfs6/CnVvhLofi+y8RXFjcSa/4y1PW7c2juwSC5dWRW3KuHGDkDI9Ca9YooA5P4ueFLvx78KfGfhnSZIIr7xF4ev9OtnnYiNJJ7d41ZiASFDOCcAnGeDXMaL8LdU039mO0+HU1xZHWbfwQuhNOjMYDOLPyNwO3ds3c525x2zxXqdH5flQB5h4f+GOqaV+zTafD24nsm1i38F/2I86M3kGf7J5O4Eru2buc7c47Z4rgtQ/Zk1vUf2dfh54RtNetdF8cfDj7He6Rq0EZntkv7dGUblZQWiYOwPyg8jg4Kn6M/KigDyHwbqHxyuNe06Dx5ovwzstIRj/AGld6bqV5LLIoU/6mJ4wFJbb95jgZ645s6N8K9V0/wDaV8Q/EKa4sm0jVvCtrpMMKs3nrNFO0jMy7doXDDB3E57V6rRQB5Dpvwh1e1/ap1b4lyXNgdEv/BkWiR26yN9oE63IlLFdu3ZtGM7s57d69eo/KigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//Z</Image>
+              <Name>Image1</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <Stretch>True</Stretch>
+            </Image1>
+            <HorizontalLinePrimitive10 Ref="14" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,4,74,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="15" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive10</Name>
+              <Page isRef="5" />
+              <Parent isRef="6" />
+              <StartCap Ref="16" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive10>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>PageHeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </PageHeaderBand1>
+        <GroupHeaderBand1 Ref="17" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,38,74.2,30</ClientRectangle>
+          <Components isList="true" count="24">
+            <Text3 Ref="18" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,0,14,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9</Font>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text3</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>Bill No.</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text3>
+            <Text4 Ref="19" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16,0,22,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>2dea97a8554247b6be67aa5b1ead0987</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text4</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>{View_TailoringInvoiceGST.InvoiceNo}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text4>
+            <Text5 Ref="20" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>42,0,10,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9</Font>
+              <Guid>c31110b2c21f4085970f7c68a296d215</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text5</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>Date</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text5>
+            <Text6 Ref="21" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>52,0,22,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>89a81aeecfa44882aae1624f4f03cba7</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text6</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>{View_TailoringInvoiceGST.InvoiceDate}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="22" type="DateFormat" isKey="true">
+                <StringFormat>dd/MM/yyyy</StringFormat>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text6>
+            <Text7 Ref="23" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>8,24,24,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>4b7f95f5cc654e2181a029432ef38cc4</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text7</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>Description</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text7>
+            <Text8 Ref="24" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.5,24,4.5,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>db90cbe49f01458b9d54e59978389f65</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text8</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>SR</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text8>
+            <Text9 Ref="25" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>32,24,8,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>24bde225511b44b9835aa43116b928f1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text9</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>HSN</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text9>
+            <Text10 Ref="26" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>62,24,12,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>bf2c24a76fe94e4392c8b4c766b532b4</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text10</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>Amt</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text10>
+            <Text25 Ref="27" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,4,14,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9</Font>
+              <Guid>35f160ab7cd64583baaed60c5e27ec7b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text25</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>Customer</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text25>
+            <Text26 Ref="28" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16,4,58,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>f7e3ae99b3974b18aa4c6b168ff5f685</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text26</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>{View_TailoringInvoiceGST.LedgerName}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text26>
+            <Text20 Ref="29" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,8,14,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9</Font>
+              <Guid>330343dd3cb24d74aa51e58220d78f2c</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text20</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>Address</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text20>
+            <Text21 Ref="30" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16,8,58,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>68df41a10375424eb618be7a1a5df081</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text21</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>{View_TailoringInvoiceGST.Address1}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text21>
+            <Text23 Ref="31" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16,12,58,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>16efb98811e14b7493e317106395dd31</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text23</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>{View_TailoringInvoiceGST.Address2} {View_TailoringInvoiceGST.City}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text23>
+            <Text24 Ref="32" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16,16,58,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>8b46b59ca77940eca502468bc59d74f9</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text24</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>{View_TailoringInvoiceGST.MobileNo}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text24>
+            <Text27 Ref="33" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,16,14,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9</Font>
+              <Guid>c9cc29e026de43bcbf30385a8375dc52</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text27</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>Contact</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text27>
+            <Text28 Ref="34" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>2,20,14,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9</Font>
+              <Guid>cca9b37e80b54c87ae4e7c4ed2ca2fea</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text28</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>GSTIN</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text28>
+            <Text29 Ref="35" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>16,20,58,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>8ae8860458fe4fb58bd50151b948c0c4</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text29</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>{View_TailoringInvoiceGST.GSTNo}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text29>
+            <Text30 Ref="36" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>48,24,6,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>28e34bc8cb4a4488aa8476af4fd19600</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text30</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>QTY</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text30>
+            <Text31 Ref="37" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>54,24,8,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>eadcf9b8e14145d59998f577b8626450</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text31</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>RATE</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text31>
+            <Text32 Ref="38" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>40,24,8,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>4b3849224a7e43909e41854e847d977f</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text32</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <Text>GST%</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text32>
+            <HorizontalLinePrimitive7 Ref="39" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0,74,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="40" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>7c6585f9fb6b47e2be2ac0cc46193e53</Guid>
+              <Name>HorizontalLinePrimitive7</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <StartCap Ref="41" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive7>
+            <HorizontalLinePrimitive8 Ref="42" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,24,74,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="43" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>021535b70c094c288ff359247748ca5b</Guid>
+              <Name>HorizontalLinePrimitive8</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <StartCap Ref="44" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive8>
+            <HorizontalLinePrimitive9 Ref="45" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,30,74,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="46" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>a972174889b34b9692d8f283cbad1ee0</Guid>
+              <Name>HorizontalLinePrimitive9</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <StartCap Ref="47" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive9>
+            <HorizontalLinePrimitive4 Ref="48" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,4,74,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="49" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>8a8aa79cd28743e097ba67369cc97126</Guid>
+              <Name>HorizontalLinePrimitive4</Name>
+              <Page isRef="5" />
+              <Parent isRef="17" />
+              <StartCap Ref="50" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive4>
+          </Components>
+          <Condition>{View_TailoringInvoiceGST.InvId}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </GroupHeaderBand1>
+        <DataBand1 Ref="51" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,76,74.2,4</ClientRectangle>
+          <Components isList="true" count="9">
+            <Text11 Ref="52" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <CanGrow>True</CanGrow>
+              <ClientRectangle>8,0,24,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <GrowToHeight>True</GrowToHeight>
+              <Guid>cddd690fd21b443a9b337dc602d28bc4</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text11</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+              <Text>{View_TailoringInvoiceGST.TItemName} {View_TailoringInvoiceGST.BarCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text11>
+            <Text12 Ref="53" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>48,0,6,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>282314e45a754f059092810a23f82978</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text12</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+              <Text>{View_TailoringInvoiceGST.TItemQty}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text12>
+            <Text14 Ref="54" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>62,0,12,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>35acdf5c99784c3487a60868384c7292</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text14</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+              <Text>{View_TailoringInvoiceGST.Amt}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="55" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator />
+                <GroupSize>0</GroupSize>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text14>
+            <Text13 Ref="56" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3.5,0,4.5,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>ccc8331ce6964a43a0913e25456f4fd1</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text13</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+              <Text>{Line}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text13>
+            <Text33 Ref="57" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>32,0,8,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>a088bfd12c044da98532cf1942c1124b</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text33</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+              <Text>{View_TailoringInvoiceGST.HSNCode}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text33>
+            <Text34 Ref="58" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>40,0,8,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>3b7b7c15229741b385bb1309d8789529</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text34</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+              <Text>{View_TailoringInvoiceGST.TaxPer}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text34>
+            <Text35 Ref="59" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>54,0,8,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>9f3ecb632f2846eeac0317b37606e989</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text35</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+              <Text>{View_TailoringInvoiceGST.Rate}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text35>
+            <HorizontalLinePrimitive5 Ref="60" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,0,74,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="61" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>59e603a46fc44e00a3006dca97abea0a</Guid>
+              <Name>HorizontalLinePrimitive5</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+              <StartCap Ref="62" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive5>
+            <HorizontalLinePrimitive6 Ref="63" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,4,74,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="64" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>90c251f255a04c028bdfac27f6423df1</Guid>
+              <Name>HorizontalLinePrimitive6</Name>
+              <Page isRef="5" />
+              <Parent isRef="51" />
+              <StartCap Ref="65" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive6>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>View_TailoringInvoiceGST</DataSourceName>
+          <Filters isList="true" count="0" />
+          <Name>DataBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <GroupFooterBand1 Ref="66" type="GroupFooterBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <CanShrink>True</CanShrink>
+          <ClientRectangle>0,88,74.2,42</ClientRectangle>
+          <Components isList="true" count="24">
+            <Text16 Ref="67" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44,12,16,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>336a21480ed44739a275d10a15405c1b</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text16</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>Bill Amt</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text16>
+            <Text17 Ref="68" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>60,12,14,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>f6f78e3f1a6944c1a3681bf62224f68c</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text17</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>{View_TailoringInvoiceGST.SalesBillAmt}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="69" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator />
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text17>
+            <Text36 Ref="70" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,4,18,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>ed0322ace2794767a20ab3853973763e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text36</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>Amt In Words:</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text36>
+            <Text37 Ref="71" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,8,38,8</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>9fbba79ab01c463981bde18ec691f124</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text37</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>{AmtInWord}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text37>
+            <Text39 Ref="72" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>60,0,14,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>1df275471d454866bb2662646d2693b1</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text39</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>{Sum(View_TailoringInvoiceGST.Amt)}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="73" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator />
+                <GroupSize>2</GroupSize>
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>Totals</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text39>
+            <Text42 Ref="74" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>59.78,4,14.32,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>85e210dff3c54305b0a5057dcb0de44d</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text42</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>{View_TailoringInvoiceGST.BillAmt}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="75" type="NumberFormat" isKey="true">
+                <GroupSeparator />
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>DataColumn</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text42>
+            <Text43 Ref="76" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44,4,15.78,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>8f53004703e849ec98f660e25b209d29</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text43</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>Taxable Amt</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text43>
+            <Text44 Ref="77" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>59.78,8,14.32,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>00284fe832c54b76904bdf9b2f676a9f</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text44</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>{View_TailoringInvoiceGST.IGSTAmt_SB+View_TailoringInvoiceGST.CGSTAmt_SB+View_TailoringInvoiceGST.SGSTAmt_SB}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="78" type="NumberFormat" isKey="true">
+                <GroupSeparator />
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text44>
+            <Text45 Ref="79" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44,8,16,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>bd41470ae3a3436e8e0173c1c0c7995a</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text45</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>GST Total</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text45>
+            <Text46 Ref="80" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>28,0,10,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,10,Bold</Font>
+              <Guid>bb56cd5f198545fa936086a677962605</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text46</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>Total</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text46>
+            <Text63 Ref="81" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>46,0,10,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>e8015a8a78124e7f863a4ce0056273d8</Guid>
+              <HorAlignment>Center</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text63</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>{Sum(GroupHeaderBand1,View_TailoringInvoiceGST.TItemQty)}</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Totals</Type>
+            </Text63>
+            <Text71 Ref="82" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>59.78,16,14.32,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>06265d7383294913808928ad964499a6</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text71</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>{View_TailoringInvoiceGST.ReceivedAmt}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="83" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator />
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text71>
+            <Text72 Ref="84" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44,16,16,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>e1e2c7a671c440ba9a933af6280d577e</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text72</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>Received</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text72>
+            <Text73 Ref="85" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>59.78,20,14.32,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,9,Bold</Font>
+              <Guid>666e8c1a2ce64520be01f048f04be303</Guid>
+              <HorAlignment>Right</HorAlignment>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text73</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>{View_TailoringInvoiceGST.DueAmt}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextFormat Ref="86" type="NumberFormat" isKey="true">
+                <DecimalDigits>0</DecimalDigits>
+                <GroupSeparator />
+                <NegativePattern>1</NegativePattern>
+                <UseLocalSetting>False</UseLocalSetting>
+              </TextFormat>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text73>
+            <Text74 Ref="87" type="Text" isKey="true">
+              <Brush>Transparent</Brush>
+              <ClientRectangle>44,20,16,4</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8</Font>
+              <Guid>f24ceefb0b3f4fadbed390996bfe39b3</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text74</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>Due</Text>
+              <TextBrush>Black</TextBrush>
+              <Type>Expression</Type>
+              <VertAlignment>Center</VertAlignment>
+            </Text74>
+            <Text38 Ref="88" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,16,38,6</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,8,Bold</Font>
+              <Guid>3035f4924d934aeaa9244c5a4ab92626</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text38</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>Salesman: {View_TailoringInvoiceGST.SP1}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text38>
+            <Text40 Ref="89" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,24,42,3.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,7,Bold</Font>
+              <Guid>37bc17226ae64d1eb3699d77475c047f</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text40</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>TERMS &amp; CONDITION</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text40>
+            <Text41 Ref="90" type="Text" isKey="true">
+              <Border>None;Black;2;Solid;False;4;Black</Border>
+              <Brush>Transparent</Brush>
+              <ClientRectangle>3,27.5,70,14.5</ClientRectangle>
+              <Conditions isList="true" count="0" />
+              <Font>Calibri,7,Bold</Font>
+              <Guid>8cc0893445d94f9d92a8143c09f51ded</Guid>
+              <Margins>0,0,0,0</Margins>
+              <Name>Text41</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <Text>{View_CompanyMaster.TC1}
+{View_CompanyMaster.TC2}
+{View_CompanyMaster.TC3}
+{View_CompanyMaster.TC4}
+{View_CompanyMaster.TC5}</Text>
+              <TextBrush>Black</TextBrush>
+              <TextOptions>HotkeyPrefix=None, LineLimit=False, RightToLeft=False, Trimming=None, WordWrap=True, Angle=0, FirstTabOffset=40, DistanceBetweenTabs=20,</TextOptions>
+              <Type>Expression</Type>
+            </Text41>
+            <HorizontalLinePrimitive1 Ref="91" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,4,74,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="92" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Name>HorizontalLinePrimitive1</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <StartCap Ref="93" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive1>
+            <HorizontalLinePrimitive2 Ref="94" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>44,16,30,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="95" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>161f23f7965047c1b5d0f48202e72e72</Guid>
+              <Name>HorizontalLinePrimitive2</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <StartCap Ref="96" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive2>
+            <HorizontalLinePrimitive3 Ref="97" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>44,8,30,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="98" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>63b22e82a258478ea7183c0191474aa3</Guid>
+              <Name>HorizontalLinePrimitive3</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <StartCap Ref="99" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive3>
+            <HorizontalLinePrimitive11 Ref="100" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>44,12,30,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="101" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>af3b00782a2c435d95af7b9692396506</Guid>
+              <Name>HorizontalLinePrimitive11</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <StartCap Ref="102" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive11>
+            <HorizontalLinePrimitive12 Ref="103" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>44,20,30,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="104" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>bf21cedf79004ba5b23efad00daeac4a</Guid>
+              <Name>HorizontalLinePrimitive12</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <StartCap Ref="105" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive12>
+            <HorizontalLinePrimitive13 Ref="106" type="HorizontalLinePrimitive" isKey="true">
+              <ClientRectangle>0,24,74,0.254</ClientRectangle>
+              <Color>Black</Color>
+              <EndCap Ref="107" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </EndCap>
+              <Guid>34689b670b114df59fc11170c9437bdd</Guid>
+              <Name>HorizontalLinePrimitive13</Name>
+              <Page isRef="5" />
+              <Parent isRef="66" />
+              <StartCap Ref="108" type="Cap" isKey="true">
+                <Color>Black</Color>
+              </StartCap>
+            </HorizontalLinePrimitive13>
+          </Components>
+          <Conditions isList="true" count="0" />
+          <Name>GroupFooterBand1</Name>
+          <Page isRef="5" />
+          <Parent isRef="5" />
+        </GroupFooterBand1>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>65fb0fa427a641a298595af16d5f38ea</Guid>
+      <Margins>2,2.8,2,2</Margins>
+      <Name>Page1</Name>
+      <PageHeight>200</PageHeight>
+      <PageWidth>79</PageWidth>
+      <Report isRef="0" />
+      <UnlimitedBreakable>False</UnlimitedBreakable>
+      <UnlimitedHeight>True</UnlimitedHeight>
+      <Watermark Ref="109" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="110" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>9/8/2021 12:22:23 PM</ReportChanged>
+  <ReportCreated>10/14/2020 6:43:48 PM</ReportCreated>
+  <ReportFile>D:\PROJECTS\BhavikaGit17\TailoringERP\TailoringERP\Report\mrtInvoice_Sales.mrt</ReportFile>
+  <ReportGuid>81efc0265cbd4d85b2b386bd2ed37c59</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2012.2.1304</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+		#endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>

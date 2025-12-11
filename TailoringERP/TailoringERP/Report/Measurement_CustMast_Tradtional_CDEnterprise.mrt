@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<StiSerializer version="1.02" type="Net" application="StiReport">
+  <Dictionary Ref="1" type="Dictionary" isKey="true">
+    <BusinessObjects isList="true" count="0" />
+    <Databases isList="true" count="1">
+      <Connection Ref="2" type="Stimulsoft.Report.Dictionary.StiSqlDatabase" isKey="true">
+        <Alias>Connection</Alias>
+        <ConnectionString>Integrated Security=False;Data Source=MAHESH\SUNRISE1;Initial Catalog=dbSTL_CDEnterprises;Password=Ss.d@2017;User ID=sa</ConnectionString>
+        <Name>Connection</Name>
+      </Connection>
+    </Databases>
+    <DataSources isList="true" count="1">
+      <View_MeasurementSheet_Cust Ref="3" type="Stimulsoft.Report.Dictionary.StiSqlSource" isKey="true">
+        <Alias>View_MeasurementSheet_Cust</Alias>
+        <Columns isList="true" count="67">
+          <value>M1,System.String</value>
+          <value>M2,System.String</value>
+          <value>M3,System.String</value>
+          <value>M4,System.String</value>
+          <value>M5,System.String</value>
+          <value>M6,System.String</value>
+          <value>M7,System.String</value>
+          <value>M8,System.String</value>
+          <value>M9,System.String</value>
+          <value>M10,System.String</value>
+          <value>M11,System.String</value>
+          <value>M12,System.String</value>
+          <value>M13,System.String</value>
+          <value>M14,System.String</value>
+          <value>M15,System.String</value>
+          <value>M16,System.String</value>
+          <value>M17,System.String</value>
+          <value>M18,System.String</value>
+          <value>M19,System.String</value>
+          <value>M20,System.String</value>
+          <value>Note1,System.String</value>
+          <value>Note2,System.String</value>
+          <value>Note3,System.String</value>
+          <value>Note4,System.String</value>
+          <value>Note5,System.String</value>
+          <value>Note6,System.String</value>
+          <value>Note7,System.String</value>
+          <value>Note8,System.String</value>
+          <value>Note9,System.String</value>
+          <value>Note10,System.String</value>
+          <value>Note11,System.String</value>
+          <value>Note12,System.String</value>
+          <value>Note13,System.String</value>
+          <value>Note14,System.String</value>
+          <value>Note15,System.String</value>
+          <value>Note16,System.String</value>
+          <value>Note17,System.String</value>
+          <value>Note18,System.String</value>
+          <value>Note19,System.String</value>
+          <value>Note20,System.String</value>
+          <value>CDId,System.Int64</value>
+          <value>LedgerId,System.Int64</value>
+          <value>TItemId,System.Int64</value>
+          <value>ParaId,System.Int64</value>
+          <value>ParaName,System.String</value>
+          <value>PrintOrder,System.Int64</value>
+          <value>ParaValue,System.String</value>
+          <value>Notes,System.String</value>
+          <value>Code,System.Int64</value>
+          <value>LedgerCode,System.String</value>
+          <value>LedgerName,System.String</value>
+          <value>PhoneNo,System.String</value>
+          <value>MobileNo,System.String</value>
+          <value>TranSMS,System.String</value>
+          <value>PromoSMS,System.String</value>
+          <value>CId,System.Int64</value>
+          <value>TItemCode,System.String</value>
+          <value>BarCode,System.String</value>
+          <value>TItemName,System.String</value>
+          <value>TItemRate,System.Double</value>
+          <value>CuttingRate,System.Double</value>
+          <value>SewingRate,System.Double</value>
+          <value>MaterialRate,System.Double</value>
+          <value>ItemType,System.String</value>
+          <value>ItemCategory,System.String</value>
+          <value>ItemSubType,System.String</value>
+          <value>IsActive,System.String</value>
+        </Columns>
+        <CommandTimeout>30</CommandTimeout>
+        <Dictionary isRef="1" />
+        <Name>View_MeasurementSheet_Cust</Name>
+        <NameInSource>Connection</NameInSource>
+        <Parameters isList="true" count="0" />
+        <SqlCommand>select * from View_MeasurementSheet_Cust</SqlCommand>
+      </View_MeasurementSheet_Cust>
+    </DataSources>
+    <Relations isList="true" count="0" />
+    <Report isRef="0" />
+    <Variables isList="true" count="0" />
+  </Dictionary>
+  <EngineVersion>EngineV2</EngineVersion>
+  <GlobalizationStrings isList="true" count="0" />
+  <MetaTags isList="true" count="0" />
+  <Pages isList="true" count="1">
+    <Page1 Ref="4" type="Page" isKey="true">
+      <Border>None;Black;2;Solid;False;4;Black</Border>
+      <Brush>Transparent</Brush>
+      <Components isList="true" count="4">
+        <GroupHeaderBand1 Ref="5" type="GroupHeaderBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <ClientRectangle>0,4,190,8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Condition>{View_MeasurementSheet_Cust.TItemId}</Condition>
+          <Conditions isList="true" count="0" />
+          <Name>GroupHeaderBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+        </GroupHeaderBand1>
+        <DataBand1 Ref="6" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,20,190,120</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>View_MeasurementSheet_Cust</DataSourceName>
+          <Filters isList="true" count="1">
+            <value>ItemType,EqualTo,TOP,,String</value>
+          </Filters>
+          <Name>DataBand1</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand1>
+        <DataBand2 Ref="7" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,148,190,8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>View_MeasurementSheet_Cust</DataSourceName>
+          <Filters isList="true" count="1">
+            <value>ItemType,EqualTo,BOTTOM,,String</value>
+          </Filters>
+          <Name>DataBand2</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand2>
+        <DataBand3 Ref="8" type="DataBand" isKey="true">
+          <Brush>Transparent</Brush>
+          <BusinessObjectGuid isNull="true" />
+          <ClientRectangle>0,164,190,8</ClientRectangle>
+          <Components isList="true" count="0" />
+          <Conditions isList="true" count="0" />
+          <DataRelationName isNull="true" />
+          <DataSourceName>View_MeasurementSheet_Cust</DataSourceName>
+          <Filters isList="true" count="1">
+            <value>ItemType,EqualTo,COAT,,String</value>
+          </Filters>
+          <Name>DataBand3</Name>
+          <Page isRef="4" />
+          <Parent isRef="4" />
+          <Sort isList="true" count="0" />
+        </DataBand3>
+      </Components>
+      <Conditions isList="true" count="0" />
+      <Guid>b7c1ea5f18964d7ea04c7daf65a626ba</Guid>
+      <Margins>10,10,10,10</Margins>
+      <Name>Page1</Name>
+      <Orientation>Landscape</Orientation>
+      <PageHeight>1480</PageHeight>
+      <PageWidth>210</PageWidth>
+      <PaperSize>A5</PaperSize>
+      <Report isRef="0" />
+      <Watermark Ref="9" type="Stimulsoft.Report.Components.StiWatermark" isKey="true">
+        <Font>Arial,100</Font>
+        <TextBrush>[50:0:0:0]</TextBrush>
+      </Watermark>
+    </Page1>
+  </Pages>
+  <PrinterSettings Ref="10" type="Stimulsoft.Report.Print.StiPrinterSettings" isKey="true" />
+  <ReferencedAssemblies isList="true" count="8">
+    <value>System.Dll</value>
+    <value>System.Drawing.Dll</value>
+    <value>System.Windows.Forms.Dll</value>
+    <value>System.Data.Dll</value>
+    <value>System.Xml.Dll</value>
+    <value>Stimulsoft.Controls.Dll</value>
+    <value>Stimulsoft.Base.Dll</value>
+    <value>Stimulsoft.Report.Dll</value>
+  </ReferencedAssemblies>
+  <ReportAlias>Report</ReportAlias>
+  <ReportChanged>8/5/2024 7:17:55 PM</ReportChanged>
+  <ReportCreated>8/5/2024 7:08:11 PM</ReportCreated>
+  <ReportFile>D:\DevelopmentWork\TailoringERP\TailoringERP\Report\Measurement_CustMast_Tradtional_CDEnterprise.mrt</ReportFile>
+  <ReportGuid>d9707e6db3a641949f998861c0f224ba</ReportGuid>
+  <ReportName>Report</ReportName>
+  <ReportUnit>Millimeters</ReportUnit>
+  <ReportVersion>2012.2.1304</ReportVersion>
+  <Script>using System;
+using System.Drawing;
+using System.Windows.Forms;
+using System.Data;
+using Stimulsoft.Controls;
+using Stimulsoft.Base.Drawing;
+using Stimulsoft.Report;
+using Stimulsoft.Report.Dialogs;
+using Stimulsoft.Report.Components;
+
+namespace Reports
+{
+    public class Report : Stimulsoft.Report.StiReport
+    {
+        public Report()        {
+            this.InitializeComponent();
+        }
+
+        #region StiReport Designer generated code - do not modify
+        #endregion StiReport Designer generated code - do not modify
+    }
+}
+</Script>
+  <ScriptLanguage>CSharp</ScriptLanguage>
+  <Styles isList="true" count="0" />
+</StiSerializer>
