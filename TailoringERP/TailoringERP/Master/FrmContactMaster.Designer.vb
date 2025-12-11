@@ -81,7 +81,7 @@ Partial Class FrmContactMaster
         'txtName
         '
         Me.txtName.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtName.Location = New System.Drawing.Point(144, 26)
+        Me.txtName.Location = New System.Drawing.Point(150, 24)
         Me.txtName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtName.MaxLength = 50
         Me.txtName.Name = "txtName"
@@ -93,7 +93,7 @@ Partial Class FrmContactMaster
         Me.lblItemType.AutoSize = True
         Me.lblItemType.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblItemType.ForeColor = System.Drawing.Color.Black
-        Me.lblItemType.Location = New System.Drawing.Point(366, 118)
+        Me.lblItemType.Location = New System.Drawing.Point(440, 119)
         Me.lblItemType.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblItemType.Name = "lblItemType"
         Me.lblItemType.Size = New System.Drawing.Size(102, 23)
@@ -106,7 +106,7 @@ Partial Class FrmContactMaster
         Me.cmbDesignation.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbDesignation.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDesignation.FormattingEnabled = True
-        Me.cmbDesignation.Location = New System.Drawing.Point(473, 110)
+        Me.cmbDesignation.Location = New System.Drawing.Point(547, 111)
         Me.cmbDesignation.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbDesignation.Name = "cmbDesignation"
         Me.cmbDesignation.Size = New System.Drawing.Size(203, 31)
@@ -117,7 +117,7 @@ Partial Class FrmContactMaster
         '
         Me.txtContactNo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtContactNo.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtContactNo.Location = New System.Drawing.Point(144, 66)
+        Me.txtContactNo.Location = New System.Drawing.Point(150, 70)
         Me.txtContactNo.Margin = New System.Windows.Forms.Padding(4)
         Me.txtContactNo.MaxLength = 10
         Me.txtContactNo.Name = "txtContactNo"
@@ -129,7 +129,7 @@ Partial Class FrmContactMaster
         Me.lblBarCode.AutoSize = True
         Me.lblBarCode.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblBarCode.ForeColor = System.Drawing.Color.Black
-        Me.lblBarCode.Location = New System.Drawing.Point(364, 75)
+        Me.lblBarCode.Location = New System.Drawing.Point(438, 76)
         Me.lblBarCode.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.lblBarCode.Name = "lblBarCode"
         Me.lblBarCode.Size = New System.Drawing.Size(109, 23)
@@ -139,7 +139,7 @@ Partial Class FrmContactMaster
         'txtCompanyName
         '
         Me.txtCompanyName.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtCompanyName.Location = New System.Drawing.Point(142, 107)
+        Me.txtCompanyName.Location = New System.Drawing.Point(148, 111)
         Me.txtCompanyName.Margin = New System.Windows.Forms.Padding(4)
         Me.txtCompanyName.MaxLength = 50
         Me.txtCompanyName.Name = "txtCompanyName"
@@ -162,7 +162,7 @@ Partial Class FrmContactMaster
         '
         Me.cmbContactType.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.cmbContactType.FormattingEnabled = True
-        Me.cmbContactType.Location = New System.Drawing.Point(470, 69)
+        Me.cmbContactType.Location = New System.Drawing.Point(544, 70)
         Me.cmbContactType.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbContactType.Name = "cmbContactType"
         Me.cmbContactType.Size = New System.Drawing.Size(206, 31)
@@ -214,7 +214,7 @@ Partial Class FrmContactMaster
         Me.dtpBirthDate.CustomFormat = "dd/MM/yyyy"
         Me.dtpBirthDate.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dtpBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom
-        Me.dtpBirthDate.Location = New System.Drawing.Point(473, 151)
+        Me.dtpBirthDate.Location = New System.Drawing.Point(547, 152)
         Me.dtpBirthDate.Margin = New System.Windows.Forms.Padding(4)
         Me.dtpBirthDate.Name = "dtpBirthDate"
         Me.dtpBirthDate.ShowCheckBox = True
@@ -226,7 +226,7 @@ Partial Class FrmContactMaster
         Me.txtRemark1.AcceptsReturn = True
         Me.txtRemark1.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtRemark1.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRemark1.Location = New System.Drawing.Point(866, 126)
+        Me.txtRemark1.Location = New System.Drawing.Point(1066, 125)
         Me.txtRemark1.Margin = New System.Windows.Forms.Padding(4)
         Me.txtRemark1.MaxLength = 50
         Me.txtRemark1.Multiline = True
@@ -240,7 +240,7 @@ Partial Class FrmContactMaster
         Me.txtRemark2.AcceptsReturn = True
         Me.txtRemark2.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtRemark2.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtRemark2.Location = New System.Drawing.Point(867, 211)
+        Me.txtRemark2.Location = New System.Drawing.Point(1067, 210)
         Me.txtRemark2.Margin = New System.Windows.Forms.Padding(4)
         Me.txtRemark2.MaxLength = 50
         Me.txtRemark2.Multiline = True
@@ -254,7 +254,7 @@ Partial Class FrmContactMaster
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.Black
-        Me.Label7.Location = New System.Drawing.Point(733, 214)
+        Me.Label7.Location = New System.Drawing.Point(933, 213)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(83, 23)
@@ -266,7 +266,7 @@ Partial Class FrmContactMaster
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.Black
-        Me.Label8.Location = New System.Drawing.Point(734, 129)
+        Me.Label8.Location = New System.Drawing.Point(934, 128)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(83, 23)
@@ -279,7 +279,7 @@ Partial Class FrmContactMaster
         Me.cmbBroadcast.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbBroadcast.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbBroadcast.FormattingEnabled = True
-        Me.cmbBroadcast.Location = New System.Drawing.Point(473, 196)
+        Me.cmbBroadcast.Location = New System.Drawing.Point(547, 197)
         Me.cmbBroadcast.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbBroadcast.Name = "cmbBroadcast"
         Me.cmbBroadcast.Size = New System.Drawing.Size(203, 31)
@@ -291,7 +291,7 @@ Partial Class FrmContactMaster
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(366, 158)
+        Me.Label10.Location = New System.Drawing.Point(440, 159)
         Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(87, 23)
@@ -303,7 +303,7 @@ Partial Class FrmContactMaster
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Black
-        Me.Label6.Location = New System.Drawing.Point(366, 199)
+        Me.Label6.Location = New System.Drawing.Point(440, 200)
         Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(87, 23)
@@ -316,7 +316,7 @@ Partial Class FrmContactMaster
         Me.cmbLedgerID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbLedgerID.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbLedgerID.FormattingEnabled = True
-        Me.cmbLedgerID.Location = New System.Drawing.Point(142, 196)
+        Me.cmbLedgerID.Location = New System.Drawing.Point(148, 200)
         Me.cmbLedgerID.Margin = New System.Windows.Forms.Padding(4)
         Me.cmbLedgerID.Name = "cmbLedgerID"
         Me.cmbLedgerID.Size = New System.Drawing.Size(221, 31)
@@ -366,7 +366,7 @@ Partial Class FrmContactMaster
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.Black
-        Me.Label3.Location = New System.Drawing.Point(733, 33)
+        Me.Label3.Location = New System.Drawing.Point(933, 32)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(97, 23)
@@ -377,7 +377,7 @@ Partial Class FrmContactMaster
         '
         Me.txtworkNotes.AcceptsReturn = True
         Me.txtworkNotes.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtworkNotes.Location = New System.Drawing.Point(866, 26)
+        Me.txtworkNotes.Location = New System.Drawing.Point(1066, 25)
         Me.txtworkNotes.Margin = New System.Windows.Forms.Padding(4)
         Me.txtworkNotes.MaxLength = 50
         Me.txtworkNotes.Multiline = True
@@ -389,7 +389,7 @@ Partial Class FrmContactMaster
         'txtEmailID
         '
         Me.txtEmailID.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtEmailID.Location = New System.Drawing.Point(144, 149)
+        Me.txtEmailID.Location = New System.Drawing.Point(150, 153)
         Me.txtEmailID.Margin = New System.Windows.Forms.Padding(4)
         Me.txtEmailID.MaxLength = 50
         Me.txtEmailID.Name = "txtEmailID"

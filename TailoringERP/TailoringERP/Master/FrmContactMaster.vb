@@ -448,9 +448,6 @@ Public Class FrmContactMaster
     End Sub
 
 
-
-
-
 #End Region
 
 #Region "Events"
@@ -527,6 +524,12 @@ Public Class FrmContactMaster
 
     Private Sub txtSMobileNo_TextChanged(sender As Object, e As EventArgs) Handles txtSMobileNo.TextChanged
         ApplySearchFilter()
+    End Sub
+
+    Private Sub txtContactNo_KeyPress(sender As Object, e As KeyPressEventArgs) Handles txtContactNo.KeyPress
+        If Not Char.IsDigit(e.KeyChar) AndAlso e.KeyChar <> ChrW(Keys.Back) Then
+            e.Handled = True
+        End If
     End Sub
 
 
