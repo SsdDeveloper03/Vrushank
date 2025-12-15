@@ -1,0 +1,155 @@
+SQL Table
+
+ContactMaster
+(
+    ContactId INT IDENTITY(1,1),
+    ContactNo VARCHAR(20),
+    PersonName NVARCHAR(50),
+    CompanyName NVARCHAR(50),
+    Designation VARCHAR(20),
+    EmailId VARCHAR(30),
+    WorkNotes NVARCHAR(100),
+    LedgerId INT,
+    Birthday DATE,
+    Remark1 NVARCHAR(50),
+    Remark2 NVARCHAR(50),
+    ContactType NVARCHAR(20),
+    Broadcast NVARCHAR(50),
+    CreatedBy INT,
+    CreatedOn DATETIME,
+    CreatedFrom NVARCHAR(50)
+)
+
+
+
+
+-----------------------------------------------------------------
+
+INSERT Procedure: 
+
+
+CREATE PROCEDURE SP_ContactMaster_Insert
+(
+    @ContactNo      VARCHAR(20),
+    @PersonName     NVARCHAR(50),
+    @CompanyName    NVARCHAR(50),
+    @Designation    VARCHAR(20),
+    @EmailId        VARCHAR(30),
+    @WorkNotes      NVARCHAR(100),
+    @LedgerId       INT,
+    @Birthday       DATE,
+    @Remark1        NVARCHAR(50),
+    @Remark2        NVARCHAR(50),
+    @ContactType    NVARCHAR(20),
+    @Broadcast      NVARCHAR(50),
+    @CreatedBy      INT,
+    @CreatedOn      DATETIME,
+    @CreatedFrom    NVARCHAR(50)
+)
+AS
+BEGIN
+    INSERT INTO ContactMaster
+    (
+        ContactNo, PersonName, CompanyName, Designation, EmailId,
+        WorkNotes, LedgerId, Birthday, Remark1, Remark2,
+        ContactType, Broadcast, CreatedBy, CreatedOn, CreatedFrom
+    )
+    VALUES
+    (
+        @ContactNo, @PersonName, @CompanyName, @Designation, @EmailId,
+        @WorkNotes, @LedgerId, @Birthday, @Remark1, @Remark2,
+        @ContactType, @Broadcast, @CreatedBy, @CreatedOn, @CreatedFrom
+    )
+END
+GO
+
+
+-----------------------------------------------------------------
+
+
+
+UPDATE Procedure
+
+CREATE PROCEDURE SP_ContactMaster_Update
+(
+    @ContactId      INT,
+    @ContactNo      VARCHAR(20),
+    @PersonName     NVARCHAR(50),
+    @CompanyName    NVARCHAR(50),
+    @Designation    VARCHAR(20),
+    @EmailId        VARCHAR(30),
+    @WorkNotes      NVARCHAR(100),
+    @LedgerId       INT,
+    @Birthday       DATE,
+    @Remark1        NVARCHAR(50),
+    @Remark2        NVARCHAR(50),
+    @ContactType    NVARCHAR(20),
+    @Broadcast      NVARCHAR(50)
+)
+AS
+BEGIN
+    UPDATE ContactMaster SET
+        ContactNo = @ContactNo,
+        PersonName = @PersonName,
+        CompanyName = @CompanyName,
+        Designation = @Designation,
+        EmailId = @EmailId,
+        WorkNotes = @WorkNotes,
+        LedgerId = @LedgerId,
+        Birthday = @Birthday,
+        Remark1 = @Remark1,
+        Remark2 = @Remark2,
+        ContactType = @ContactType,
+        Broadcast = @Broadcast
+    WHERE ContactId = @ContactId
+END
+GO
+
+
+-----------------------------------------------------------------
+
+
+DELETE Procedure
+
+
+CREATE PROCEDURE SP_ContactMaster_Delete
+(
+    @ContactId INT
+)
+AS
+BEGIN
+    DELETE FROM ContactMaster
+    WHERE ContactId = @ContactId
+END
+GO
+
+
+
+-----------------------------------------------------------------
+
+
+
+SELECT Procedure
+
+
+CREATE PROCEDURE SP_ContactMaster_Select
+(
+    @Name NVARCHAR(50) = '',
+    @Mobile VARCHAR(20) = ''
+)
+AS
+BEGIN
+    SELECT ContactId, PersonName, ContactNo, CompanyName, Designation,
+           EmailId, WorkNotes, LedgerId, Birthday, Remark1, Remark2,
+           ContactType, Broadcast, CreatedBy, CreatedOn, CreatedFrom
+    FROM ContactMaster
+    WHERE
+        (@Name = '' OR PersonName LIKE '%' + @Name + '%')
+        AND
+        (@Mobile = '' OR ContactNo LIKE '%' + @Mobile + '%')
+    ORDER BY PersonName
+END
+GO
+
+
+-----------------------------------------------------------------

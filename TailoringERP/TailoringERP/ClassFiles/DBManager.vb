@@ -336,25 +336,25 @@ Namespace TailoringERP.DB
             datatype = SqlDbType.VarChar
             Select Case dtype
 
-                Case dtype.Bool : datatype = SqlDbType.Bit
+                Case Dtype.Bool : datatype = SqlDbType.Bit
 
-                Case dtype.character : datatype = SqlDbType.Char
+                Case Dtype.character : datatype = SqlDbType.Char
 
-                Case dtype.DateTime : datatype = SqlDbType.DateTime
+                Case Dtype.DateTime : datatype = SqlDbType.DateTime
 
-                Case dtype.float : datatype = SqlDbType.Float
+                Case Dtype.float : datatype = SqlDbType.Float
 
-                Case dtype.int : datatype = SqlDbType.Int
+                Case Dtype.int : datatype = SqlDbType.Int
 
-                Case dtype.Money : datatype = SqlDbType.Money
+                Case Dtype.Money : datatype = SqlDbType.Money
 
-                Case dtype.varchar : datatype = SqlDbType.VarChar
+                Case Dtype.varchar : datatype = SqlDbType.VarChar
 
-                Case dtype.nvarchar : datatype = SqlDbType.NVarChar
+                Case Dtype.nvarchar : datatype = SqlDbType.NVarChar
 
-                Case dtype.img : datatype = SqlDbType.Image
+                Case Dtype.img : datatype = SqlDbType.Image
 
-                Case dtype.smallInt : datatype = SqlDbType.SmallInt
+                Case Dtype.smallInt : datatype = SqlDbType.SmallInt
 
             End Select
             'If val = isNull Then val = ""

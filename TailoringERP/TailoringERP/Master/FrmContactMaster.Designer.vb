@@ -22,6 +22,7 @@ Partial Class FrmContactMaster
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmContactMaster))
         Me.Label2 = New System.Windows.Forms.Label()
         Me.txtName = New System.Windows.Forms.TextBox()
@@ -56,16 +57,21 @@ Partial Class FrmContactMaster
         Me.txtSMobileNo = New System.Windows.Forms.TextBox()
         Me.txtSName = New System.Windows.Forms.TextBox()
         Me.lblF_LedgerName = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnRefresh = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnCancel = New System.Windows.Forms.Button()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnSave = New System.Windows.Forms.Button()
         Me.btnEdit = New System.Windows.Forms.Button()
         Me.btnAdd = New System.Windows.Forms.Button()
+        Me.cmsContactMaster = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.cmsRefresh = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cmsSave = New System.Windows.Forms.ToolStripMenuItem()
+        Me.cmsRename = New System.Windows.Forms.ToolStripMenuItem()
         Me.gbMainDetail.SuspendLayout()
         CType(Me.gcData, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.gvData, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.cmsContactMaster.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label2
@@ -105,7 +111,7 @@ Partial Class FrmContactMaster
         '
         'cmbDesignation
         '
-        Me.cmbDesignation.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbDesignation.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
         Me.cmbDesignation.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbDesignation.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbDesignation.FormattingEnabled = True
@@ -164,6 +170,8 @@ Partial Class FrmContactMaster
         '
         'cmbContactType
         '
+        Me.cmbContactType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
+        Me.cmbContactType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbContactType.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.cmbContactType.FormattingEnabled = True
         Me.cmbContactType.Location = New System.Drawing.Point(569, 70)
@@ -293,7 +301,7 @@ Partial Class FrmContactMaster
         '
         'cmbBroadcast
         '
-        Me.cmbBroadcast.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbBroadcast.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
         Me.cmbBroadcast.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbBroadcast.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbBroadcast.FormattingEnabled = True
@@ -330,7 +338,7 @@ Partial Class FrmContactMaster
         '
         'cmbLedgerID
         '
-        Me.cmbLedgerID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.cmbLedgerID.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Append
         Me.cmbLedgerID.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.cmbLedgerID.Font = New System.Drawing.Font("Calibri", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmbLedgerID.FormattingEnabled = True
@@ -349,9 +357,9 @@ Partial Class FrmContactMaster
         Me.Label5.Location = New System.Drawing.Point(12, 199)
         Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(84, 23)
+        Me.Label5.Size = New System.Drawing.Size(111, 23)
         Me.Label5.TabIndex = 157
-        Me.Label5.Text = "Ledger ID"
+        Me.Label5.Text = "Ledger Name"
         '
         'Label4
         '
@@ -424,9 +432,9 @@ Partial Class FrmContactMaster
         Me.Label1.Location = New System.Drawing.Point(12, 155)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(69, 23)
+        Me.Label1.Size = New System.Drawing.Size(73, 23)
         Me.Label1.TabIndex = 152
-        Me.Label1.Text = "EmailID"
+        Me.Label1.Text = "Email ID"
         '
         'gcData
         '
@@ -448,9 +456,9 @@ Partial Class FrmContactMaster
         '
         Me.gvData.Appearance.FooterPanel.Font = New System.Drawing.Font("Calibri", 11.25!)
         Me.gvData.Appearance.FooterPanel.Options.UseFont = True
-        Me.gvData.Appearance.HeaderPanel.Font = New System.Drawing.Font("Calibri", 13.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gvData.Appearance.HeaderPanel.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gvData.Appearance.HeaderPanel.Options.UseFont = True
-        Me.gvData.Appearance.Row.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gvData.Appearance.Row.Font = New System.Drawing.Font("Calibri", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gvData.Appearance.Row.Options.UseFont = True
         Me.gvData.GridControl = Me.gcData
         Me.gvData.Name = "gvData"
@@ -460,7 +468,7 @@ Partial Class FrmContactMaster
         Me.gvData.OptionsView.ShowAutoFilterRow = True
         Me.gvData.OptionsView.ShowFooter = True
         Me.gvData.OptionsView.ShowGroupPanel = False
-        Me.gvData.RowHeight = 30
+        Me.gvData.RowHeight = 40
         '
         'Label9
         '
@@ -481,7 +489,7 @@ Partial Class FrmContactMaster
         Me.txtSMobileNo.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSMobileNo.Location = New System.Drawing.Point(977, 699)
         Me.txtSMobileNo.Margin = New System.Windows.Forms.Padding(4)
-        Me.txtSMobileNo.MaxLength = 50
+        Me.txtSMobileNo.MaxLength = 10
         Me.txtSMobileNo.Name = "txtSMobileNo"
         Me.txtSMobileNo.Size = New System.Drawing.Size(156, 30)
         Me.txtSMobileNo.TabIndex = 7
@@ -489,6 +497,7 @@ Partial Class FrmContactMaster
         'txtSName
         '
         Me.txtSName.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.txtSName.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper
         Me.txtSName.Font = New System.Drawing.Font("Verdana", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtSName.Location = New System.Drawing.Point(652, 699)
         Me.txtSName.Margin = New System.Windows.Forms.Padding(4)
@@ -510,19 +519,19 @@ Partial Class FrmContactMaster
         Me.lblF_LedgerName.TabIndex = 286
         Me.lblF_LedgerName.Text = "Name "
         '
-        'Button1
+        'btnRefresh
         '
-        Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackColor = System.Drawing.SystemColors.Control
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(1337, 696)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(105, 36)
-        Me.Button1.TabIndex = 8
-        Me.Button1.Text = "Re&fresh"
-        Me.Button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnRefresh.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnRefresh.BackColor = System.Drawing.SystemColors.Control
+        Me.btnRefresh.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRefresh.Location = New System.Drawing.Point(1337, 696)
+        Me.btnRefresh.Margin = New System.Windows.Forms.Padding(4)
+        Me.btnRefresh.Name = "btnRefresh"
+        Me.btnRefresh.Size = New System.Drawing.Size(105, 36)
+        Me.btnRefresh.TabIndex = 8
+        Me.btnRefresh.Text = "Re&fresh"
+        Me.btnRefresh.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btnRefresh.UseVisualStyleBackColor = False
         '
         'btnExit
         '
@@ -530,6 +539,7 @@ Partial Class FrmContactMaster
         Me.btnExit.BackColor = System.Drawing.SystemColors.Control
         Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnExit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnExit.Image = Global.TailoringERP.My.Resources.Resources.close1
         Me.btnExit.Location = New System.Drawing.Point(483, 696)
         Me.btnExit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnExit.Name = "btnExit"
@@ -545,6 +555,7 @@ Partial Class FrmContactMaster
         Me.btnCancel.BackColor = System.Drawing.SystemColors.Control
         Me.btnCancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnCancel.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.btnCancel.Image = Global.TailoringERP.My.Resources.Resources.cancel1
         Me.btnCancel.Location = New System.Drawing.Point(382, 696)
         Me.btnCancel.Margin = New System.Windows.Forms.Padding(4)
         Me.btnCancel.Name = "btnCancel"
@@ -560,6 +571,7 @@ Partial Class FrmContactMaster
         Me.btnDelete.BackColor = System.Drawing.SystemColors.Control
         Me.btnDelete.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnDelete.ForeColor = System.Drawing.Color.Red
+        Me.btnDelete.Image = Global.TailoringERP.My.Resources.Resources.delete1
         Me.btnDelete.Location = New System.Drawing.Point(283, 696)
         Me.btnDelete.Margin = New System.Windows.Forms.Padding(4)
         Me.btnDelete.Name = "btnDelete"
@@ -575,6 +587,7 @@ Partial Class FrmContactMaster
         Me.btnSave.BackColor = System.Drawing.SystemColors.Control
         Me.btnSave.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave.ForeColor = System.Drawing.Color.DarkGreen
+        Me.btnSave.Image = Global.TailoringERP.My.Resources.Resources.save1
         Me.btnSave.Location = New System.Drawing.Point(195, 696)
         Me.btnSave.Margin = New System.Windows.Forms.Padding(4)
         Me.btnSave.Name = "btnSave"
@@ -590,6 +603,7 @@ Partial Class FrmContactMaster
         Me.btnEdit.BackColor = System.Drawing.SystemColors.Control
         Me.btnEdit.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnEdit.ForeColor = System.Drawing.Color.Maroon
+        Me.btnEdit.Image = Global.TailoringERP.My.Resources.Resources.edit1
         Me.btnEdit.Location = New System.Drawing.Point(96, 696)
         Me.btnEdit.Margin = New System.Windows.Forms.Padding(4)
         Me.btnEdit.Name = "btnEdit"
@@ -615,6 +629,32 @@ Partial Class FrmContactMaster
         Me.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btnAdd.UseVisualStyleBackColor = False
         '
+        'cmsContactMaster
+        '
+        Me.cmsContactMaster.AllowDrop = True
+        Me.cmsContactMaster.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.cmsContactMaster.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.cmsRefresh, Me.cmsSave, Me.cmsRename})
+        Me.cmsContactMaster.Name = "cmsContactMaster"
+        Me.cmsContactMaster.Size = New System.Drawing.Size(188, 76)
+        '
+        'cmsRefresh
+        '
+        Me.cmsRefresh.Name = "cmsRefresh"
+        Me.cmsRefresh.Size = New System.Drawing.Size(187, 24)
+        Me.cmsRefresh.Text = "Refresh Data"
+        '
+        'cmsSave
+        '
+        Me.cmsSave.Name = "cmsSave"
+        Me.cmsSave.Size = New System.Drawing.Size(187, 24)
+        Me.cmsSave.Text = "Save Layout"
+        '
+        'cmsRename
+        '
+        Me.cmsRename.Name = "cmsRename"
+        Me.cmsRename.Size = New System.Drawing.Size(187, 24)
+        Me.cmsRename.Text = "Rename Column"
+        '
         'FrmContactMaster
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -625,7 +665,7 @@ Partial Class FrmContactMaster
         Me.Controls.Add(Me.txtSMobileNo)
         Me.Controls.Add(Me.gbMainDetail)
         Me.Controls.Add(Me.txtSName)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnRefresh)
         Me.Controls.Add(Me.lblF_LedgerName)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.btnEdit)
@@ -639,6 +679,7 @@ Partial Class FrmContactMaster
         Me.gbMainDetail.PerformLayout()
         CType(Me.gcData, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.gvData, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.cmsContactMaster.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -673,7 +714,7 @@ Partial Class FrmContactMaster
     Friend WithEvents txtSMobileNo As TextBox
     Friend WithEvents txtSName As TextBox
     Friend WithEvents lblF_LedgerName As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnRefresh As Button
     Friend WithEvents btnExit As Button
     Friend WithEvents btnCancel As Button
     Friend WithEvents btnDelete As Button
@@ -684,4 +725,9 @@ Partial Class FrmContactMaster
     Friend WithEvents Label10 As Label
     Friend WithEvents lblContactId As Label
     Friend WithEvents Label11 As Label
+    Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents cmsContactMaster As ContextMenuStrip
+    Friend WithEvents cmsRefresh As ToolStripMenuItem
+    Friend WithEvents cmsSave As ToolStripMenuItem
+    Friend WithEvents cmsRename As ToolStripMenuItem
 End Class

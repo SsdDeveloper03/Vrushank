@@ -1044,7 +1044,7 @@ Public Class FrmSalesItemMaster
         txtSalesRateA.Clear()
         txtMRP.Clear()
 
-        'cmbItemCategory.SelectedIndex = 0
+        'cmbItemCategory.SelectedIndex = 0ComboFill_ItemType
         'cmbItemSubCategory.SelectedIndex = 0
         'cmbItemColor.SelectedIndex = 0
         'cmbItemSize.SelectedIndex = 0
