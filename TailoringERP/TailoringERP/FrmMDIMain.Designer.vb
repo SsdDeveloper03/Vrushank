@@ -25,9 +25,9 @@ Partial Class FrmMDIMain
         Me.components = New System.ComponentModel.Container()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.SalesMasterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CustomerMasterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.XtraTabbedMdiManager1 = New DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(Me.components)
+        Me.CustomerMasterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ContactMasterToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.XtraTabbedMdiManager1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,17 +51,10 @@ Partial Class FrmMDIMain
         Me.SalesMasterToolStripMenuItem.Size = New System.Drawing.Size(104, 24)
         Me.SalesMasterToolStripMenuItem.Text = "Sales Master"
         '
-        'CustomerMasterToolStripMenuItem
-        '
-        Me.CustomerMasterToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.CustomerMasterToolStripMenuItem.Name = "CustomerMasterToolStripMenuItem"
-        Me.CustomerMasterToolStripMenuItem.Size = New System.Drawing.Size(133, 24)
-        Me.CustomerMasterToolStripMenuItem.Text = "Customer Master"
-        '
         'Panel1
         '
         Me.Panel1.Location = New System.Drawing.Point(0, 33)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1063, 519)
         Me.Panel1.TabIndex = 1
@@ -70,6 +63,13 @@ Partial Class FrmMDIMain
         '
         Me.XtraTabbedMdiManager1.ClosePageButtonShowMode = DevExpress.XtraTab.ClosePageButtonShowMode.InAllTabPageHeaders
         Me.XtraTabbedMdiManager1.MdiParent = Me
+        '
+        'CustomerMasterToolStripMenuItem
+        '
+        Me.CustomerMasterToolStripMenuItem.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.CustomerMasterToolStripMenuItem.Name = "CustomerMasterToolStripMenuItem"
+        Me.CustomerMasterToolStripMenuItem.Size = New System.Drawing.Size(133, 24)
+        Me.CustomerMasterToolStripMenuItem.Text = "Customer Master"
         '
         'ContactMasterToolStripMenuItem
         '
@@ -87,7 +87,7 @@ Partial Class FrmMDIMain
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FrmMDIMain"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmMDIMain"
@@ -102,8 +102,8 @@ Partial Class FrmMDIMain
 
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents SalesMasterToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CustomerMasterToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Panel1 As Panel
     Friend WithEvents XtraTabbedMdiManager1 As DevExpress.XtraTabbedMdi.XtraTabbedMdiManager
+    Friend WithEvents CustomerMasterToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ContactMasterToolStripMenuItem As ToolStripMenuItem
 End Class
